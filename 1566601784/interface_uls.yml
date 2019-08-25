@@ -1,0 +1,137 @@
+dependency:
+   testReloadSwitch: 2-1000
+   testBoxOnline: 3-1000
+   testModuleStatus: 4-1000
+
+
+testcases:
+   testReloadSwitch: -id 1 -duts [node01,node02] -write_erase True
+   testBoxOnline: -id 2 -duts [node01,node02]
+   testModuleStatus: -id 3 -duts [node01,node02]
+   testConfigMgmtPort: -id 6 -duts [node01]
+   testL2SanityPortFlap: -id 7 -duts [node01, node02] -itgen_profile profile_l2_sanity -port_list node01.interface9,node01.interface10
+   testL2SanityPortModeChange: -id 8 -duts [node01, node02] -itgen_profile profile_l2_sanity -port_list node01.interface9
+   testL2SanityPortChannelMemberAdd: -id 9 -duts [node01, node02] -itgen_profile profile_l2_sanity  -dut_port node01.interface3 -peer_port node02.interface3 -pc_num 100
+   testL2SanityPortChannelMemberRemove: -id 10 -duts [node01, node02] -itgen_profile profile_l2_sanity -dut_port node01.interface3 -peer_port node02.interface3 -pc_num 100
+   testL2SanityUnconfig: -id 11 -duts [node01, node02] -itgen_profile profile_l2_sanity
+   testStaticRoute: -id 12 -duts [node01 node02] -port_list node01.interface1,node01.interface2,node02.interface1,node02.interface2
+   testToggleSwitchport: -id 13 -duts [node01,node02] -node01_ip 47.1.1.1 -node02_ip 47.1.1.2 -mask 24 -vlan 1
+   testPortChannelShutNoshut: -id 14 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface2 -peer_port_list node02.interface1,node02.interface2 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 10
+   testSubPortChannelShutNoshut: -id 15 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface2 -peer_port_list node02.interface1,node02.interface2 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 10 -tcclass testPortChannelShutNoshut -sub_po True
+   testSvi: -id 17 -duts [node01,node02] -dut_port node01.interface1 -vlan 800 -switchport_mode trunk
+   testIpv6Interface: -id 19 -duts [node01,node02] -dut_port_list node01.interface1 -dut_ipv6_address 120::1 -peer_ipv6_address 120::2 -mask 64
+
+   ##### 30-50 kstack testcases #############################
+   testKstackInterfacePreCleanup: -id 21 -duts [node01, node02] -tcclass testKstackInterfaceCleanup
+   testKstackInterfaceBringup: -id 22 -duts [node01, node02]
+   testKstackInterfaceShut: -id 23 -duts [node01, node02]
+   testKstackL3IntfMTU: -id 24 -duts [node01, node02]
+   testKstackInterfaceCleanup: -id 25 -duts [node01, node02]
+   
+   ##### fex testcases #####################################
+   testAAFexBringup: -id 20 -duts [node01] -mode MIX -tcclass testFexBringup
+   testL2AAFexSanityHIFPortFlap: -id 121 -duts [node01,node02,node04] -itgen_profile profile_l2_aa_fex_sanity -port_list node01.interface56,node01.interface57 -config_dict l2_aa_fex_sanity_config -tcclass testL2FexSanityPortFlap -aa_fex True
+   testL2AAFexSanityUnconfig: -id 122 -duts [node01,node02,node04] -itgen_profile profile_l2_aa_fex_sanity -config_dict l2_aa_fex_sanity_config -tcclass testL2FexSanityUnconfig
+   testFexBringup: -id 52 -duts [node01]
+   testFexSviPing: -id 53 -duts [node01,node02] -dut_port node01.interface7 -vlan 800 -switchport_mode trunk -dut_ip 10.1.1.1 -peer_ip 10.1.1.2 -mask 24
+   testFexPortChannelShutNoshut: -id 55 -duts [node01,node02] -dut_port_list node01.interface7,node01.interface35 -peer_port_list node02.interface6,node02.interface30 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 10 -vlan 100
+   testFexLacpShutNoshut: -id 56 -duts [node01,node02] -dut_port_list node01.interface7,node01.interface35 -peer_port_list node02.interface6,node02.interface30 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 10 -vlan 100 -po_mode active
+   testL2BridgingAccessFexAndFexPort: -id 57 -duts [node01,node02,node03] -dut_peer1_port node01.interface7 -dut_peer2_port node01.interface8 -peer1_ip 47.1.1.1 -peer2_ip 47.1.1.2 -mask 24 -vlan 899 -switchport_mode access
+   testFexSviRoutingFexAndFexPort: -id 59 -duts [node01,node02,node03] -dut_peer1_port node01.interface7 -dut_peer2_port node01.interface8 -ip1 47.1.1.1 -peer1_ip 47.1.1.2 -ip2 48.1.1.1 -peer2_ip 48.1.1.2 -mask 24 -vlan1 901 -vlan2 902 -switchport_mode access
+   testFexSviRoutingFexAndSwitchPort: -id 60 -duts [node01,node02,node03] -dut_peer1_port node01.interface7 -dut_peer2_port node01.interface5 -ip1 47.1.1.1 -peer1_ip 47.1.1.2 -ip2 48.1.1.1 -peer2_ip 48.1.1.2 -mask 24 -vlan1 901 -vlan2 902 -switchport_mode access
+   testL2BridgingFexLacpPortChannelTrunk: -id 71 -duts [node01,node02,node03] -dut_peer1_ports node01.interface1,node01.interface2 -dut_peer2_ports node01.interface13,node01.interface14 -peer1_ip 47.1.1.1 -peer2_ip 47.1.1.2 -mask 24 -vlan 899 -switchport_mode access -pc_list 91,92 -pc_mode active
+   testFexStaticMac: -id 74 -duts [node01] -port_list node01.interface9 node01.interface10 node01.interface15 -vlans 801 -switchport_mode access -itgen_profile profile_Fex_staticMac
+   testL2FexSanityMacLearning: -id 70 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -config_dict l2_fex_sanity_config
+   testL2FexSanityPortFlap: -id 72 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -port_list node01.interface9,node01.interface15 -config_dict l2_fex_sanity_config
+   testL2FexSanityPortModeChange: -id 76 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -port_list node01.interface9 -config_dict l2_fex_sanity_config
+   testL2FexSanityPortChannelMemberAdd: -id 77 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -dut_port node01.interface19 -peer_port node02.interface19 -pc_num 100 -config_dict l2_fex_sanity_config
+   testL2FexSanityPortChannelMemberRemove: -id 78 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -dut_port node01.interface19 -peer_port node02.interface19 -pc_num 100 -config_dict l2_fex_sanity_config
+   testL2FexSanityDeleteCreateVlan: -id 79 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -vlan_list 3,4,5 -config_dict l2_fex_sanity_config
+   testL2FexSanityAllowedVlanAdd: -id 80 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -vlan_list 11-15 -config_dict l2_fex_sanity_config
+   testL2FexSanityAllowedVlanRemove: -id 81 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -vlan_list 11-15 -config_dict l2_fex_sanity_config
+   testL2FexSanityUnconfig: -id 82 -duts [node01, node02] -itgen_profile profile_l2_fex_sanity -config_dict l2_fex_sanity_config
+   testDynamicL2MulticastPCFex: -id 94 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type dynamic -port_type pc -traffic_port_list node01.interface9,node01.interface10,node01.interface11,node01.interface12,node01.interface56,node01.interface57,node01.interface58,node01.interface59,node02.interface7,node02.interface8
+   ##### acl qos testcases ################################
+   testPBR: -id 120 -duts [node01] -dut_port_list node01.interface9,node01.interface10,node01.interface11,node01.interface12 -acl_name PBR4-acl -traffic_list TI01,TI02,TI03,TI04 -traffic_list1 TI04,TI05,TI06,TI07 -itgen_profile profile_pbr_sanity -logicaltophysical logicaltophysical -int_config_dict pbr_int_config_dict -proto ipv4 -trigger_list normal_redirect,add_static_route,host_flap,clear_arp -src_ip any -dst_ip 71.1.1.0,71.1.2.0,71.1.3.0,71.1.4.0 -dst_ip_mask 24 -next_hop1 197.30.1.2 -next_hop2 197.31.1.2 -static_ip 197.32.1.2 -static_mac 0000.4001.0103 -static_mac1 0000.4001.0104 -vlan_no 100 -routemap_name PBR4-rm
+
+   ##### multicast testcases ##############################
+   testStaticL2MulticastPC: -id 62 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type static -port_type pc
+   testDynamicL2MulticastPhy: -id 63 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type dynamic -port_type physical
+   testL2MulticastLcReload: -id 65 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type static -port_type pc -trigger_tc True
+   testL2MulticastPCFlap: -id 66 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type static -port_type pc -trigger_tc True
+   testL2MulticastVlanRecreate: -id 68 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type dynamic -port_type pc -trigger_tc True
+   testL2MulticastSVICreateDelete: -id 69 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type dynamic -port_type pc -trigger_tc True
+   testL2MulticastPortFlap: -id 67 -duts [node01, node02] -tgn tgn -vlan 2 -igmp_type dynamic -port_type pc -trigger_tc True
+   
+   ##################L3 Multicast Cases########################
+   testPimv4: -id 173 -duts [node01,node02]
+   testPimv4LcReload: -id 179 -duts [node01,node02] -trigger_tc True -trigger_intf_list [interface9, interface10, interface11, interface12]
+   testPimv4PCFlap: -id 181 -duts [node01,node02] -trigger_tc True -trigger_intf_list [interface1, interface2] -tcclass testPimv4PortFlap
+   testPimv4SVI: -id 183 -duts [node01,node02]
+   testPimv4SVILcReload: -id 184 -duts [node01,node02] -trigger_tc True -trigger_intf_list [interface1, interface2]
+   testPimv4SVIPortFlap: -id 185 -duts [node01,node02] -trigger_tc True -trigger_intf_list [interface1, interface2]
+   testPimv4SVIPCFlap: -id 186 -duts [node01,node02] -trigger_tc True -trigger_intf_list [interface1, interface2] -tcclass testPimv4SVIPortFlap
+   testPimv4PoSinfPCFlap: -id 196 -duts [node01,node02] -trigger_tc True -trigger_intf_list [po12] -intf_dict pim_sanity_interface_PoSinf_dict -ospf_dict pim_sanity_ospf_PoSinf_dict -pim_dict pim_sanity_config_PoSinf_dict -mroute_g1_dict pim_sanity_mroute_g1_PoSinf_dict -mroute_g2_dict pim_sanity_mroute_g2_PoSinf_dict -tcclass testPimv4PortFlap
+   testPimv4PoSinfFlap: -id 197 -duts [node01,node02] -trigger_tc True -trigger_intf_list [po12.30, po12.31, po12.32] -intf_dict pim_sanity_interface_PoSinf_dict -ospf_dict pim_sanity_ospf_PoSinf_dict -pim_dict pim_sanity_config_PoSinf_dict -mroute_g1_dict pim_sanity_mroute_g1_PoSinf_dict -mroute_g2_dict pim_sanity_mroute_g2_PoSinf_dict -tcclass testPimv4PortFlap
+  
+   
+   #################vxlan testcases##############################
+   testAccessVxLAN10G: -id 98 -duts [node01,node02,node03] -itgen_profile profile_vxlan_access -intf_dict vxlan_intf_access_dict_10G -ospf_dict vxlan_ospf_dict_10G -pim_dict vxlan_pim_dict_10G -mroute_dict vxlan_mroute_dict_10G -pc_check True -flap True -reload True -nve_flap True -mac_move True -stats False -add_delete True -aging_check True -nve_dict vxlan_intf_nve_access_dict -config_change True
+   testTrunkVxLAN10G: -id 99 -duts [node01,node02,node03] -itgen_profile profile_vxlan_trunk -intf_dict vxlan_intf_trunk_dict_10G -ospf_dict vxlan_ospf_dict_10G -pim_dict vxlan_pim_dict_10G -mroute_dict vxlan_trunk_mroute_dict_10G -pc_check True -nve_dict vxlan_intf_nve_trunk_dict
+   testAccessVxLAN40G_PO: -id 100 -duts [node01,node02,node03] -itgen_profile profile_vxlan_access -intf_dict vxlan_intf_access_dict_40GPO -ospf_dict vxlan_ospf_dict_40GPO -pim_dict vxlan_pim_dict_40GPO -mroute_dict vxlan_mroute_dict_40GPO  -nve_dict vxlan_intf_nve_access_dict
+   testAccessVxLAN10GSvi: -id 101 -duts [node01,node02,node03] -itgen_profile profile_vxlan_access -intf_dict vxlan_intf_access_dict_10G_svi -ospf_dict vxlan_ospf_dict_10G_svi -pim_dict vxlan_pim_dict_10G_svi -mroute_dict vxlan_mroute_dict_10G -pc_check True -flap True -reload True -nve_flap True -mac_move True -stats False -add_delete True -aging_check True -nve_dict vxlan_intf_nve_access_dict
+   testTrunkVxLAN10GSvi: -id 102 -duts [node01,node02,node03] -itgen_profile profile_vxlan_trunk -intf_dict vxlan_intf_trunk_dict_10G_svi -ospf_dict vxlan_ospf_dict_10G_svi -pim_dict vxlan_pim_dict_10G_svi -mroute_dict vxlan_trunk_mroute_dict_10G -pc_check True -nve_dict vxlan_intf_nve_trunk_dict
+   testAccessVxLAN40G_POSvi: -id 103 -duts [node01,node02,node03] -itgen_profile profile_vxlan_access -intf_dict vxlan_intf_access_dict_40GPO_svi -ospf_dict vxlan_ospf_dict_40GPO_svi -pim_dict vxlan_pim_dict_40GPO_svi -mroute_dict vxlan_mroute_dict_40GPO -nve_dict vxlan_intf_nve_access_dict
+
+   #################uls.yml testcases##############################
+   testBgpv4: -id 104 -duts [node01,node02,node03]
+   testCdp: -id 105 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface2
+   testLLDP: -id 106 -duts [node01,node02] -port_list node01.interface1,node02.interface1
+   testSviVrf: -id 107 -duts [node01,node02] -dut_port node01.interface1 -vlan 800 -switchport_mode trunk -vrf test
+   testHsrp: -id 108 -duts [node01,node02] 
+
+   #################PROTOCOLS testcases##############################
+   testStaticMac: -id 109 -duts [node01] -port_list node01.interface9 node01.interface10 node01.interface11 -vlans 801 -switchport_mode access -itgen_profile profile_staticMac
+   testVrrp: -id 110 -duts [node01,node02]
+   testHsrpv6: -id 111 -duts [node01,node02]
+   
+   #################SUBINTF testcases##############################
+   testPTPSubIntf: -id 112 -tcclass testPTPModes -duts [node01,node02,node04] -intf_dict ptp_sub_intf_dict -skip_clksync False -intf_dict1 ptp_clksync_intf_config_dict -intf_dict2 ptp_session2_intf_config_dict -skip_ptp_session2 False -ptp_msg_profile smpte
+   testRaclIPv4SubIntf: -id 113 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface9,node01.interface10 -peer_port_list node02.interface1 -node01_ip 1.1.1.1 -node02_ip 1.1.1.2 -mask 24 -acl_name racl-ip-1 -server_intf1_name eth3 -server_intf2_name eth4 -itgen_profile profile_acl_sub_intf
+   testRaclIPv6SubIntf: -id 114 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface9,node01.interface10 -peer_port_list node02.interface1 -node01_ipv6 2001::1:1:1:1 -node02_ipv6 2001::1:1:1:2 -mask 120 -acl_name racl-ipv6-1 -itgen_profile profile_acl_sub_intf
+
+
+   #################SVI testcases##############################
+   
+   # testSvi: -id  -duts [node01,node02] -dut_port node01.interface1 -vlan 800 -switchport_mode trunk -bfd_check False
+   # testSviVrf: -id  -duts [node01,node02] -dut_port node01.interface1 -vlan 800 -switchport_mode trunk -vrf test -bfd_check False
+   # testPimv4SVI
+   # testPimv4SVILcReload
+   # testPimv4SVIPortFlap
+   # testPimv4SVIPCFlap
+   # testPimv4PoSinfPCFlap
+   # testPimv4PoSinfFlap
+   
+   #################CDP testcases##############################
+   testL2ptCdpEthAccess: -id 115 -tcclass testL2ptCdpNeighborship -duts [node04,node03] -client_node1_intf node04.interface1 -client_node2_intf node03.interface4 
+   testL2ptCdpEthTrunk: -id 116 -tcclass testL2ptCdpNeighborship -duts [node01,node04] -client_node1_intf node04.interface27 -client_node2_intf node03.interface5
+   testCdp100G: -id 117 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface2 -tcclass testCdp
+
+   #################ASCII testcases##############################
+   testSystemAsciiReplay: -id 118 -tcclass testSystemAsciiReplay -duts [node01,node02]
+   testNxAPIShowAsciiHttpXml: -id 119 -duts [node01,node02] -type cli_show_ascii -chunk 0 -sid session1 -op xml -web http -port_list node01.interface1,node02.interface1 -uname admin -passwd insieme
+   testNxAPIShowAsciiHttpJson: -id 120 -duts [node01,node02] -type cli_show_ascii -chunk 0 -sid session1 -op json -web http -port_list node01.interface1,node02.interface1 -uname admin -passwd insieme
+   testNxAPIShowAsciiHttpXmlChunk: -id 121 -duts [node01,node02] -type cli_show_ascii -chunk 1 -sid session1 -op xml -web http -port_list node01.interface1,node02.interface1 -uname admin -passwd insieme
+
+
+   #################LACP testcases##############################
+   testLacpShutNoshut: -id 122 -duts [node01,node02] -dut_port_list node01.interface1,node01.interface2 -peer_port_list node02.interface1,node02.interface2 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 20
+
+   testL2BridgingLacpPortChannelAccess: -id 123 -duts [node01,node02,node03] -dut_peer1_ports node01.interface1,node01.interface2 -dut_peer2_ports node01.interface5 -peer1_ip 47.1.1.1 -peer2_ip 47.1.1.2 -mask 24 -vlan 899 -switchport_mode access -pc_list 91,92 -pc_mode active
+
+   testL2BridgingLacpPortChannelTrunk: -id 124 -duts [node01,node02,node03] -dut_peer1_ports node01.interface1,node01.interface2 -dut_peer2_ports node01.interface5 -peer1_ip 47.1.1.1 -peer2_ip 47.1.1.2 -mask 24 -vlan 899 -switchport_mode access -pc_list 91,92 -pc_mode active
+
+   testLacpMemberChange: -id 125 -duts [node01,node02] -dut_port_list node01.interface1 -peer_port_list node02.interface1 -node01_ip 36.1.1.1 -node02_ip 36.1.1.2 -mask 24 -pc_no 20 -dut_int3 node01.interface2 -peer_int3 node02.interface2
+
+   testVpcLessChangeLacpSysId:   -id 126 -duts [node01, node02, node03]
+   testVerifyVpcLacpConvergence: -id 127 -duts [node01,node02] -itgen_profile profile_basevpc -traffic_items ["TI01","TI02","TI03","TI04","TI05","TI06","TI07","TI08","TI09","TI10"] 

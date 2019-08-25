@@ -1,0 +1,4 @@
+
+(?<=Starting Traffic validation).*?(?=returndict after stop)
+
+1:2019-08-24 18:37:01,414 - PYLOG - INFO - Starting Traffic validation

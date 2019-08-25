@@ -1,0 +1,386 @@
+2019-08-24 18:15:34,984 - PYLOG - INFO - Inside cleanStart for node node01
+2019-08-24 18:15:40,995 - PYLOG - INFO - Inside powerCycle for 172.31.151.0 outlet 2
+2019-08-24 18:15:42,500 - PYLOG - INFO - username used: admin
+2019-08-24 18:15:43,556 - PYLOG - INFO - password used: insieme
+2019-08-24 18:15:45,025 - PYLOG - INFO - Powering down PDU 172.31.151.0 outlet 2
+2019-08-24 18:15:50,177 - PYLOG - INFO - Powering up PDU 172.31.151.0 outlet 2
+2019-08-24 18:15:51,643 - PYLOG - INFO - telnet 172.31.146.72 2008
+2019-08-24 18:15:51,653 - PYLOG - INFO - Inside getLoaderPrompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+
+Trying 172.31.146.72...
+Connected to 172.31.146.72.
+Escape character is '^]'.
+
+CISCO MODULE 
+BIOS Ver: 5.34.4[DBG]
+RC Revision:  02.03.00
+
+Memory Information:
+ MRC Revision:00.50.00
+ Total  DRAM: 32768 MB
+ Memory TOLM: 80000000
+ PCIE   BASE: 80000000     	Size : 10000000
+ PCI32  BASE: 90000000     	Limit: FBFFFFFF
+ PCI64  BASE: 380000000000     	Limit: 383FFFFFFFFF
+ UC    START: 380000000000     	End  : 384000000000
+ME Operational Firmware Version: 06:3.0.3.27
+
+DIMM Information:
+ Clock Speed: 1067MHz
+ Socket: 0x0 Channel: 0x0 Number: 0x0 Presence: Yes Size: 16GB
+ Socket: 0x0 Channel: 0x1 Number: 0x0 Presence: Yes Size: 16GB
+Bridge->[B0|D3|F1]
+Bridge->[B0|D3|F2]
+Bridge->[B0|D3|F3]
+Bridge->[B0|D1C|F0]
+Bridge->[B0|D1C|F1]
+Bridge->[B0|D1C|F2]
+Bridge->[B0|D1C|F3]
+Bridge->[B0|D1C|F7]
+
+Detected CISCO IOFPGA 
+Booting from Primary Bios 
+ Code Signing Results: 0x0 
+ Booting from Upgrade FPGA
+Disable Secureboot Checking for now 
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x80000020
+ FPGA Revision         : 0x3
+ FPGA ID               : 0x15778222
+ FPGA Date             : 0x20190318
+ Power Debug Register1  : 0x0
+ Power Debug Register2  : 0x7
+ Reset Cause Register  : 0x80000000
+ Boot Ctrl Register    : 0xe0ff
+ FPGA Update Status    : 0x80000020
+
+Detected CISCO IOFPGA 
+
+Board Type: Firestone
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x800105a0
+ FPGA Revision         : 0x6
+ FPGA ID               : 0x15900074
+ FPGA Date             : 0x20190402
+ FPGA Update Status    : 0xe00105a0
+
+Detected CISCO MIFPGA 
+Altera Subsystem Vendor ID 0x1172
+Punch RSU 0x14080 with 0x2
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+Altera Subsystem Vendor ID 0x1172
+Punch RSU 0x14080 with 0x2
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x800105a0
+ MIFPGA Version        : 0x8
+ MIFPGA Date           : 0x20190329
+ MIFPGA Update Status  : 0xe00105a0
+ MIFPGA ID             : 0x15156099
+
+Bootable Disk is detected. Device Name: Micron_1100_MTFDDAV256TBN               
+Version 2.18.1260. Copyright (C) 2019 American Megatrends, Inc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+Board type  4
+IOFPGA @ 0xe8000000
+SLOT_ID @ 0xf
+Set fan speed to 60%
+Initializing fan controller...
+Aborting config file read and autoboot 
+No autoboot or failed autoboot. falling to loader 
+
+
+
+                Loader Version 5.34
+
+loader >                                                     2019-08-24 18:16:32,755 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+2019-08-24 18:16:51,593 - PYLOG - INFO - telnet 172.31.146.72 2008
+2019-08-24 18:16:56,612 - PYLOG - INFO - Inside getLoaderPrompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+
+Trying 172.31.146.72...
+Connected to 172.31.146.72.
+Escape character is '^]'.
+
+
+loader >                                                                       2019-08-24 18:16:56,822 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+2019-08-24 18:16:56,823 - PYLOG - INFO - Inside bootKickstartMode: hdl=</usr/bin/telnet 172.31.146.72 2008>
+
+
+
+loader >                                                                       2019-08-24 18:16:59,036 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+cmdline recoverymode=1cmdline recoverymode=1
+
+
+loader >                                                                       2019-08-24 18:17:01,342 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+boot sanity-golden.gbin
+boot sanity-golden.gbin
+Booting sanity-golden.gbin 
+Trying diskboot 
+ Filesystem type is ext2fs, partition type 0x83
+Image valid
+OS Image Key Type: Development KEY
+
+
+Image Signature verification was Successful.
+
+Boot Time: 8/25/2019  1:18:11
+Installing klm_card_index
+done
+Linking n9k flash devices
+creating flash devices BOOT_DEV= sda
+INIT: version 2.88 booting
+Installing ata_piix module ... done.
+Unsquashing rootfs ...
+Enabling 8250 serial driver spurious INTs workaround
+Installing isan procfs ... done.
+is_lxc: is_stby: suffix:
+Installing ftrace in non-lxc mode done
+Installing SSE module ... done.
+Creating SSE device node 247 ... done.
+Loading I2C driver ... done.
+Loading MEM scrub driver ... done.
+Installing CCTRL driver for card_type 98 without NEED_GEM ... done.
+Loading IGB driver ... done.
+Checking SSD firmware ...
+	Model Number:       Micron_1100_MTFDDAV256TBN               
+	Serial Number:      MSA214906N3
+	Firmware Revision:  M0MU020
+
+Checking all filesystems.
+Installing SPROM driver ... IS_N9K done.
+Installing pfmsvcs module ...done.
+Installing nvram module ... done.
+Installing if_index module with port mode 6 ... done.
+Installing fcfwd
+Installing RNI lcnd ... done
+Installing LC netdev ... done
+Installing psdev module ... done.
+Installing veobc module ... done.
+Checking SR card
+Card Index is 21175
+Inserting eMMC module ... 
+Inserting OBFL module ... 15.05: eMMC Device found.
+15.05: card has mmc
+done.
+15.06: Making OBFL character devices for mmc
+mounting plog for N9k!
+Mounting OBFL for eMMC
+1+0 records in
+1+0 records out
+512 bytes (512 B) copied, 0.0908138 s, 5.6 kB/s
+Attach blkoops
+15.24: Before mounting blkoops
+16.28: After mounting blkoops
+Making OBFL character devices
+Inserting kernel_services module ... done.
+Making kernel_services character devices
+cgroups initialized
+exit code: 1
+Starting OpenBSD Secure Shell server: sshd ... done.
+tune2fs 1.42.9 (28-Dec-2013)
+Setting reserved blocks percentage to 0% (0 blocks)
+Starting portmap daemon...
+creating NFS state directory: done
+starting 8 nfsd kernel threads: done
+starting mountd: done
+starting statd: done
+Saving image for img-sync ...
+Loading system software
+Patch Repository Setup completed successfully
+No system image Telling INIT to INIT: Sending processes the TERM signal
+INIT: Sending processes the KILL signal
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2019, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+switch(boot)# 2019-08-24 18:18:48,051 - PYLOG - INFO - Inside kickstartModeGetImage: hdl=</usr/bin/telnet 172.31.146.72 2008>
+
+
+switch(boot)# 2019-08-24 18:18:48,202 - PYLOG - INFO - Got kickstart prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+terminal width 500
+terminal width 500
+switch(boot)# config t
+config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch(boot)(config)# 2019-08-24 18:18:48,564 - PYLOG - INFO - Got kickstart config prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+interface mgmt 0
+interface mgmt 0
+switch(boot)(config-if)# 2019-08-24 18:18:48,721 - PYLOG - INFO - Got kickstart intf prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+ip address 172.31.203.80 255.255.248.0
+ip address 172.31.203.80 255.255.248.0
+switch(boot)(config-if)# no shutdown
+no shutdown
+switch(boot)(config-if)# exit
+exit
+switch(boot)(config)# ip default-gateway 172.31.200.1
+ip default-gateway 172.31.200.1
+switch(boot)(config)# exit
+exit
+switch(boot)# delete bootflash:sanity.image
+delete bootflash:sanity.image
+switch(boot)# 2019-08-24 18:19:37,198 - PYLOG - INFO - Now running command:  copy scp://snoopy@172.31.146.95/tftpboot/sanity-image/lindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin bootflash:sanity.image
+copy scp://snoopy@172.31.146.95/tftpboot/sanity-image/lindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin bootflash:sanity.image
+copy scp://snoopy@172.31.146.95/tftpboot/sanity-image/lindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin bootflash:sanity.image
+The authenticity of host '172.31.146.95 (172.31.146.95)' can't be established.
+RSA key fingerprint is SHA256:DC/ybMRDcdMrda/6SDf/vnpjELVSsZJfCsg9XJUd1n8.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Warning: Permanently added '172.31.146.95' (RSA) to the list of known hosts.
+Outbound-ReKey for 172.31.146.95:22
+Inbound-ReKey for 172.31.146.95:22
+snoopy@172.31.146.95's password: nbv123
+
+lindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                        0%    0     0.0KB/s   --:-- ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                        4%   62MB  62.5MB/s   00:20 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                        8%  120MB  62.0MB/s   00:20 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       12%  171MB  60.9MB/s   00:19 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       16%  223MB  60.0MB/s   00:19 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       20%  283MB  59.9MB/s   00:18 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       24%  334MB  59.0MB/s   00:17 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       28%  385MB  58.3MB/s   00:16 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       32%  443MB  58.2MB/s   00:15 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       36%  494MB  57.5MB/s   00:15 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       39%  543MB  56.7MB/s   00:14 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       43%  599MB  56.6MB/s   00:13 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       47%  646MB  55.7MB/s   00:13 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       50%  696MB  55.1MB/s   00:12 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       54%  746MB  54.6MB/s   00:11 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       58%  798MB  54.3MB/s   00:10 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       62%  852MB  54.3MB/s   00:09 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       65%  898MB  53.4MB/s   00:08 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       69%  948MB  53.1MB/s   00:07 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       72%  994MB  52.5MB/s   00:07 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       76% 1047MB  52.5MB/s   00:06 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       79% 1096MB  52.1MB/s   00:05 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       83% 1149MB  52.2MB/s   00:04 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       87% 1207MB  52.8MB/s   00:03 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       91% 1251MB  51.9MB/s   00:02 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       93% 1289MB  50.5MB/s   00:01 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                       97% 1331MB  49.7MB/s   00:00 ETAlindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin                                                                                                                                                                                                                                                                                                                                                                                                                                      100% 1371MB  50.8MB/s   00:27    
+Copy complete, now saving to disk (please wait)...
+Copy complete.
+switch(boot)# dir bootflash: | include sanity.image
+dir bootflash: | include sanity.image
+ 1438113280  Aug 25 2019 01:20:07  sanity.image
+switch(boot)# write erase
+write erase
+Warning: This command will erase the startup-configuration.
+Do you wish to proceed anyway? (y/n) [N] y
+y
+switch(boot)# 
+switch(boot)# write erase boot
+write erase boot
+This command will erase the boot variables and the ip configuration of interface mgmt 0
+Do you wish to proceed anyway? (y/n) [N] y
+y
+switch(boot)# 
+switch(boot)# 2019-08-24 18:20:08,945 - PYLOG - INFO - sending start command
+start
+start
+bash-4.3# 2019-08-24 18:20:09,087 - PYLOG - INFO - Removing cflow files
+rm -rf /bootflash/cflow*
+rm -rf /bootflash/cflow*
+bash-4.3# 2019-08-24 18:20:09,227 - PYLOG - INFO -  rm -rf /bootflash/cflow*
+
+echo "poapdisable=1" > /bootflash/platform.inf
+echo "poapdisable=1" > /bootflash/platform.inf
+bash-4.3# exit
+exit
+exit
+switch(boot)# reload
+reload
+This command will reboot this supervisor module. (y/n) ? y
+2019-08-24 18:20:09,830 - PYLOG - INFO - Inside getLoaderPrompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
+
+y
+
+CISCO MODULE 
+BIOS Ver: 5.34.4[DBG]
+RC Revision:  02.03.00
+
+Memory Information:
+ MRC Revision:00.50.00
+ Total  DRAM: 32768 MB
+ Memory TOLM: 80000000
+ PCIE   BASE: 80000000     	Size : 10000000
+ PCI32  BASE: 90000000     	Limit: FBFFFFFF
+ PCI64  BASE: 380000000000     	Limit: 383FFFFFFFFF
+ UC    START: 380000000000     	End  : 384000000000
+ME Operational Firmware Version: 06:3.0.3.27
+
+DIMM Information:
+ Clock Speed: 1067MHz
+ Socket: 0x0 Channel: 0x0 Number: 0x0 Presence: Yes Size: 16GB
+ Socket: 0x0 Channel: 0x1 Number: 0x0 Presence: Yes Size: 16GB
+Bridge->[B0|D3|F1]
+Bridge->[B0|D3|F2]
+Bridge->[B0|D3|F3]
+Bridge->[B0|D1C|F0]
+Bridge->[B0|D1C|F1]
+Bridge->[B0|D1C|F2]
+Bridge->[B0|D1C|F3]
+Bridge->[B0|D1C|F7]
+
+Detected CISCO IOFPGA 
+Booting from Primary Bios 
+ Code Signing Results: 0x0 
+ Booting from Upgrade FPGA
+Disable Secureboot Checking for now 
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x80000020
+ FPGA Revision         : 0x3
+ FPGA ID               : 0x15778222
+ FPGA Date             : 0x20190318
+ Power Debug Register1  : 0x0
+ Power Debug Register2  : 0x7
+ Reset Cause Register  : 0x80000000
+ Boot Ctrl Register    : 0xe0ff
+ FPGA Update Status    : 0x80000020
+
+Detected CISCO IOFPGA 
+
+Board Type: Firestone
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x800105a0
+ FPGA Revision         : 0x6
+ FPGA ID               : 0x15900074
+ FPGA Date             : 0x20190402
+ FPGA Update Status    : 0xe00105a0
+
+Detected CISCO MIFPGA 
+Altera Subsystem Vendor ID 0x1172
+Punch RSU 0x14080 with 0x2
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+Altera Subsystem Vendor ID 0x1172
+Punch RSU 0x14080 with 0x2
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+Xilinx Subsystem Vendor ID 0x10ee
+Punch RSU 0x8c with 0x800105a0
+ MIFPGA Version        : 0x8
+ MIFPGA Date           : 0x20190329
+ MIFPGA Update Status  : 0xe00105a0
+ MIFPGA ID             : 0x15156099
+
+Bootable Disk is detected. Device Name: Micron_1100_MTFDDAV256TBN               
+Version 2.18.1260. Copyright (C) 2019 American Megatrends, Inc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+Board type  4
+IOFPGA @ 0xe8000000
+SLOT_ID @ 0xf
+Set fan speed to 60%
+Initializing fan controller...
+Aborting config file read and autoboot 
+No autoboot or failed autoboot. falling to loader 
+
+
+
+                Loader Version 5.34
+
+loader >                                                     2019-08-24 18:20:59,452 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2008>
