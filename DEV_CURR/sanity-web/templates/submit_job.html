@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block sb_admin_title %}Job Submission Form{% endblock sb_admin_title %}
+
+{% block sb_admin_content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Submit Job</h2>
+        {% if submission %}
+            <div class="alert alert-info alert-dismissable">
+                <button type="button" class="close" data-dismiss="info" aria-hidden="true">&times;</button>
+                <b>Job was successfully submitted. it will be reflected in your job list soon</b>
+            </div>
+        {% endif %}
+        <p class="lead">Fill in proper details and hit submit</p>
+    </div>
+</div>
+
+    <div class="col-lg-10">
+        <form action="" class="was-validated" role="form" method="post">
+{% csrf_token %}
+            <p>Fields marked with <sup>*</sup> are compulsory</p>
+            <div class="form-group row">
+                <label for="build" class="col-sm-2 col-form-label">Build<sup>*</sup></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="build" placeholder="Enter Build path" name="build" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="testsuite" class="col-sm-2 col-form-label">TestSuite<sup>*</sup></label>
+                <div class="col-sm-4">
+                    <select class="form-control" id="testsuite" name="testsuite" required>
+                            <option hidden disabled selected value> -- Select a suite -- </option>
+                        {% for testsuite in testsuites %}
+                            <option value="{{testsuite.testsuite}}">{{testsuite.testsuite}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="asic" class="col-sm-2 col-form-label">ASIC Type</label>
+                <div class="col-sm-4">
+                    <select class="form-control" id="asic" name="asic">
+                            <option value="any">Any (No Preference)</option>
+                        {% for asic in asics %}
+                            <option value="{{asic.asic}}">{{asic.asic|capfirst}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <label for="testbed" class="col-sm-1 col-form-label">Testbed</label>
+                <div class="col-sm-3">
+                    <select class="form-control" id="testbed" name="testbed">
+                            <option value="any">Any (No Preference)</option>
+                        {% for testbed in testbeds %}
+                            <option value="{{testbed.testbed}}" class="{{testbed.asic|capfirst}}">{{testbed.testbed|capfirst}} ({{testbed.asic|capfirst}})</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="email" placeholder="Enter email id's, seperated by comma" name="email">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="send_update" class="col-sm-2 col-form-label">Send Email Updates</label>
+                <div class="col-sm-2">
+                    <select class="form-control" id="send_update" name="send_update" required>
+                        <option value="1" selected="selected">Send</option>
+                        <option value="0">Don't Send</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr>
+            <div id="more_flags" hidden="hidden">
+                <div class="form-group row">
+                    <label for="issu_build" class="col-sm-2 col-form-label">ISSU Build</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="issu_build" placeholder="Enter ISSU Build SRCDIR" name="issu_build">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="download_image" class="col-sm-2 col-form-label">Download Image</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="download_image" placeholder="Download Image" name="download_image">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label> Select Image boot mode</label>
+                    </div>
+                    <div class="col-sm-2">
+                         <label for="basemode" class="radio-inline">
+                             <input type="radio" id="basemode" name="boot_mode" value="BASEMODE"> Basemode</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="dockermode" class="radio-inline">
+                            <input type="radio" id="dockermode" name="boot_mode" value="DOCKERMODE"> Dockermode</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="containermode" class="radio-inline">
+                            <input type="radio"  id="containermode"  name="boot_mode" value="CONTAINERMODE"> Containermode</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label> Select on-fail action</label>
+                    </div>
+                    <div class="col-sm-2">
+                         <label for="pause_on_fail" class="radio-inline">
+                             <input type="radio" id="pause_on_fail" name="on_fail" value="STOPONFAIL"> Stop on Fail</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="stop_on_fail" class="radio-inline">
+                            <input type="radio" id="stop_on_fail" name="on_fail" value="PAUSEONFAIL"> Pause on Fail</label>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label> Select if new change</label>
+                    </div>
+                    <div class="col-sm-2">
+                         <label for="new_change" class="radio-inline">
+                             <input type="radio" id="new_change" name="new_change" value="NEW_CHANGE"> New Change</label>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group row">
+                    <div class="col-sm-2">
+                        <label> Select if Download Only</label>
+                    </div>
+                    <div class="col-sm-2">
+                         <label for="download_only" class="radio-inline">
+                             <input type="radio" id="download_only" name="download_only" value="download_only"> Download Only</label>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-group row">
+                    <label for="mparams" class="col-sm-2 col-form-label">MPARAMS</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="mparams" placeholder="Download Image" name="mparams">
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="button" id="show_btn" class="btn btn-info">Show options</button>
+        </form>
+    </div>
+{% endblock sb_admin_content %}
+{% block sb_admin_custom_js %}
+<script type="text/javascript">
+    var show = 0;
+    $(document).ready(function(){
+      var btn = $('#show_btn');
+      btn.click(function(){
+        if (show==0){
+            show = 1;
+            $("#more_flags").show();
+            $('#show_btn').text('Hide options')
+        } else {
+            show = 0;
+            $("#more_flags").hide();
+            $('#show_btn').text('Show options')
+        }
+      });
+  });
+</script>
+{% endblock sb_admin_custom_js %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block sb_admin_title %}Home{% endblock sb_admin_title %}
+{% block sb_admin_content %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <i class="fa fa-info-circle"></i>  <strong>Dashboard</strong> This and everything below is inside <code>sb_admin_content</code> block.
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Dashboard</h2>
+        <p class="lead">Reusable Django application providing SB Admin dashboard theme, but also some other bootstrap related extras (for now it is only a login snippet).</p>
+        <h5>List of resources</h5>
+        <h6>Font Awesome</h6>
+        <p class="">You can find list of all awesome icons <a href="https://fortawesome.github.io/Font-Awesome/icons/">here</a>.
+    </div>
+</div>
+{% endblock sb_admin_content %}
+

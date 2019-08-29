@@ -1,0 +1,31 @@
+version: "3.1"
+services:
+  mysql:
+    build: db
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes: 
+      - ./db_init_scripts:/docker-entrypoint-initdb.d 
+
+  django:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+      - migration
+    volumes:
+      - ./:/usr/src/app
+
+  migration:
+    build: .
+    depends_on:
+      - mysql
+    volumes:
+      - ./:/usr/src/app
+    command: >
+      bash -c "python manage.py makemigrations --noinput &&
+      python manage.py migrate --noinput &&
+      python manage.py collectstatic --noinput"

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %} Job Details {% endblock title %}
+
+{% block sb_admin_breadcrumb_active %}
+          <li class="breadcrumb-item active">Submit-Job</li>
+{% endblock sb_admin_breadcrumb_active %}
+
+{% block sb_admin_content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Job Details for job: {{job.submit_id}}</h2>
+    </div>
+</div>
+<div class="row">
+
+    <table class="table table-bordered table-hover table-striped">
+        <tbody>
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ job.status }}</td>
+            </tr>
+            <tr>
+                <th>Sbmitter</th>
+                <td>{{ job.submitter }}</td>
+            </tr>
+            <tr>
+                <th>Submit Date</th>
+                <td>{{ job.submit_date }}</td>
+            </tr>
+            <tr>
+                <th>Build</th>
+                <td>{{ job.build }}</td>
+            </tr>
+            <tr>
+                <th>Testsuite</th>
+                <td>{{ job.testsuite }}</td>
+            </tr>
+            <tr>
+                <th>Asic</th>
+                <td>{{ job.asic }}</td>
+            </tr>
+            <tr>
+                <th>Testbed</th>
+                <td>{{ job.testbed }}</td>
+            </tr>
+            <tr>
+                <th>Flags</th>
+                <td>{{ job.flags }}</td>
+            </tr>
+            <tr>
+                <th>Priority</th>
+                <td>{{ job.priority }}</td>
+            </tr>
+            <tr>
+                <th>Eta</th>
+                <td>{{ job.eta }}</td>
+            </tr>
+            <tr>
+                <th>Logs</th>
+                <td>{{ job.logs }}</td>
+            </tr>
+            <tr>
+                <th>Results</th>
+                <td>{{ job.results }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+    <h4>Job logs:</h4>
+    <p>File contents refresh every 30 seconds
+    <label for="auto_refresh" class="radio-inline">
+        <input type="checkbox" id="auto_refresh" name="auto_refresh" value="auto_refresh" checked="checked"> Check to enable Auto refresh
+    </label></p>
+    <pre id="fileOutput"></pre>
+</div>
+
+
+
+{% endblock sb_admin_content %}
+
+{% block sb_admin_custom_js %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        var fileOutput = $('#fileOutput');
+        $.get("{% url 'get_logs' %}?submit_id={{job.submit_id}}", function(data, status){
+            fileOutput.text(data);
+        });
+        setInterval(function () {
+            var fileOutput = $('#fileOutput');
+            var auto_refresh = $('#auto_refresh');
+            console.log("in")
+            if (auto_refresh.is(':checked')) {
+                console.log("get")
+                $.get("{% url 'get_logs' %}?submit_id={{job.submit_id}}", function(data, status){
+                    fileOutput.text(data);
+                });
+            }
+        }, 30000);
+    });
+
+</script>
+{% endblock sb_admin_custom_js %}
