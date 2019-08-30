@@ -1,0 +1,270 @@
+                   Ether/IP
+                pkt_length:
+                   128
+
+    profile_l2_sanity:
+        interface_dict:
+            eth4:
+                base_config: -switchport_mode access  -vlan 9
+            eth3:
+                base_config: -switchport_mode trunk -allowed_vlan_list 1-10 -vlan 9
+            eth1:
+                base_config: -switchport_mode trunk -allowed_vlan_list 1-10 -vlan 9
+        peer_interface_dict:
+            interface1: -name eth3 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/1 -itgen_peer_connections node01:Eth1/5/1
+            interface2: -name eth4 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/2 -itgen_peer_connections node01:Eth1/5/2
+            interface3: -name eth2 -type ethernet -speed 10G -peer_device node03 -peer_interface Eth1/1/1
+            interface5: -name eth1 -type ethernet -speed 10G -peer_device node02 -peer_interface Eth1/5/2 -itgen_peer_connections node02:Eth1/10,node01:Po100
+        peer_intf_dict_40G:
+            interface1: -name eth3 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/1 -itgen_peer_connections node01:Eth1/5/1
+            interface2: -name eth4 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/2 -itgen_peer_connections node01:Eth1/5/2
+            interface3: -name eth2 -type ethernet -speed 10G -peer_device node03 -peer_interface Eth1/1/1
+            interface5: -name eth1 -type ethernet -speed 10G -peer_device node02 -peer_interface Eth1/5/2 -itgen_peer_connections node02:Eth1/5/2,node01:Eth2/1
+        peer_intf_dict_1G:
+            interface1: -name eth3 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/1 -itgen_peer_connections node01:Eth1/5/1
+            interface2: -name eth4 -type ethernet -speed 10G -peer_device node01 -peer_interface Eth1/5/2 -itgen_peer_connections node01:Eth1/5/2
+            interface3: -name eth2 -type ethernet -speed 10G -peer_device node03 -peer_interface Eth1/1/1
+            interface5: -name eth1 -type ethernet -speed 10G -peer_device node02 -peer_interface Eth1/5/2 -itgen_peer_connections node02:Eth1/5/2,node01:Eth1/30
+        endpoint_dict:
+            epg_eth4_eth1: -macaddr 0000.4444.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth1_eth4: -macaddr 0000.1111.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            
+            epg_eth3_eth1: -macaddr 0000.3333.2001 -macaddr_step 0000.0000.0001 -vlan 1 -vlan_step 1 -host_count 10
+            epg_eth1_eth3: -macaddr 0000.1111.2001 -macaddr_step 0000.0000.0001 -vlan 1 -vlan_step 1 -host_count 10
+            
+            epg_eth4_eth3: -macaddr 0000.4444.3001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth3_eth4: -macaddr 0000.3333.3001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_all_zero_1: -macaddr 0000.0000.0000 -macaddr_step 0000.0000.0000 -vlan 9
+            
+            epg_eth4_UUC: -macaddr 0000.4400.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth3_UUC: -macaddr 0000.3300.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth1_UUC: -macaddr 0000.1100.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10           
+            
+            epg_eth4_UUC_dst: -macaddr 0000.9944.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth3_UUC_dst: -macaddr 0000.9933.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10
+            epg_eth1_UUC_dst: -macaddr 0000.9911.1001 -macaddr_step 0000.0000.0001 -vlan 9 -vlan_step 0 -host_count 10   
+            
+            
+            epg_eth3_eth1_vlan_add: -macaddr 0000.5555.2001 -macaddr_step 0000.0000.0001 -vlan 11 -vlan_step 1 -host_count 5
+            epg_eth1_eth3_vlan_add: -macaddr 0000.6666.2001 -macaddr_step 0000.0000.0001 -vlan 11 -vlan_step 1 -host_count 5 
+            
+                                
+          
+        active_interfaces: eth4,eth3,eth1
+
+        traffic_mapping_dict:
+            TI01:
+                src_int:
+                    eth4
+                dst_int:
+                    eth3
+                src_endpoint:
+                    epg_eth4_eth3
+                dst_endpoint:
+                    epg_eth3_eth4
+                pkt_format:
+                    Ether/IP
+                pkt_length:
+                   128
+            TI02:
+                src_int:
+                    eth3
+                dst_int:
+                    eth4
+                src_endpoint:
+                    epg_eth3_eth4
+                dst_endpoint:
+                    epg_eth4_eth3
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+
+            TI03:
+                src_int:
+                    eth4
+                dst_int:
+                    eth1
+                src_endpoint:
+                    epg_eth4_eth1
+                dst_endpoint:
+                    epg_eth1_eth4
+                pkt_format:
+                    Ether/IP
+                pkt_length:
+                   128
+            TI04:
+                src_int:
+                    eth1
+                dst_int:
+                    eth4
+                src_endpoint:
+                    epg_eth1_eth4
+                dst_endpoint:
+                    epg_eth4_eth1
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+            TI05:
+                src_int:
+                    eth3
+                dst_int:
+                    eth1
+                src_endpoint:
+                    epg_eth3_eth1
+                dst_endpoint:
+                    epg_eth1_eth3
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                   128
+            TI06:
+                src_int:
+                    eth1
+                dst_int:
+                    eth3
+                src_endpoint:
+                    epg_eth1_eth3
+                dst_endpoint:
+                    epg_eth3_eth1
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+
+            TI07:
+                src_int:
+                    eth4
+                dst_int:
+                    eth3,eth1
+                src_endpoint:
+                    epg_eth4_UUC
+                dst_endpoint:
+                    epg_eth4_UUC_dst
+                pkt_format:
+                    Ether/IP
+                pkt_length:
+                    128
+
+            TI08:
+                src_int:
+                    eth3
+                dst_int:
+                    eth4,eth1
+                src_endpoint:
+                    epg_eth3_UUC
+                dst_endpoint:
+                    epg_eth3_UUC_dst
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+                    
+            TI09:
+                src_int:
+                    eth1
+                dst_int:
+                    eth3,eth4
+                src_endpoint:
+                    epg_eth1_UUC
+                dst_endpoint:
+                    epg_eth1_UUC_dst
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128                    
+            TI10:
+                src_int:
+                    eth3
+                dst_int:
+                    eth1
+                src_endpoint:
+                    epg_eth3_eth1_vlan_add
+                dst_endpoint:
+                    epg_eth1_eth3_vlan_add                  
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                   128
+            TI11:
+                src_int:
+                    eth1
+                dst_int:
+                    eth3
+                src_endpoint:
+                    epg_eth1_eth3_vlan_add
+                dst_endpoint:
+                    epg_eth3_eth1_vlan_add
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+            TI12:
+                src_int:
+                    eth1
+                dst_int:
+                    eth4,eth3
+                src_endpoint:
+                    epg_eth3_UUC
+                dst_endpoint:
+                    epg_eth3_UUC_dst
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+                    
+            TI13:
+                src_int:
+                    eth3
+                dst_int:
+                    eth1,eth4
+                src_endpoint:
+                    epg_eth1_UUC
+                dst_endpoint:
+                    epg_eth1_UUC_dst
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128       
+
+            TI14:
+                src_int:
+                    eth4
+                dst_int:
+                    eth3
+                src_endpoint:
+                    epg_all_zero_1
+                dst_endpoint:
+                    epg_eth3_eth4
+                pkt_format:
+                    Ether/IP
+                pkt_length:
+                    128
+            TI15:
+                src_int:
+                    eth3
+                dst_int:
+                    eth4
+                src_endpoint:
+                    epg_all_zero_1
+                dst_endpoint:
+                    epg_eth4_eth3
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+            TI16:
+                src_int:
+                    eth1
+                dst_int:
+                    eth4
+                src_endpoint:
+                    epg_all_zero_1
+                dst_endpoint:
+                    epg_eth4_eth1
+                pkt_format:
+                    Ether/Dot1Q/IP
+                pkt_length:
+                    128
+    ###############################

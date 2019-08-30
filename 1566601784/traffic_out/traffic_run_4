@@ -1,0 +1,5 @@
+testL2SanityPortModeChange"
+3002:2019-08-24 18:41:42,405 - PYLOG - INFO - Passed Arguments are Namespace(DEFAULTKEYS=[], KEYS=['traffic_items', 'pktcount', 'profile', 'nonblocking', 'resolve_arp', 'send_igmp_for_active_groups', 'send_igmp_join', 'serial'], VALIDARGS=True, duration=None, inter=None, nonblocking=False, pktcount=1000, profile='profile_l2_sanity', resolve_arp=True, send_igmp_for_active_groups=False, send_igmp_join=False, serial=False, traffic_items=['TI01', 'TI02', 'TI03', 'TI04', 'TI05', 'TI06', 'TI07', 'TI08', 'TI09'])
+working/traffic_parse.sh:17:pkts=lineList[2] #PKTS
+working/traffic_parse.sh:18:rd_before=lineList[3] # returndict before stop
+working/traffic_collect.sh:12:ag 'returndict after stop' interface_uls-sanity97.log> out5
