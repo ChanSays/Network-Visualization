@@ -1,0 +1,51 @@
+Match 1 was found at 1-28: Ether dst=00:00:BB:01:00:01
+Group 1 found at 1-10: Ether dst
+Group 2 found at 11-28: 00:00:BB:01:00:01
+Match 2 was found at 28-50:  src=00:00:CC:01:00:01
+Group 1 found at 28-32: src
+Group 2 found at 33-50: 00:00:CC:01:00:01
+Match 3 was found at 50-61:  type=0x800
+Group 1 found at 50-55: type
+Group 2 found at 56-61: 0x800
+Match 4 was found at 64-79: IP src=1.1.1.21
+Group 1 found at 64-70: IP src
+Group 2 found at 71-79: 1.1.1.21
+Match 5 was found at 79-92:  dst=1.1.1.11
+Group 1 found at 79-83: dst
+Group 2 found at 84-92: 1.1.1.11
+Match 6 was found at 105-150: Raw load='00000000000000000000000000PGIDTI09'
+Group 1 found at 105-113: Raw load
+Group 2 found at 114-150: '00000000000000000000000000PGIDTI09'
+
+
+choose color based on eth
+
+{
+    "color": "#36e236", 
+    "label": "00:00:BB:01:00:01", 
+    "attributes": {
+        "type": "0x800",
+        "IP src": "1.1.1.17", 
+        "dst": "1.1.1.27",
+        "intf":"eth2",
+        "Raw load": "00000000000000000000000000PGIDTI10"
+    }, 
+    "y": -405.0466, # -4000,4000
+    "x": -403.36734, # -4000,4000
+    "id": "00:00:BB:01:00:01", 
+    "size": 93.54254 # 100,500
+}
+
+{
+    "attributes": {
+        "id": "e31", 
+        "weight": "6.0"
+    }, 
+    "source": "00:00:BB:01:00:01", 
+    "label": "eth3", 
+    "id": "e31", 
+    "target": "00:00:CC:01:00:01"
+}
+
+
+dict("color"="eth","label"="00:00:BB:01:00:01")

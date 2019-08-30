@@ -1,6 +1,6 @@
 {
     "type": "network",
-	"data":"data/ukgov3.json",
+	"data":"data/sampledict1.json",
     "version": "1.0",
     "logo": {
         "file": "images/cisco1.png",

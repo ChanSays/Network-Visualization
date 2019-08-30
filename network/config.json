@@ -3,9 +3,9 @@
     "data": "data/twitter_mutual2.json",
     "version": "1.0",
     "logo": {
-        "file": "images/oii_brand.png",
+        "file": "images/cisco1.png",
         "link": "http://www.oii.ox.ac.uk/",
-        "text": "Oxford Internet Institute"
+        "text": "Cisco"
     },
     "text": {
         "title": "Twitter Network of @OIIOxford",

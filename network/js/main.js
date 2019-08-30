@@ -106,7 +106,20 @@ function initSigma(config) {
 		a.bind("upnodes", function (a) {
 		    nodeActive(a.content[0])
 		});
-
+        a.bind('clickEdge', function(a) {
+            // Get Edge 
+            if( !a.data.edge.selected  ){
+              a.data.edge.color = '#F491A4';
+              a.data.edge.selected = true;
+    
+            }else{
+              a.data.edge.color = 'blue';
+              a.data.edge.selected = false;
+            }
+    
+            a.refresh();        
+        });
+        
 		a.draw();
 		configSigmaElements(config);
 	}
