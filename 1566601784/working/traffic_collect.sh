@@ -1,3 +1,6 @@
+# ### FIRST FILE IN SEQUENCE, NEXT IS TrafficParse.ipynb 
+
+
 # PURPOSE: take traffic out per itgen run from specified log ie interface_uls-sanity97.log -> traffic_out/*
 
 # for (( c=1; c<=$OUTLEN; c++ ))
@@ -5,6 +8,10 @@
 #    echo "Welcome $c times"
 # done
 
+LOGFILE=$(ls -1 | grep -E "^.*\.log$")
+
+
+# get log name
 ag '(?<=TESTCASE )test.*(?=\")' interface_uls-sanity97.log > out1 # has line numbers
 ag 'Passed Arguments are' interface_uls-sanity97.log > out2 # traffic params
 ag 'PKTS' interface_uls-sanity97.log > out3 
