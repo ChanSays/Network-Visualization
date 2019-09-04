@@ -11,6 +11,8 @@ Node2Node links: DUT -> intf -> intf -> DUT
 Traffic links : Itgen -> eth-> MAC -> MAC ->  intf -> DUT
 Itgen2Node: Itgen -> eth ->  intf -> DUT
 
+name:node01
+
 
 - create nodes for DUTs : tor1,tor2,node3,itgen
 - get traffic profile for each traffic_run

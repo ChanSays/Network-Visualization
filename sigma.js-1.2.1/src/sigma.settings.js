@@ -105,13 +105,13 @@
     // {booleans} The different drawing modes:
     //           false: Layered not displayed.
     //           true: Layered displayed.
-    drawEdges: true,
+    drawEdges: false,
     drawNodes: true,
     drawLabels: true,
     drawEdgeLabels: false,
     // {boolean} Indicates if the edges must be drawn in several frames or in
     //           one frame, as the nodes and labels are drawn.
-    batchEdgesDrawing: false,
+    batchEdgesDrawing: true,
     // {boolean} Indicates if the edges must be hidden during dragging and
     //           animations.
     hideEdgesOnMove: false,
@@ -139,9 +139,9 @@
     //          equals, then the minimal display size will be 0. And if they
     //          are both equal to 0, then there is no mapping, and the radius
     //          of the nodes will be their size.
-    minEdgeSize: 0.5,
+    minEdgeSize: 0,
     maxEdgeSize: 1,
-    minNodeSize: 1,
+    minNodeSize: 0,
     maxNodeSize: 8,
 
 
@@ -164,7 +164,7 @@
     eventsEnabled: true,
     // {number} Defines by how much multiplicating the zooming level when the
     //          user zooms with the mouse-wheel.
-    zoomingRatio: 1.7,
+    zoomingRatio: 1.000011,
     // {number} Defines by how much multiplicating the zooming level when the
     //          user zooms by double clicking.
     doubleClickZoomingRatio: 2.2,

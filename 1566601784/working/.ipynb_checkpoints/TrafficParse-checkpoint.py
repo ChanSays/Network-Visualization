@@ -6,16 +6,33 @@ import subprocess
 import random
 import math
 import json
-
+import yaml
 # PURPOSE: parses traffic_run_* files from traffic_out into json in traffic_jsons
 
+g_node_dict={}
 
+def nodeDictCreate():
+    f=open("logfile_name.txt", "r")
+    tb_yml=f.read()
+    tb_yml=tb_yml.rstrip('\n')
+#     tb_yml
+    with open(tb_yml, 'r') as stream:
+        try:
+            parsed_yml = yaml.safe_load(stream)
+#             print(yaml.safe_load(stream))
+            global g_node_dict
+            g_node_dict = parsed_yml['node_dict']
+        except yaml.YAMLError as exc:
+            print(exc)
+    
+        
 def json_gen(v3,json_file):
 
     number_of_colors = 1
     # choose color based on eth
-    
-
+#     nodeDictCreate()
+    global g_node_dict
+#     print(g_node_dict)
     regex = r"((?:\w|\.|\:|\')*)\=((?:\w|\.|\:|\')*)" # all *=* vals
     regex1 = r"((?:[a-fA-F0-9]{2}:)+[a-fA-F0-9]{2})" # mac addr only, no ip match
     regex2 = r"((?<=\<)\w*)" # get < items
@@ -26,6 +43,9 @@ def json_gen(v3,json_file):
     edges=[]
     json_obj={}
     i=0
+    nodes = nodeGen(nodes) # after appending tor1 etc.
+    nodes = intfGen(nodes)
+    
     for v3item in v3: 
         for key in v3item: # eth1,eth2..
             color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)]) for i in range(number_of_colors)]
@@ -66,14 +86,16 @@ def json_gen(v3,json_file):
                         pass
                     else:
                         # append to attr
-                        node_attr[spl[0]]=spl[1]
+#                         node_attr[spl[0]]=spl[1]
+                        pass
                 #         edge_attr[spl[0]]=spl[1]
                 node['color'.replace("'", '"')] = "#"+"%06x" % random.randint(0, 0xFFFFFF)      
                 node['attributes']=node_attr
                 node['channel']=curr_eth
                 node['x']= random.randint(-4000,4000)
                 node['y']= random.randint(-4000,4000)
-                node['size']= random.randint(100,500)
+#                 node['size']= random.randint(100,300)
+                node["size"] = random.randint(2, 10)
                 edge['id']= 'e'+str(i)
                 i+=1
                 edge['weight'] = random.randint(20,200)
@@ -90,7 +112,8 @@ def json_gen(v3,json_file):
                         label= match.group(groupNum).strip() # mac addr
                         id_obj= match.group(groupNum).strip()
 
-
+    
+#     dut_nodes = nodeGen()
 
     json_obj['nodes']=nodes
     json_obj['edges']=edges
@@ -99,7 +122,7 @@ def json_gen(v3,json_file):
     with open(json_file,'w') as f:
         json.dump(json_obj ,f)
 
-def profileGen:
+def profileGen():
     p1='profile_l2_sanity'
     p2='profile_vxlan_access'
     curr_tb = 'sanity97-testbed.yml'
@@ -122,23 +145,120 @@ def profileGen:
     output = output.decode('ASCII').rstrip(os.linesep)
     print(output)
 
-def ethGen:
+def jsonifySanityDict():
+    # ['node01', 'node02', 'node03', 'tgn']
+    global g_node_dict
+    for i in list(g_node_dict.keys()):
+    #     curr_node_dict = i+'_dict'
+
+        intf_list=list(g_node_dict[i]['interfaces'].values())
+    #     print(intf_list)
+        new_intf_dict = {}
+
+        for j in intf_list:
+            j = j.split(" ")
+    #         print(i)
+            intf_name=j[1]
+    #         print(intf_name)
+            attr_list1=j[2:]
+            attr_list2=[]
+            for k in attr_list1:
+                k=k.replace("-","")
+                attr_list2.append(k)
+    #             print(k)
+
+    #         print(attr_list1)
+    #         print(attr_list2)
+            it = iter(attr_list2)
+            attr = dict(zip(it, it))
+    #         print(b)
+            new_intf= dict({intf_name:attr})
+            new_intf_dict[intf_name]=attr
+    #         print(new_intf)
+    #   print(new_intf_dict)
+        g_node_dict[i]['interfaces']=new_intf_dict
+    print(g_node_dict[i])
+    #     print("\n\n\n")
     
-def intfGen:
+def intfGen(node_lst):
+    # create Eth1/5 json
+    # create eth4 json
+    try:
+        global g_node_dict
+        for curr_node in g_node_dict.keys():
+            for i in g_node_dict[curr_node]["interfaces"]:
+                curr_intf = i  # ie Eth2/1
+                #     print(curr_intf)
+                peer = (
+                    g_node_dict[curr_node]["interfaces"][i]["peer_device"]
+                    + "-"
+                    + g_node_dict[curr_node]["interfaces"][i]["peer_interface"]
+                )  # ie node02-Eth2/1
+                #     print(peer) # node02-Eth2/1
+
+                node = {}
+                edge = {}
+                node_attr = {}
+                edge_attr = {}
+
+
+                node["label"] = str(peer)
+                node["id"] = str(peer)
+                node["color".replace("'", '"')] = "#" + "%06x" % random.randint(0, 0xFFFFFF)
+                node["attributes"] = node_attr
+                node["channel"] = None
+                node["x"] = random.randint(-18000, -10000)
+                node["y"] = random.randint(-18000, -10000)
+                node["size"] = random.randint(2, 10)
+        #         print(node)
+
+                node_lst.append(node)
+    except Exception as exc:
+        print(exc)
+        
+
+    return node_lst    
     
-def nodeGen:
-    
+def nodeGen(node_lst):
+    # create node01 json
+    # create tgn json
+    global g_node_dict
+    for i in g_node_dict.keys():
+        node = {}
+        edge = {}
+        node_attr = {}
+        edge_attr = {}
+
+#         node_attr = g_node_dict[i]
+
+        node["label"] = str(i)
+        node["id"] = str(i)
+        node["color".replace("'", '"')] = "#" + "%06x" % random.randint(0, 0xFFFFFF)
+        node["attributes"] = node_attr
+        node["channel"] = ''
+        node["x"] = random.randint(-8000, -5000)
+        node["y"] = random.randint(5000, 8000)
+        node["size"] = random.randint(100, 100)
+        
+        node_lst.append(node)
+        
+    return node_lst
 
 def main():
 
     os.system("rm -rf traffic_json && mkdir traffic_json")
+    
+    nodeDictCreate()
+    global g_node_dict
+    
+    jsonifySanityDict()
     
     cmd = "cat out2 | wc -l"  
     ps = "cat out2 | wc -l"  
     pop_res = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     output = pop_res.communicate()[0]
     output = output.decode('ASCII').rstrip(os.linesep)
-    print(output)
+#     print(output)
 
     
     environ['OUTLEN']=output
