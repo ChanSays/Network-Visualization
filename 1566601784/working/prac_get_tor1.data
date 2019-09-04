@@ -1,0 +1,101 @@
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:34:58,750 - PYLOG - DEBUG -  STP state is : OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:34:58,919 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:34:58,924 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:34:58,924 - PYLOG - INFO - Iteration 0:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:09,096 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:09,102 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:09,102 - PYLOG - INFO - Iteration 1:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:19,274 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:19,280 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:19,280 - PYLOG - INFO - Iteration 2:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:29,453 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:29,458 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:29,458 - PYLOG - INFO - Iteration 3:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:39,632 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:39,636 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:39,636 - PYLOG - INFO - Iteration 4:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:49,808 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:49,813 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:49,813 - PYLOG - INFO - Iteration 5:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/2 
+show spanning-tree interface Eth1/5/2 
+No spanning tree information available for Ethernet1/5/2
+sanity97-tor1# 2019-08-24 18:35:59,986 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:35:59,992 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '9' : in {}
+2019-08-24 18:35:59,992 - PYLOG - INFO - Iteration 6:function "getSpanningTreePortStateDict" did not pass. Expected:{'9': {'state': 'FWD'}}, Actual:OrderedDict()
+2019-08-24 18:35:59,992 - PYLOG - INFO - function "getSpanningTreePortStateDict" did not pass in all "7" iterations
+2019-08-24 18:35:59,996 - PYLOG - ERROR - Failed:FAIL: STP role and state are INCORRECT for Eth1/5/2 on sanity97-tor1 
+2019-08-24 18:35:59,996 - PYLOG - INFO - PASS: STP state verification passed for interface Eth1/5/2 
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:00,165 - PYLOG - DEBUG -  STP state is : OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:00,330 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:00,335 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:00,335 - PYLOG - INFO - Iteration 0:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:10,508 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:10,514 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:10,515 - PYLOG - INFO - Iteration 1:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:20,688 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:20,697 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:20,698 - PYLOG - INFO - Iteration 2:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:30,871 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:30,877 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:30,877 - PYLOG - INFO - Iteration 3:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:41,049 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:41,054 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:41,054 - PYLOG - INFO - Iteration 4:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:36:51,226 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:36:51,231 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:36:51,231 - PYLOG - INFO - Iteration 5:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+show spanning-tree interface Eth1/5/1 
+show spanning-tree interface Eth1/5/1 
+No spanning tree information available for Ethernet1/5/1
+sanity97-tor1# 2019-08-24 18:37:01,404 - PYLOG - DEBUG -  STP state is : OrderedDict()
+2019-08-24 18:37:01,410 - PYLOG - WARNING - compareVars: FAIL: Missing the key: '10' : in {}
+2019-08-24 18:37:01,410 - PYLOG - INFO - Iteration 6:function "getSpanningTreePortStateDict" did not pass. Expected:{'10': {'state': 'FWD'}, '1': {'state': 'FWD'}, '3': {'state': 'FWD'}, '2': {'state': 'FWD'}, '5': {'state': 'FWD'}, '4': {'state': 'FWD'}, '7': {'state': 'FWD'}, '6': {'state': 'FWD'}, '9': {'state': 'FWD'}, '8': {'state': 'FWD'}}, Actual:OrderedDict()
+2019-08-24 18:37:01,410 - PYLOG - INFO - function "getSpanningTreePortStateDict" did not pass in all "7" iterations
+2019-08-24 18:37:01,414 - PYLOG - ERROR - Failed:FAIL: STP role and state are INCORRECT for Eth1/5/1 on sanity97-tor1 
+2019-08-24 18:37:01,414 - PYLOG - INFO - PASS: STP state verification passed for interface Eth1/5/1 
+2019-08-24 18:37:01,414 - PYLOG - INFO - Starting Traffic validation
+2019-08-24 18:37:06,420 - PYLOG - INFO - New iteration of startTrafficFlows
+2019-08-24 18:37:06,425 - PYLOG - INFO - Passed Arguments are Namespace(DEFAULTKEYS=[], KEYS=['traffic_items', 'pktcount', 'profile', 'nonblocking', 'resolve_arp', 'send_igmp_for_active_groups', 'send_igmp_join', 'serial'], VALIDARGS=True, duration=None, inter=None, nonblocking=False, pktcount=200, profile='profile_l2_sanity', resolve_arp=True, send_igmp_for_active_groups=False, send_igmp_join=False, serial=False, traffic_items=['TI01', 'TI02', 'TI03', 'TI04', 'TI05', 'TI06', 'TI07', 'TI08', 'TI09'])

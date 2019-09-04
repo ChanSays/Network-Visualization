@@ -14,7 +14,7 @@ def json_gen(v3,json_file):
 
     number_of_colors = 1
     # choose color based on eth
-
+    
 
     regex = r"((?:\w|\.|\:|\')*)\=((?:\w|\.|\:|\')*)" # all *=* vals
     regex1 = r"((?:[a-fA-F0-9]{2}:)+[a-fA-F0-9]{2})" # mac addr only, no ip match
@@ -35,7 +35,7 @@ def json_gen(v3,json_file):
 
                 matches = re.finditer(regex3, test_str)
     #             print("\n\nNEW PKT\n\n") #make new json obj now
-
+                
 
 
                 node={}
@@ -99,14 +99,44 @@ def json_gen(v3,json_file):
     with open(json_file,'w') as f:
         json.dump(json_obj ,f)
 
+def profileGen:
+    p1='profile_l2_sanity'
+    p2='profile_vxlan_access'
+    curr_tb = 'sanity97-testbed.yml'
+    old_profile= 'old_profile.yml'
+    new_profile = 'new_profile.yml'
+
+    # create new traffic profile
+    cmd_prof_find = "sed -n '/"+p1+"/,/profile/p' " + curr_tb + ' > '+old_profile + " && sed -e '$ d' "+old_profile+" > "+new_profile
+
+    # 
+    cmd_exist_prof = "ag -g '"+p1+".yml' > res.txt"
+
+    # 
+    cmd_file_size = "wc -l < res.txt"
+    cmd_file_size
+    
+#     cmd = "cat out2 | wc -l"  
+    pop_res = subprocess.Popen(cmd_prof_find,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+    output = pop_res.communicate()[0]
+    output = output.decode('ASCII').rstrip(os.linesep)
+    print(output)
+
+def ethGen:
+    # 
+def intfGen:
+    
+def nodeGen:
+    
 
 def main():
 
     os.system("rm -rf traffic_json && mkdir traffic_json")
-
-    cmd = "cat out2 | wc -l"
-    ps = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
-    output = ps.communicate()[0]
+    
+    cmd = "cat out2 | wc -l"  
+    ps = "cat out2 | wc -l"  
+    pop_res = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+    output = pop_res.communicate()[0]
     output = output.decode('ASCII').rstrip(os.linesep)
     print(output)
 
@@ -128,7 +158,7 @@ def main():
         pkts=lineList[2] #PKTS
         rd_before=lineList[3] # returndict before stop
         rd_after=lineList[4] # returndict after stop
-
+        
         val1 = [i for i in test.split('\"') if i][0]
         val2 = args.split('Namespace')[1]
         val3 = pkts.split('PKTS ')[1]

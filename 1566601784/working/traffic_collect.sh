@@ -1,4 +1,4 @@
-# ### FIRST FILE IN SEQUENCE, NEXT IS TrafficParse.ipynb 
+# ### FIRST FILE IN SEQUENCE, NEXT IS TrafficParse.py
 
 
 # PURPOSE: take traffic out per itgen run from specified log ie interface_uls-sanity97.log -> traffic_out/*
@@ -9,14 +9,16 @@
 # done
 
 LOGFILE=$(ls -1 | grep -E "^.*\.log$")
+TB_YML=$(ag -lig 'sanity.*testbed.yml')
 
 
 # get log name
-ag '(?<=TESTCASE )test.*(?=\")' interface_uls-sanity97.log > out1 # has line numbers
-ag 'Passed Arguments are' interface_uls-sanity97.log > out2 # traffic params
-ag 'PKTS' interface_uls-sanity97.log > out3 
-ag 'returndict before stop' interface_uls-sanity97.log > out4
-ag 'returndict after stop' interface_uls-sanity97.log> out5
+ag '(?<=TESTCASE )test.*(?=\")' $LOGFILE > out1 # has line numbers
+ag 'Passed Arguments are' $LOGFILE > out2 # traffic params
+ag 'PKTS' $LOGFILE > out3 
+ag 'returndict before stop' $LOGFILE > out4
+ag 'returndict after stop' $LOGFILE > out5
+ag -lig 'sanity.*testbed.yml' . > logfile_name.txt
 
 OUTLEN=$(cat out2 | wc -l)
 
@@ -36,7 +38,7 @@ do
             TRAFF_NUM=$(echo $o2 | awk -F':' '{print $1}') # traffic_run line number ie 2798
             CASENUM=$(awk "NR==($d)" out1 | awk -F':' '{print $1}')
             
-
+            
             #compare temp to TRAFF_NUM
             
             if [ "$CASENUM" -le "$TRAFF_NUM" ] 
@@ -44,7 +46,7 @@ do
             echo "CASENUM: $CASENUM <= TRAFF_NUM: $TRAFF_NUM"
             cand=$CASENUM
             CASENXTNUM=$(awk "NR==($d+1)" out1 | awk -F':' '{print $1}')
-                if [ "$TRAFF_NUM" -le "$CASENXTNUM"  ]
+                if [ "$TRAFF_NUM" -le "$CASENXTNUM" ]
                 then
                     echo "TRAFF_NUM: $TRAFF_NUM <= CASENXTNUM: $next" 
                     echo "DONE"
