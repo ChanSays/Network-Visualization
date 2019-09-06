@@ -1,0 +1,29 @@
+
+setenv SANITYHOME "/vol/eor-qa/sanity/golden"
+
+############ CVS settings start here ###############
+## Using snoopy's CVS path 
+setenv CVSMAIN "/vol/eor-qa/sanity/golden/eor/"
+############ CVS settings end here   ###############
+
+##### IXIA settings start here  ##############
+
+setenv IXIA_HOME "/vol/eor-qa/automation/ixos650p2"
+setenv TCL_HOME "/vol/eor-qa/automation/ixos650p2"
+setenv HLTHOME "/vol/eor-qa/automation/ixos650p2/lib/hltapi"
+setenv IXIA_VERSION "HLTSET150"
+
+# Note that TCLLIBPATH must contain a Tcl list of directories, using a space to separate multiple directories (unlike the PATH environment variable which uses colons to separate multiple directories)
+setenv TCLLIBPATH "${IXIA_HOME}/lib"
+
+setenv IXIA_HOME "/vol/eor-qa/automation/ixos_6.80EA"
+setenv TCL_HOME "/vol/eor-qa/automation/ixos_6.80EA"
+setenv HLTHOME "/vol/eor-qa/automation/ixos_6.80EA/lib/hltapi"
+setenv IXIA_VERSION "HLTSET174"
+
+# Note that TCLLIBPATH must contain a Tcl list of directories, using a space to separate multiple directories (unlike the PATH environment variable which uses colons to separate multiple directories)
+setenv TCLLIBPATH "${IXIA_HOME}/lib"
+
+#############  IXIA settings ends here  #################
+
+

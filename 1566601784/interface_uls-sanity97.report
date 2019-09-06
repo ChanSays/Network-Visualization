@@ -1,0 +1,2170 @@
+#################################################################
+################### Firestone ChemneyRock interface_uls Report ###########################
+#################################################################
+
+
+Test server name    : ins-eorsanity97
+Testbed  name       : /vol/eor-qa/sanity/logs/lindach/1566601784/sanity97-testbed.yml
+Total Test cases Run: 88
+Passed test cases   : 19
+Failed test cases   : 24
+Aborted test cases  : 45
+Skipped test cases  : 0
+Log dir:            : <a href="http://172.31.201.237/vol/eor-qa/sanity/logs/lindach/1566601784">/vol/eor-qa/sanity/logs/lindach/1566601784</a>
+Report file         : /vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.report
+logfile             : /vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log
+Core files location : 172.31.144.92:/tftpboot/sanity-cores
+Test start time     : 2019_08_24_18_09_46
+Test End time       : 2019_08_25_06_02_51
+Test Duration       : 11:53:04.997533
+Comments: %%% /auto/Insieme-EOR3/release/h_utopias/nexus/REL_9_2_2v_IHP8_0_74/build/images/final 
+Arguments passed: ['/vol/eor-qa/sanity/golden/basic_sanity.py', '-build', 'tftp://172.31.146.95/sanity-image/lindach-1566601784-nxos.9.2.2v.IHP8.0.74.bin', '-testsuite', '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls.yml', '-logicaldict', '/vol/eor-qa/sanity/logs/lindach/1566601784/logical_dict.yml', '-testbed', '/vol/eor-qa/sanity/logs/lindach/1566601784/sanity97-testbed.yml', '-logfile', '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', '-reportfile', '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.report', '-email', '\xc2\xa0lindach@cisco.com,n9k-sanity@cisco.com', '-jobid', 'LINDACH-1566601784', '-stoponfail', 'False', '-pauseonfail', 'False', '-basemode', 'False', '-collectlogs', 'False', '-containermode', 'False', '-dockermode', 'False', '-oc', 'False', '-yang', 'False', '-INTTransitDefault', 'False', '-INTTransitL3Heavy', 'False', '-issu_build', 'skip', '-ctrl_plugin_image', 'skip', '-issu_cases', 'testReloadSwitch', '-patch', 'skip', '-cflow', 'skip', '-reportsubject', 'Firestone', 'ChemneyRock', 'interface_uls', '-comments', ' %%% /auto/Insieme-EOR3/release/h_utopias/nexus/REL_9_2_2v_IHP8_0_74/build/images/final'] 
+
+
+Summary Report
+##############
+TestCase                                                                  Result    Duration  
+########                                                                  ######    ########  
+testReloadSwitch                                                          pass      0:00:16   
+testBoxOnline                                                             pass      0:00:02   
+testModuleStatus                                                          pass      0:00:10   
+testConfigMgmtPort                                                        pass      0:00:29   
+testL2SanityPortFlap                                                      abort     0:04:14   
+testL2SanityPortModeChange                                                abort     0:04:14   
+testL2SanityPortChannelMemberAdd                                          abort     0:01:10   
+testL2SanityPortChannelMemberRemove                                       abort     0:04:14   
+testL2SanityUnconfig                                                      pass      0:00:12   
+testStaticRoute                                                           pass      0:00:42   
+testToggleSwitchport                                                      pass      0:01:49   
+testPortChannelShutNoshut                                                 pass      0:04:05   
+testSubPortChannelShutNoshut                                              pass      0:02:45   
+testSvi                                                                   pass      0:03:35   
+testIpv6Interface                                                         pass      0:00:49   
+testAAFexBringup                                                          abort     0:00:56   
+testKstackInterfacePreCleanup                                             pass      0:00:23   
+testKstackInterfaceBringup                                                pass      0:01:26   
+testKstackInterfaceShut                                                   pass      0:00:58   
+testKstackL3IntfMTU                                                       pass      0:00:20   
+testKstackInterfaceCleanup                                                pass      0:00:30   
+testFexBringup                                                            pass      0:00:09   
+testFexSviPing                                                            fail      0:08:08   
+testFexPortChannelShutNoshut                                              fail      0:22:44   
+testFexLacpShutNoshut                                                     fail      0:22:45   
+testL2BridgingAccessFexAndFexPort                                         fail      0:06:31   
+testFexSviRoutingFexAndFexPort                                            fail      0:08:58   
+testFexSviRoutingFexAndSwitchPort                                         fail      0:07:24   
+testStaticL2MulticastPC                                                   fail      0:11:22   
+testDynamicL2MulticastPhy                                                 fail      0:02:23   
+testL2MulticastLcReload                                                   fail      0:14:17   
+testL2MulticastPCFlap                                                     fail      0:13:24   
+testL2MulticastPortFlap                                                   fail      0:02:22   
+testL2MulticastVlanRecreate                                               fail      0:02:23   
+testL2MulticastSVICreateDelete                                            fail      0:02:22   
+testL2FexSanityMacLearning                                                fail      0:04:19   
+testL2BridgingFexLacpPortChannelTrunk                                     fail      0:07:52   
+testL2FexSanityPortFlap                                                   abort     0:04:14   
+testFexStaticMac                                                          fail      0:02:12   
+testL2FexSanityPortModeChange                                             fail      0:08:05   
+testL2FexSanityPortChannelMemberAdd                                       fail      0:04:51   
+testL2FexSanityPortChannelMemberRemove                                    fail      0:06:52   
+testL2FexSanityDeleteCreateVlan                                           fail      0:10:51   
+testL2FexSanityAllowedVlanAdd                                             fail      0:07:55   
+testL2FexSanityAllowedVlanRemove                                          fail      0:06:50   
+testL2FexSanityUnconfig                                                   pass      0:00:15   
+testDynamicL2MulticastPCFex                                               fail      0:03:52   
+testAccessVxLAN10G                                                        abort     2:24:35   
+testTrunkVxLAN10G                                                         abort     0:03:14   
+testAccessVxLAN40G_PO                                                     abort     0:03:04   
+testAccessVxLAN10GSvi                                                     abort     0:03:04   
+testTrunkVxLAN10GSvi                                                      abort     0:03:04   
+testAccessVxLAN40G_POSvi                                                  abort     0:03:04   
+testBgpv4                                                                 abort     0:26:16   
+testCdp                                                                   abort     0:03:54   
+testLLDP                                                                  abort     0:03:54   
+testSviVrf                                                                abort     0:03:54   
+testHsrp                                                                  abort     0:03:54   
+testStaticMac                                                             abort     0:03:54   
+testVrrp                                                                  abort     0:03:54   
+testHsrpv6                                                                abort     0:03:54   
+testPTPSubIntf                                                            abort     0:03:54   
+testRaclIPv4SubIntf                                                       abort     0:03:54   
+testRaclIPv6SubIntf                                                       abort     0:03:54   
+testL2ptCdpEthAccess                                                      abort     0:03:54   
+testL2ptCdpEthTrunk                                                       abort     0:01:36   
+testCdp100G                                                               abort     0:06:23   
+testSystemAsciiReplay                                                     abort     0:03:54   
+testNxAPIShowAsciiHttpXml                                                 abort     0:03:54   
+testPBR                                                                   abort     0:03:54   
+testNxAPIShowAsciiHttpXmlChunk                                            abort     0:03:54   
+testLacpShutNoshut                                                        abort     0:03:54   
+testL2BridgingLacpPortChannelAccess                                       abort     0:03:54   
+testL2BridgingLacpPortChannelTrunk                                        abort     0:03:54   
+testLacpMemberChange                                                      abort     0:03:54   
+testVpcLessChangeLacpSysId                                                abort     0:03:54   
+testVerifyVpcLacpConvergence                                              abort     0:03:54   
+testPimv4                                                                 abort     0:03:54   
+testPimv4LcReload                                                         abort     0:15:36   
+testPimv4PCFlap                                                           abort     0:15:27   
+testPimv4SVI                                                              abort     0:10:56   
+testPimv4SVILcReload                                                      abort     0:10:51   
+testPimv4SVIPortFlap                                                      abort     0:10:51   
+testPimv4SVIPCFlap                                                        abort     0:10:51   
+testPimv4PoSinfPCFlap                                                     abort     0:55:41   
+testPimv4PoSinfFlap                                                       abort     0:48:58   
+testGoldDiagnostic                                                        pass      0:01:41   
+testCores                                                                 fail      0:01:11   
+
+
+
+Aborted test case logs
+=====================
+Testcase: testL2SanityPortFlap 
+logs
+	<type 'exceptions.KeyError'> 'node01' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 57566, '__init__', 'l2SanityBaseClass.validateMacLearning(self)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 48948, 'validateMacLearning', 'mac_obj=verify_lib.verifyMacTable(self.hdl1, self.log, self.expected_mac_dict[eor_utils.strtolist(self.duts)[0]])'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2SanityPortModeChange 
+logs
+	<type 'exceptions.KeyError'> 'node01' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 58104, '__init__', 'l2SanityBaseClass.validateMacLearning(self)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 48948, 'validateMacLearning', 'mac_obj=verify_lib.verifyMacTable(self.hdl1, self.log, self.expected_mac_dict[eor_utils.strtolist(self.duts)[0]])'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2SanityPortChannelMemberAdd 
+logs
+	<type 'exceptions.KeyError'> 'node01' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 57816, '__init__', 'l2SanityBaseClass.validateMacLearning(self)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 48948, 'validateMacLearning', 'mac_obj=verify_lib.verifyMacTable(self.hdl1, self.log, self.expected_mac_dict[eor_utils.strtolist(self.duts)[0]])'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2SanityPortChannelMemberRemove 
+logs
+	<type 'exceptions.KeyError'> 'node01' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 57868, '__init__', 'l2SanityBaseClass.validateMacLearning(self)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 48948, 'validateMacLearning', 'mac_obj=verify_lib.verifyMacTable(self.hdl1, self.log, self.expected_mac_dict[eor_utils.strtolist(self.duts)[0]])'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testAAFexBringup 
+logs
+	<type 'exceptions.KeyError'> 'node04' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 34816, '__init__', "obj1.vpcPeersAndLeafConfig('-fex_aa True')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vpc_lib.py', 607, 'vpcPeersAndLeafConfig', "self.vpcDomainConfig(node,self.vpc_config[node]['vpc_domain'])"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vpc_lib.py', 298, 'vpcDomainConfig', "self.log.debug ('Apply vpc domain config on {0}'.format(self.hdl[node].switchName))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2FexSanityPortFlap 
+logs
+	<type 'exceptions.KeyError'> 'node01' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 57566, '__init__', 'l2SanityBaseClass.validateMacLearning(self)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 48948, 'validateMacLearning', 'mac_obj=verify_lib.verifyMacTable(self.hdl1, self.log, self.expected_mac_dict[eor_utils.strtolist(self.duts)[0]])'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testAccessVxLAN10G 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27397, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27505, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testTrunkVxLAN10G 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27674, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 28673, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testAccessVxLAN40G_PO 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 24949, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27505, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testAccessVxLAN10GSvi 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 24949, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27505, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testTrunkVxLAN10GSvi 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27674, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 28673, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testAccessVxLAN40G_POSvi 
+logs
+	<type 'exceptions.TypeError'> expected string or buffer 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 24949, '__init__', 'self.cleanup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/vxlan_tc.py', 27505, 'cleanup', "clearInterfaceConfig(hdl,self.log,'-interface all -skip_fex_fabric')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 15572, 'clearInterfaceConfig', 'i_list=getInterfaceList(hdl,log)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 14733, 'getInterfaceList', 'interface_list.extend(re.findall(pat,cmd_out,re.M))'
+	  -->'/usr/local/lib/python2.7/re.py', 177, 'findall', 'return _compile(pattern, flags).findall(string)'
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testBgpv4 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146997
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146997
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 40929, '__init__', 'interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4678, '__init__', 'self.verifyInterfaceBringup()'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 832, 'verifyInterfaceBringup', 'self.individualVerify(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 855, 'individualVerify', "self.baseConfigAndVerify(node,intf,'-mode verify')"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 1143, 'baseConfigAndVerify', "show_intf_output=hdl.iexec('show interface {0}'.format(intf))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testCdp 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testLLDP 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testSviVrf 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87610
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87610
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testHsrp 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87692
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87692
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testStaticMac 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testVrrp 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testHsrpv6 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87693
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87693
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPTPSubIntf 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87694
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87694
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testRaclIPv4SubIntf 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): ^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 782664
+
+before (last 100 chars): ^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 782664
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testRaclIPv6SubIntf 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2ptCdpEthAccess 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87694
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87694
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2ptCdpEthTrunk 
+logs
+	<type 'exceptions.KeyError'> 'node04' 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 93507, '__init__', 'self.client_node1_intf = eor_utils.normalizeInterfaceName(self.log, self.physicalInterfaceName(self.client_node1_intf))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 93200, 'physicalInterfaceName', "intf_entry = self.hlite.gd['inputdict']['node_dict'][node]['interfaces'][intf_name]"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testCdp100G 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 1865, '__init__', "obj1=verify_lib.verifyInterfaceStatus(self.hdl1, self.log, '-interface {0} -iteration 3'.format(dut_port_str))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/verify_lib.py', 8537, '__init__', "intdict=getInterfaceBriefDict(hdl,log,'-interface {0}'.format(interfaces))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/eor_utils.py', 1398, 'getInterfaceBriefDict', 'showoutput+=hdl.iexec(new_cmd)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testSystemAsciiReplay 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87697
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87697
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testNxAPIShowAsciiHttpXml 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPBR 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87693
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87693
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testNxAPIShowAsciiHttpXmlChunk 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testLacpShutNoshut 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2BridgingLacpPortChannelAccess 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87696
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testL2BridgingLacpPortChannelTrunk 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87698
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testLacpMemberChange 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87691
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87691
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testVpcLessChangeLacpSysId 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testVerifyVpcLacpConvergence 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87697
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87697
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+before (last 100 chars): 
+^CInternal CLI error: Interrupted system call
+Warning - interface verification taking time 87695
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3078, '<module>', 'hlite.gd[\'connectObj\'].switch_hdl_dict[node].iexec(\'echo "START TESTCASE {0}"\'.format(testcase))'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4LcReload 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 147000
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 147000
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37123, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4PCFlap 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37123, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4SVI 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146997
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146997
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37646, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4SVILcReload 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37646, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4SVIPortFlap 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37646, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4SVIPCFlap 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37646, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4PoSinfPCFlap 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146999
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37123, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Testcase: testPimv4PoSinfFlap 
+logs
+	<class 'pexpect.TIMEOUT'> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0xe270a10>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/ssh
+args: ['/usr/bin/ssh', 'admin@172.31.203.80']
+searcher: searcher_re:
+    0: re.compile("# $")
+buffer (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+before (last 100 chars): Warning - interface verification taking time 146998
+^CInternal CLI error: Interrupted system call
+
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 5562
+child_fd: 19
+closed: False
+timeout: 50
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.log', mode 'a' at 0xf4329c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1 
+	  -->'/vol/eor-qa/sanity/golden/basic_sanity.py', 3167, '<module>', 'objs[testcase] = tcclasses[tcclass](hlite, tcargs)  # run test case, the real deal'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/testcases/misc_tc.py', 37123, '__init__', 'ret_obj=interface_lib.bringupInterface(self.log, self.switch_hdl_dict, self.node_dict, self.interface_config_dict)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4629, '__init__', 'self.individualConfig(node,intf)'
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 4733, 'individualConfig', "self.baseConfigAndVerify(node,intf,'-mode config',sup_arp_str)"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/interface_lib.py', 912, 'baseConfigAndVerify', "po_meb_opt=hdl.iexec('show running int {0}'.format(members))"
+	  -->'/vol/eor-qa/sanity/branch1/eor/systest/lib/icon.py', 894, 'iexec', "self.hdl.expect('# $')"
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1311, 'expect', 'return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1325, 'expect_list', 'return self.expect_loop(searcher_re(pattern_list), timeout, searchwindowsize)'
+	  -->'/usr/local/lib/python2.7/site-packages/pexpect.py', 1409, 'expect_loop', "raise TIMEOUT (str(e) + '\\n' + str(self))"
+	 
+	<frame object at 0x1b0e9f0>, '/vol/eor-qa/sanity/golden/basic_sanity.py', 3231, '<module>', ['            hlite.gd[\'reportlogs\'][testcase].append("{0} {1} {2} {3} ".format(sys.exc_info()[0],sys.exc_info()[1],traceback.extract_tb(sys.exc_info()[2]),inspect.stack()))\n'], 0
+	 
+Failed test case logs
+=====================
+
+Testcase: testFexSviPing 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 800 are active
+	PASS: Trunk port config on Eth1/2 vlan 800 passed
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 800 are active
+	FAIL: Switchport not enabled on interface Eth101/1/1
+	PASS: Trunk port config on Eth101/1/1 vlan 800 passed
+	PASS: Ip address 10.1.1.1 configured on interface Vlan800 on sanity97-tor1
+	PASS: Ip address 10.1.1.2 configured on interface Vlan800 on sanity97-tor2
+	FAIL: Some or all of the Eth101/1/1 not in up state
+	FAIL: Some or all of the Eth1/2 not in up state
+	FAIL: Some or all of the Vlan800 not in up state
+	FAIL: Some or all of the Vlan800 not in up state
+	FAIL: Interfaces Vlan800 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan800 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan800 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan800 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Expected: SVI Vlan800 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Expected: SVI Vlan800 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Ping to destination 10.1.1.1 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 10.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 10.1.1.2 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 10.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: vlan 800 successfully removed from vlan table.
+	PASS: vlan 800 successfully removed from vlan table.
+
+Testcase: testFexPortChannelShutNoshut 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 100 are active
+	PASS: Access port config on Po10 vlan 100 passed
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 100 are active
+	PASS: Access port config on Po10 vlan 100 passed
+	PASS: Ip address 36.1.1.1 configured on interface Vlan100 on sanity97-tor1
+	PASS: Ip address 36.1.1.2 configured on interface Vlan100 on sanity97-tor2
+	FAIL: Some or all of the Eth101/1/1,Eth101/1/10 not in up state
+	FAIL: Some or all of the Eth1/2,Eth1/46 not in up state
+	FAIL: sanity97-tor1 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: sanity97-tor2 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: Port channel member list is empty
+	FAIL: Port channel member list is empty
+	FAIL: Some or all of the Vlan100 not in up state
+	FAIL: Some or all of the Vlan100 not in up state
+	FAIL: Interfaces Vlan100 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Expected: SVI Vlan100 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Expected: SVI Vlan100 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Ping to destination 36.1.1.2 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 36.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: State -enabled verified for features ['lldp']
+	PASS: Feature lldp is enabled successfully 
+	PASS: State -enabled verified for features ['lldp']
+	PASS: Feature lldp is enabled successfully 
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/10 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/1 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/46 of sanity97-tor2
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/2 of sanity97-tor2
+	FAIL: sanity97-tor1 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: sanity97-tor2 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: Port channel member list is empty
+	FAIL: Port channel member list is empty
+	FAIL: Ping to destination 36.1.1.2 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 36.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/10 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/1 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/46 of sanity97-tor2
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/2 of sanity97-tor2
+	FAIL: interface Eth101/1/1 is not present
+	FAIL: interface Eth101/1/10 is not present
+	PASS: interface Eth1/2 is removed from PO 10
+	FAIL: interface Eth1/46 is not present
+	PASS: State -disabled verified for features ['lldp']
+	PASS: Feature lldp is disabled successfully 
+	PASS: State -disabled verified for features ['lldp']
+	PASS: Feature lldp is disabled successfully 
+	PASS: vlan 100 successfully removed from vlan table.
+	PASS: vlan 100 successfully removed from vlan table.
+
+Testcase: testFexLacpShutNoshut 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 100 are active
+	PASS: Access port config on Po10 vlan 100 passed
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 100 are active
+	PASS: Access port config on Po10 vlan 100 passed
+	PASS: Ip address 36.1.1.1 configured on interface Vlan100 on sanity97-tor1
+	PASS: Ip address 36.1.1.2 configured on interface Vlan100 on sanity97-tor2
+	FAIL: Some or all of the Eth101/1/1,Eth101/1/10 not in up state
+	FAIL: Some or all of the Eth1/2,Eth1/46 not in up state
+	FAIL: sanity97-tor1 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: sanity97-tor2 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: Port channel member list is empty
+	FAIL: Port channel member list is empty
+	FAIL: Some or all of the Vlan100 not in up state
+	FAIL: Some or all of the Vlan100 not in up state
+	FAIL: Interfaces Vlan100 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 not in expected state protocol-up,link-up,admin-up
+	FAIL: Interfaces Vlan100 are not in expected status protocol-up,link-up,admin-up
+	FAIL: Expected: SVI Vlan100 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Expected: SVI Vlan100 Status protocol-up/link-up/admin-up Actual: Status is protocol-down/link-down/admin-up
+	FAIL: Ping to destination 36.1.1.2 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 36.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: State -enabled verified for features ['lldp']
+	PASS: Feature lldp is enabled successfully 
+	PASS: State -enabled verified for features ['lldp']
+	PASS: Feature lldp is enabled successfully 
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/10 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/1 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/46 of sanity97-tor2
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/2 of sanity97-tor2
+	FAIL: sanity97-tor1 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: sanity97-tor2 : Portchannels ['Po10'] state verfications failed in all iterations
+	FAIL: Port channel member list is empty
+	FAIL: Port channel member list is empty
+	FAIL: Ping to destination 36.1.1.2 on sanity97-tor1 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 36.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/10 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth101/1/1 of sanity97-tor1
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/46 of sanity97-tor2
+	FAIL: Fail:LLDP neighbors was not found on interface Eth1/2 of sanity97-tor2
+	FAIL: interface Eth101/1/1 is not present
+	FAIL: interface Eth101/1/10 is not present
+	PASS: interface Eth1/2 is removed from PO 10
+	FAIL: interface Eth1/46 is not present
+	PASS: State -disabled verified for features ['lldp']
+	PASS: Feature lldp is disabled successfully 
+	PASS: State -disabled verified for features ['lldp']
+	PASS: Feature lldp is disabled successfully 
+	PASS: vlan 100 successfully removed from vlan table.
+	PASS: vlan 100 successfully removed from vlan table.
+
+Testcase: testL2BridgingAccessFexAndFexPort 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 899 are active
+	FAIL: Switchport not enabled on interface Eth101/1/1
+	FAIL: verifySwitchportAccessVlan 899 on port ['Eth101/1/1', 'Eth101/1/2'] failed 
+	PASS: Access port config on Eth101/1/1,Eth101/1/2 vlan 899 passed
+	PASS: Ip address 47.1.1.1 configured on interface Eth1/2 on sanity97-tor2
+	PASS: Ip address 47.1.1.2 configured on interface Eth1/20 on sanity97-node03
+	FAIL: Some or all of the Eth101/1/1,Eth101/1/2 not in up state
+	FAIL: Some or all of the Eth1/2 not in up state
+	FAIL: Some or all of the Eth1/20 not in up state
+	FAIL: Port Eth101/1/1,Eth101/1/2 not in expected state FWD on vlan 899
+	FAIL: Ping to destination 47.1.1.1 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.2 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.1 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: vlan 899 successfully removed from vlan table.
+
+Testcase: testFexSviRoutingFexAndFexPort 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 901 are active
+	PASS: Access port config on Eth1/2 vlan 901 passed
+	PASS: Ip address 47.1.1.2 configured on interface Vlan901 on sanity97-tor2
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 902 are active
+	PASS: Access port config on Eth1/20 vlan 902 passed
+	PASS: Ip address 48.1.1.2 configured on interface Vlan902 on sanity97-node03
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 901 are active
+	FAIL: Switchport not enabled on interface Eth101/1/1
+	FAIL: verifySwitchportAccessVlan 901 on port ['Eth101/1/1'] failed 
+	PASS: Access port config on Eth101/1/1 vlan 901 passed
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 902 are active
+	FAIL: Switchport not enabled on interface Eth101/1/2
+	FAIL: verifySwitchportAccessVlan 902 on port ['Eth101/1/2'] failed 
+	PASS: Access port config on Eth101/1/2 vlan 902 passed
+	PASS: Ip address 47.1.1.1 configured on interface Vlan901 on sanity97-tor1
+	PASS: Ip address 48.1.1.1 configured on interface Vlan902 on sanity97-tor1
+	FAIL: Some or all of the Eth101/1/1,Eth101/1/2 not in up state
+	FAIL: Some or all of the Eth1/2 not in up state
+	FAIL: Some or all of the Eth1/20 not in up state
+	FAIL: Fail:static route 48.1.1.0/24 was not found in routing table
+	FAIL: Fail:static route 47.1.1.0/24 was not found in routing table
+	FAIL: Port Eth101/1/1,Eth101/1/2 not in expected state FWD on vlan 901 and 902
+	FAIL: Ping to destination 47.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 48.1.1.2 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 48.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.2 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: vlan 901 successfully removed from vlan table.
+	PASS: vlan 901 successfully removed from vlan table.
+	PASS: vlan 902 successfully removed from vlan table.
+	PASS: vlan 902 successfully removed from vlan table.
+
+Testcase: testFexSviRoutingFexAndSwitchPort 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 901 are active
+	PASS: Access port config on Eth1/2 vlan 901 passed
+	PASS: Ip address 47.1.1.2 configured on interface Vlan901 on sanity97-tor2
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 902 are active
+	PASS: Access port config on Eth1/3 vlan 902 passed
+	PASS: Ip address 48.1.1.2 configured on interface Vlan902 on sanity97-node03
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 901 are active
+	FAIL: Switchport not enabled on interface Eth101/1/1
+	FAIL: verifySwitchportAccessVlan 901 on port ['Eth101/1/1'] failed 
+	PASS: Access port config on Eth101/1/1 vlan 901 passed
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 902 are active
+	PASS: Access port config on Eth1/3 vlan 902 passed
+	PASS: Ip address 47.1.1.1 configured on interface Vlan901 on sanity97-tor1
+	PASS: Ip address 48.1.1.1 configured on interface Vlan902 on sanity97-tor1
+	FAIL: Some or all of the Eth101/1/1,Eth1/3 not in up state
+	FAIL: Some or all of the Eth1/2 not in up state
+	FAIL: Fail:static route 48.1.1.0/24 was not found in routing table
+	FAIL: Port Eth101/1/1,Eth1/3 not in expected state FWD on vlan 901 and 902
+	FAIL: Ping to destination 47.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 48.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.2 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: vlan 901 successfully removed from vlan table.
+	PASS: vlan 901 successfully removed from vlan table.
+	PASS: vlan 902 successfully removed from vlan table.
+	PASS: vlan 902 successfully removed from vlan table.
+
+Testcase: testStaticL2MulticastPC 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: Traffic verification failed on ['NewTI22', 'NewTI20', 'NewTI21']
+
+Testcase: testDynamicL2MulticastPhy 
+logs                                           
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: IGMP (*,225.1.0.1) snooping group state verification failed on sanity97-tor1, expected:['Eth1/5/2'], actual:['Eth1/15', 'Eth1/5/2']
+
+Testcase: testL2MulticastLcReload 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: line card Status for line cards ['1'] is  ok
+	PASS: stimuliReloadLineCard passed in preCheck section
+	PASS: line card Status for line cards ['1'] is  ok
+	PASS: stimuliReloadLineCard passed in postCheck section
+	PASS: stimuliReloadLineCard passed in stimuliAndVerify
+	PASS: stimuliReloadLineCard passed
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: Traffic verification failed on ['NewTI22', 'NewTI20', 'NewTI21']
+
+Testcase: testL2MulticastPCFlap 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: stimuliPortFlap passed in preCheck section
+	PASS: stimuliPortFlap passed in postCheck section
+	PASS: stimuliPortFlap passed in stimuliAndVerify
+	PASS: stimuliPCPortFlap passed
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: Traffic verification failed on ['NewTI22', 'NewTI20', 'NewTI21']
+
+Testcase: testL2MulticastPortFlap 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: IGMP (*,225.1.0.1) snooping group state verification failed on sanity97-tor1, expected:['Eth1/5/2'], actual:['Po18', 'Eth1/5/2']
+
+Testcase: testL2MulticastVlanRecreate 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: IGMP (*,225.1.0.1) snooping group state verification failed on sanity97-tor1, expected:['Eth1/5/2'], actual:['Po18', 'Eth1/5/2']
+
+Testcase: testL2MulticastSVICreateDelete 
+logs                                           
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	PASS: verifyIgmpSnoopingCount passed
+	FAIL: IGMP (*,225.1.0.1) snooping group state verification failed on sanity97-tor1, expected:['Eth1/5/2'], actual:['Po18', 'Eth1/5/2']
+
+Testcase: testL2FexSanityMacLearning 
+logs                                           
+	PASS: DUT is more likely a TOR
+	PASS: State -enabled verified for features ['lacp']
+	FAIL: verifySwitchportInfo Switchport info unavailable for port Eth101/1/5
+	PASS: State -enabled verified for features ['lacp']
+	PASS: Passed: L2 sanity Interface Config
+	PASS: STP role and state are CORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: PASSED: All zero mac learning validation successful
+	PASS: PASSED: All zero mac learning validation successful
+
+Testcase: testL2BridgingFexLacpPortChannelTrunk 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 899 are active
+	PASS: Access port config on Po91 vlan 899 passed
+	PASS: Access port config on Po92 vlan 899 passed
+	PASS: Ip address 47.1.1.1 configured on interface Po91 on sanity97-tor2
+	PASS: Ip address 47.1.1.2 configured on interface Po92 on sanity97-node03
+	FAIL: Some or all of the Eth2/1,Eth2/12,Eth101/1/3,Eth101/1/4 not in up state
+	FAIL: Some or all of the Eth2/1,Eth2/2 not in up state
+	PASS: sanity97-tor1 : Portchannels ['Po91'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po91'] state verfications passed at iteration 0
+	FAIL: sanity97-tor1 : Portchannels ['Po92'] state verfications failed in all iterations
+	FAIL: sanity97-node03 : Portchannels ['Po92'] state verfications failed in all iterations
+	FAIL: Port channel member list is empty
+	FAIL: Port channel member list is empty
+	FAIL: Port Eth2/1,Eth2/12,Eth101/1/3,Eth101/1/4 not in expected state FWD on vlan 899
+	FAIL: Ping to destination 47.1.1.2 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.2 on sanity97-tor2 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	FAIL: Ping to destination 47.1.1.1 on sanity97-node03 failed, Expected 0.00% packet loss but received 100.00% packet loss
+	PASS: vlan 899 successfully removed from vlan table.
+
+Testcase: testFexStaticMac 
+logs                                           
+	PASS: All vlans are  in expected state
+	PASS: createVlans created vlans 801 are active
+	FAIL: Switchport not enabled on interface Eth101/1/5
+	FAIL: verifySwitchportAccessVlan 801 on port ['Eth1/5/1', 'Eth1/5/2', 'Eth101/1/5'] failed 
+	FAIL: Some or all of the Eth1/5/1,Eth1/5/2,Eth101/1/5 not in up state
+	FAIL: Default flood verification across interfaces ['Eth1/5/1', 'Eth1/5/2', 'Eth101/1/5'] to vlan ['801'] failed
+
+Testcase: testL2FexSanityPortModeChange 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	FAIL: MAC Table Verification failed: expected entries dont exist in mac address table output 
+	PASS: Mac table verification for l2 sanity PASSED
+	PASS: MAC Table Verificaiton: Unexpected entries dont exist in mac address table output 
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testL2FexSanityPortChannelMemberAdd 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testL2FexSanityPortChannelMemberRemove 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testL2FexSanityDeleteCreateVlan 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	PASS: stimuliVlanDeleteRecreate passed in preCheck section
+	PASS: stimuliVlanDeleteRecreate passed in postCheck section
+	PASS: stimuliVlanDeleteRecreate passed in stimuliAndVerify
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testL2FexSanityAllowedVlanAdd 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Po100 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testL2FexSanityAllowedVlanRemove 
+logs                                           
+	PASS: DUT is more likely a TOR
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+	FAIL: STP role and state are INCORRECT for po100 on sanity97-tor1 
+	FAIL: STP role and state are INCORRECT for Eth101/1/5 on sanity97-tor1 
+	PASS: STP role and state are CORRECT for Eth1/5/1 on sanity97-tor1 
+	FAIL: itgen verification for l2 sanity FAILED
+	PASS: MAC Table Verification passed 
+	PASS: Mac table verification for l2 sanity PASSED
+
+Testcase: testDynamicL2MulticastPCFex 
+logs                                           
+	FAIL: Some or all of the Eth1/15,Eth1/1,Eth1/5/1,Eth1/5/2,Eth1/5/3,Eth1/5/4,Eth101/1/5,Eth101/1/6,Eth102/1/7,Eth102/1/8 not in up state
+	PASS: sanity97-tor1 : Portchannels ['Po18'] state verfications passed at iteration 0
+	PASS: sanity97-tor2 : Portchannels ['Po18'] state verfications passed at iteration 0
+	FAIL: State counts are INCORRECT. Expected dict: {'2': {'STP Active': '9', 'Forwarding': '9', 'Blocking': '0', 'Listening': '0', 'Learning': '0'}} Actual dict: OrderedDict([('2', OrderedDict([('Blocking', '0'), ('Listening', '0'), ('Learning', '0'), ('Forwarding', '5'), ('STP Active', '5')]))])
+	FAIL: SpanningTree port state did not become FWD on sanity97-tor1 before test started
+
+Testcase: testCores 
+logs                                           
+	FAIL: Core file seen on sanity97-tor1
+	FAIL: Connection Timeout ,cannot login remote server to decode core
+	FAIL: corefile decode: None
+	FAIL: Core file seen on sanity97-tor1
+	FAIL: Connection Timeout ,cannot login remote server to decode core
+	FAIL: corefile decode: None
+	FAIL: Core file seen on sanity97-tor1
+	FAIL: Connection Timeout ,cannot login remote server to decode core
+	FAIL: corefile decode: None
+	FAIL: Core file seen on sanity97-tor1
+	FAIL: Connection Timeout ,cannot login remote server to decode core
+	FAIL: corefile decode: None
+	FAIL: Failed:Core Check on Switch:sanity97-tor1
+	FAIL: Some sysmgr services not running on sanity97-tor1 after crash,skip_all flag

@@ -1,0 +1,343 @@
+2019-08-24 18:15:34,983 - PYLOG - INFO - Inside cleanStart for node node02
+2019-08-24 18:15:35,990 - PYLOG - INFO - Inside powerCycle for 172.31.151.0 outlet 1
+2019-08-24 18:15:37,472 - PYLOG - INFO - username used: admin
+2019-08-24 18:15:38,528 - PYLOG - INFO - password used: insieme
+2019-08-24 18:15:40,032 - PYLOG - INFO - Powering down PDU 172.31.151.0 outlet 1
+2019-08-24 18:15:45,175 - PYLOG - INFO - Powering up PDU 172.31.151.0 outlet 1
+2019-08-24 18:15:46,644 - PYLOG - INFO - telnet 172.31.146.72 2007
+2019-08-24 18:15:46,658 - PYLOG - INFO - Inside getLoaderPrompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+
+Trying 172.31.146.72...
+Connected to 172.31.146.72.
+Escape character is '^]'.
+
+CISCO MODULE 
+BIOS Ver: 5.31.11[DBG]
+RC Revision:  02.03.00
+
+Memory Information:
+ MRC Revision:00.50.00
+ Total  DRAM: 24576 MB
+ Memory TOLM: 80000000
+ PCIE   BASE: 80000000     	Size : 10000000
+ PCI32  BASE: 90000000     	Limit: FBFFFFFF
+ PCI64  BASE: 380000000000     	Limit: 383FFFFFFFFF
+ UC    START: 380000000000     	End  : 384000000000
+ME Operational Firmware Version: 06:3.0.3.27
+
+DIMM Information:
+ Clock Speed: 1067MHz
+ Socket: 0x0 Channel: 0x0 Number: 0x0 Presence: Yes Size: 16GB
+ Socket: 0x0 Channel: 0x1 Number: 0x0 Presence: Yes Size: 8GB
+Bridge->[B0|D3|F1]
+Bridge->[B0|D3|F2]
+Bridge->[B0|D3|F3]
+Bridge->[B0|D1C|F0]
+Bridge->[B0|D1C|F1]
+Bridge->[B0|D1C|F2]
+Bridge->[B0|D1C|F3]
+Bridge->[B0|D1C|F7]
+
+Detected CISCO IOFPGA 
+Booting from Primary Bios 
+ Code Signing Results: 0x0 
+ Booting from Upgrade FPGA
+Disable Secureboot Checking for now 
+ FPGA Revision         : 0x18
+ FPGA ID               : 0x13314044
+ FPGA Date             : 0x20190208
+ Power Debug Register1  : 0x0
+ Power Debug Register2  : 0x7
+ Reset Cause Register  : 0x80000000
+ Boot Ctrl Register    : 0xe0ff
+ FPGA Update Status    : 0x20
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x4
+ MIFPGA Date           : 0x20181101
+ MIFPGA Update Status  : 0x0
+ MIFPGA ID             : 0x15156099
+
+Bootable Disk is detected. Device Name: Micron_1100_MTFDDAV256TBN               
+Version 2.18.1260. Copyright (C) 2018 American Megatrends, Inc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+Board type  4
+IOFPGA @ 0xe8000000
+SLOT_ID @ 0xf
+Chimay ToRs: setting 60% of fan speed
+Initializing fan controllerPMB WR: Nack error, tmp_data: 0x1b10200 
+Aborting config file read and autoboot 
+No autoboot or failed autoboot. falling to loader 
+
+
+
+                Loader Version 5.31.1
+
+loader >                                                   2019-08-24 18:16:35,921 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+2019-08-24 18:16:46,577 - PYLOG - INFO - telnet 172.31.146.72 2007
+2019-08-24 18:16:51,593 - PYLOG - INFO - Inside getLoaderPrompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+
+Trying 172.31.146.72...
+Connected to 172.31.146.72.
+Escape character is '^]'.
+
+
+loader >                                                                       2019-08-24 18:16:51,804 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+2019-08-24 18:16:51,805 - PYLOG - INFO - Inside bootKickstartMode: hdl=</usr/bin/telnet 172.31.146.72 2007>
+
+
+
+loader >                                                                       2019-08-24 18:16:54,020 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+cmdline recoverymode=1cmdline recoverymode=1
+
+
+loader >                                                                       2019-08-24 18:16:56,326 - PYLOG - INFO - Got loader prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+boot sanity-golden.gbin
+boot sanity-golden.gbin
+Booting sanity-golden.gbin 
+Trying diskboot 
+ Filesystem type is ext2fs, partition type 0x83
+Image valid
+OS Image Key Type: Development KEY
+
+
+Image Signature verification was Successful.
+
+Boot Time: 8/25/2019  1:18:6
+Installing klm_card_index
+done
+Linking n9k flash devices
+creating flash devices BOOT_DEV= sda
+INIT: version 2.88 booting
+Installing ata_piix module ... done.
+Unsquashing rootfs ...
+Enabling 8250 serial driver spurious INTs workaround
+Installing isan procfs ... done.
+is_lxc: is_stby: suffix:
+Installing ftrace in non-lxc mode done
+Installing SSE module ... done.
+Creating SSE device node 247 ... done.
+Loading I2C driver ... done.
+Loading MEM scrub driver ... done.
+Installing CCTRL driver for card_type 97 without NEED_GEM ... done.
+Loading IGB driver ... done.
+Checking SSD firmware ...
+	Model Number:       Micron_1100_MTFDDAV256TBN               
+	Serial Number:      MSA214906JS
+	Firmware Revision:  M0MU020
+
+Checking all filesystems.
+Installing SPROM driver ... IS_N9K done.
+Installing pfmsvcs module ...done.
+Installing nvram module ... done.
+Installing if_index module with port mode 6 ... done.
+Installing fcfwd
+Installing RNI lcnd ... done
+Installing LC netdev ... done
+Installing psdev module ... done.
+Installing veobc module ... done.
+Checking SR card
+Card Index is 21167
+Inserting eMMC module ... 
+Inserting OBFL module ... 15.04: eMMC Device found.
+15.05: card has mmc
+done.
+15.05: Making OBFL character devices for mmc
+mounting plog for N9k!
+Mounting OBFL for eMMC
+1+0 records in
+1+0 records out
+512 bytes (512 B) copied, 0.0889349 s, 5.8 kB/s
+Attach blkoops
+15.24: Before mounting blkoops
+16.10: After mounting blkoops
+Making OBFL character devices
+Inserting kernel_services module ... done.
+Making kernel_services character devices
+cgroups initialized
+invalid group file entry
+delete line 'aaa-db-operator:508:'? No
+group network-admin: no user svc-nxapi
+delete member 'svc-nxapi'? No
+grpck: no changes
+exit code: 1
+Starting OpenBSD Secure Shell server: sshd ... done.
+tune2fs 1.42.9 (28-Dec-2013)
+Setting reserved blocks percentage to 0% (0 blocks)
+Starting portmap daemon...
+creating NFS state directory: done
+starting 8 nfsd kernel threads: done
+starting mountd: done
+starting statd: done
+Saving image for img-sync ...
+Loading system software
+Patch Repository Setup completed successfully
+No system image Telling INIT to INIT: Sending processes the TERM signal
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (C) 2002-2018, Cisco and/or its affiliates.
+All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under their own
+licenses, such as open source.  This software is provided "as is," and unless
+otherwise stated, there is no warranty, express or implied, including but not
+limited to warranties of merchantability and fitness for a particular purpose.
+Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or 
+GNU General Public License (GPL) version 3.0  or the GNU
+Lesser General Public License (LGPL) Version 2.1 or 
+Lesser General Public License (LGPL) Version 2.0. 
+A copy of each such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://opensource.org/licenses/gpl-3.0.html and
+http://www.opensource.org/licenses/lgpl-2.1.php and
+http://www.gnu.org/licenses/old-licenses/library.txt.
+switch(boot)# 2019-08-24 18:18:40,672 - PYLOG - INFO - Inside kickstartModeGetImage: hdl=</usr/bin/telnet 172.31.146.72 2007>
+
+
+switch(boot)# 2019-08-24 18:18:40,827 - PYLOG - INFO - Got kickstart prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+terminal width 500
+terminal width 500
+switch(boot)# config t
+config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+switch(boot)(config)# 2019-08-24 18:18:41,189 - PYLOG - INFO - Got kickstart config prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+interface mgmt 0
+interface mgmt 0
+switch(boot)(config-if)# 2019-08-24 18:18:41,345 - PYLOG - INFO - Got kickstart intf prompt: hdl=</usr/bin/telnet 172.31.146.72 2007>
+ip address 172.31.203.81 255.255.248.0
+ip address 172.31.203.81 255.255.248.0
+switch(boot)(config-if)# no shutdown
+no shutdown
+switch(boot)(config-if)# exit
+exit
+switch(boot)(config)# ip default-gateway 172.31.200.1
+ip default-gateway 172.31.200.1
+switch(boot)(config)# exit
+exit
+switch(boot)# delete bootflash:sanity.image
+
+CISCO MODULE 
+BIOS Ver: 5.31.11[DBG]
+RC Revision:  02.03.00
+
+Memory Information:
+ MRC Revision:00.50.00
+ Total  DRAM: 24576 MB
+ Memory TOLM: 80000000
+ PCIE   BASE: 80000000     	Size : 10000000
+ PCI32  BASE: 90000000     	Limit: FBFFFFFF
+ PCI64  BASE: 380000000000     	Limit: 383FFFFFFFFF
+ UC    START: 380000000000     	End  : 384000000000
+ME Operational Firmware Version: 06:3.0.3.27
+
+DIMM Information:
+ Clock Speed: 1067MHz
+ Socket: 0x0 Channel: 0x0 Number: 0x0 Presence: Yes Size: 16GB
+ Socket: 0x0 Channel: 0x1 Number: 0x0 Presence: Yes Size: 8GB
+Bridge->[B0|D3|F1]
+Bridge->[B0|D3|F2]
+Bridge->[B0|D3|F3]
+Bridge->[B0|D1C|F0]
+Bridge->[B0|D1C|F1]
+Bridge->[B0|D1C|F2]
+Bridge->[B0|D1C|F3]
+Bridge->[B0|D1C|F7]
+
+Detected CISCO IOFPGA 
+Booting from Primary Bios 
+ Code Signing Results: 0x0 
+ Booting from Golden FPGA
+Disable Secureboot Checking for now 
+ FPGA Revision         : 0x18
+ FPGA ID               : 0x13314044
+ FPGA Date             : 0x20190208
+ Power Debug Register1  : 0x0
+ Power Debug Register2  : 0x27
+ Reset Cause Register  : 0x80000000
+ Boot Ctrl Register    : 0xe0ff
+ FPGA Update Status    : 0x0
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x7
+ MIFPGA Date           : 0x20190328
+ MIFPGA Update Status  : 0x20
+ MIFPGA ID             : 0x13300732
+
+Detected CISCO MIFPGA 
+ MIFPGA Version        : 0x4
+ MIFPGA Date           : 0x20181101
+ MIFPGA Update Status  : 0x0
+ MIFPGA ID             : 0x15156099
+
+Bootable Disk is detected. Device Name: Micron_1100_MTFDDAV256TBN               
+Version 2.18.1260. Copyright (C) 2018 American Megatrends, Inc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+Board type  4
+IOFPGA @ 0xe8000000
+SLOT_ID @ 0xf
+Chimay ToRs: setting 60% of fan speed
+Initializing fan controllerPMB WR: Nack error, tmp_data: 0x1b10200 
+Standalone chassis 
+check_bootmode: grub: Continue grub
+Trying to read config file /boot/grub/menu.lst.local from (hd0,4) 
+ Filesystem type is ext2fs, partition type 0x83
+Trying to read config file /boot/grub/menu.lst.local from (hd0,5) 
+ Filesystem type is ext2fs, partition type 0x83
+Auto boot configuration file is absent.
+No autoboot or failed autoboot. falling to loader 
+
+
+
+                Loader Version 5.31.1
+
+loader >                                                                       2019-08-24 18:22:19,713 - PYLOG - ERROR - Exception occured when trying to download image from kickstart mode: hdl=</usr/bin/telnet 172.31.146.72 2007> Timeout exceeded in read_nonblocking().
+<pexpect.spawn object at 0x2e10b90>
+version: 2.3 ($Revision: 399 $)
+command: /usr/bin/telnet
+args: ['/usr/bin/telnet', '172.31.146.72', '2007']
+searcher: searcher_re:
+    0: re.compile("\(boot\)# ")
+buffer (last 100 chars):                               
+before (last 100 chars):                               
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 2518
+child_fd: 6
+closed: False
+timeout: 60
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/vol/eor-qa/sanity/logs/lindach/1566601784/interface_uls-sanity97.lognode02', mode 'a' at 0x31b6c540>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+reload
+reload
+
+Error 27: Unrecognized command
+
+loader >                                                                       

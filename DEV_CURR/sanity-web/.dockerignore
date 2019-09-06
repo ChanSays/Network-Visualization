@@ -1,0 +1,4 @@
+*__pycache__*
+static_src/
+db/
+db_init_scripts/

@@ -1,0 +1,161 @@
+<ul class="nav navbar-top-links navbar-right">
+{% if user.username %}
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-messages">
+            {% for msg in msgs %}
+            <li>
+                <a href="#">
+                    <div>
+                        <strong>Job:{{ msg.submit_id }}</strong>
+                        <span class="pull-right text-muted">
+                            <em>{{ msg.updated_at}}</em>
+                        </span>
+                    </div>
+                    <div>Msg: {{ msg.msg }}</div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            {% endfor %}
+            <li>
+                <a class="text-center" href="{% url 'view_msgs' %}">
+                    <strong>Read All Messages</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- /.dropdown-messages -->
+    </li>
+    <!-- /.dropdown -->
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-tasks">
+            {% if user_submitted_jobs %}
+            {% for nav_job in user_submitted_jobs %}
+            <li>
+                {% if nav_job.status == 'pending' %}
+                <a href="{% url 'get_job_details' %}?submit_id={{job.submit_id}}">
+                    <div>
+                        <p>
+                            <strong>{{nav_job.submit_id}} - {{nav_job.testsuite}}</strong>
+                            <span class="pull-right text-muted">Jobs Pending</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                        </div>
+                    </div>
+                </a>
+                {% else %}
+                <a href="{% url 'get_job_details' %}?submit_id={{job.submit_id}}">
+                    <div>
+                        <p>
+                            <strong>{{nav_job.submit_id}} - {{nav_job.testsuite}}</strong>
+                            <span class="pull-right text-muted">{{nav_job.percentage}}% Complete</span>
+                        </p>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{nav_job.percentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{nav_job.percentage}}%">
+                                <span class="sr-only">{{nav_job.percentage}}% Complete (success)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </li>
+            {% endfor %}
+            <li class="divider"></li>
+            <li>
+                <a class="text-center"  href="{% url 'user_jobs' %}?filter=active">
+                    <strong>See All Active Jobs</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            {% else %}
+            <li>
+                <strong class="text-center">no running jobs</strong>
+            </li>
+            {% endif %}
+        </ul>
+        <!-- /.dropdown-tasks -->
+    </li>
+    <!-- /.dropdown -->
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-alerts">
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-comment fa-fw"></i> New Comment
+                        <span class="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                        <span class="pull-right text-muted small">12 minutes ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                        <span class="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-tasks fa-fw"></i> New Task
+                        <span class="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                        <span class="pull-right text-muted small">4 minutes ago</span>
+                    </div>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a class="text-center" href="#">
+                    <strong>See All Alerts</strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- /.dropdown-alerts -->
+    </li>
+    <!-- /.dropdown -->
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-user">
+            <li><a href="#"><i class="fa fa-user fa-fw"></i> {% if user.username %}{{ user.username }}{% else %}Anonymous{% endif %}</a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="{% url 'django-pam:logout' %}?next={% url 'home' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+            {% else %}
+            <li><a href="{% url 'django-pam:login' %}"><i class="fa fa-user fa-fw"></i> Login</a></li>
+            {% endif %}
+        </ul>
+        <!-- /.dropdown-user -->
+    </li>
+    <!-- /.dropdown -->
+</ul>

@@ -1,0 +1,5 @@
+testL2SanityPortFlap"
+2809:2019-08-24 18:37:27,856 - PYLOG - INFO - Passed Arguments are Namespace(DEFAULTKEYS=[], KEYS=['traffic_items', 'pktcount', 'profile', 'nonblocking', 'resolve_arp', 'send_igmp_for_active_groups', 'send_igmp_join', 'serial'], VALIDARGS=True, duration=None, inter=None, nonblocking=False, pktcount=1000, profile='profile_l2_sanity', resolve_arp=True, send_igmp_for_active_groups=False, send_igmp_join=False, serial=False, traffic_items=['TI01', 'TI02', 'TI03', 'TI04', 'TI05', 'TI06', 'TI07', 'TI08', 'TI09'])
+traffic_collect.sh:8:ag 'PKTS' > out3
+traffic_collect.sh:9:ag 'returndict before stop' > out4
+ag1:2:(?<=Starting Traffic validation).*?(?=returndict after stop)

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{% block sb_admin_description %} N9K Sanity App {% endblock sb_admin_description %}">
+    <meta name="author" content="{% block sb_admin_author %}{% endblock %}">
+    <title>{% block title %} N9K Sanity App {% endblock %}</title>
+
+    <link href="{% static 'admin/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'admin/font-awesome/css/font-awesome.css'%}" rel="stylesheet">
+    <link href="{% static 'admin/css/plugins/dataTables/dataTables.bootstrap.css'%}" rel="stylesheet">
+    <link href="{% static 'admin/css/plugins/morris/morris-0.4.3.min.css'%}" rel="stylesheet">
+    <link href="{% static 'admin/css/plugins/timeline/timeline.css'%}" rel="stylesheet">
+    {% block custom_css %}
+    {% endblock custom_css %}
+    <link href="{% static 'admin/css/sb-admin.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% block sb_admin_header_url %}{% url 'home' %}{% endblock sb_admin_header_url %}">{% block sb_admin_header %}N9K SANITY{% endblock sb_admin_header %} </a>
+            </div>
+            {% include 'navheader.html' %}
+            {% include 'nav.html' %}
+        </nav>
+
+        <div id="page-wrapper">
+            {% block sb_admin_content %}
+            {% endblock sb_admin_content %}
+
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+   <!-- admin_backup -->
+    <!-- /#admin_backup -->
+
+    <script src="{% static 'admin/js/jquery-1.10.2.js'%}"></script>
+    <script src="{% static 'admin/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'admin/js/plugins/dataTables/jquery.dataTables.js'%}"></script>
+    <script src="{% static 'admin/js/plugins/dataTables/dataTables.bootstrap.js'%}"></script>
+    <script src="{% static 'admin/js/plugins/metisMenu/jquery.metisMenu.js'%}"></script>
+    <script src="{% static 'admin/js/plugins/morris/raphael-2.1.0.min.js'%}"></script>
+    <script src="{% static 'admin/js/plugins/morris/morris.js'%}"></script>
+    <script src="{% static 'admin/js/sb-admin.js'%}"></script>
+{% block sb_admin_custom_js %}
+{% endblock sb_admin_custom_js %}
+</body>
+
+</html>

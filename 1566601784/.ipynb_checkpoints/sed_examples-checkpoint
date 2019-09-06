@@ -1,0 +1,3 @@
+# take the first 8 words out of each line of input:
+sed -rn 's/^(\S+\s){8}(.*)/\2/p'
+

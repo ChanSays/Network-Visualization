@@ -1,0 +1,8 @@
+These two files need to be copied to itgen. "db_update.py" has beed to added to CVS repo.
+start_sanity.sh needs to copied to root of golden eor sanity folder
+
+
+
+UPDATE:
+Only the start_sanity_flags.sh needs to be updated.
+All other files are deprecated.

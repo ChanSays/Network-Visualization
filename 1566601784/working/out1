@@ -1,0 +1,1239 @@
+1773:echo "START TESTCASE testReloadSwitch"
+1774:echo "START TESTCASE testReloadSwitch"
+1776:sanity97-tor2# echo "START TESTCASE testReloadSwitch"
+1777:echo "START TESTCASE testReloadSwitch"
+1779:sanity97-node03# echo "START TESTCASE testReloadSwitch"
+1780:echo "START TESTCASE testReloadSwitch"
+2098:echo "END TESTCASE testReloadSwitch"
+2099:echo "END TESTCASE testReloadSwitch"
+2101:sanity97-tor2# echo "END TESTCASE testReloadSwitch"
+2102:echo "END TESTCASE testReloadSwitch"
+2104:sanity97-node03# echo "END TESTCASE testReloadSwitch"
+2105:echo "END TESTCASE testReloadSwitch"
+2108:echo "START TESTCASE testBoxOnline"
+2109:echo "START TESTCASE testBoxOnline"
+2111:sanity97-tor2# echo "START TESTCASE testBoxOnline"
+2112:echo "START TESTCASE testBoxOnline"
+2114:sanity97-node03# echo "START TESTCASE testBoxOnline"
+2115:echo "START TESTCASE testBoxOnline"
+2156:echo "END TESTCASE testBoxOnline"
+2157:echo "END TESTCASE testBoxOnline"
+2159:sanity97-tor2# echo "END TESTCASE testBoxOnline"
+2160:echo "END TESTCASE testBoxOnline"
+2162:sanity97-node03# echo "END TESTCASE testBoxOnline"
+2163:echo "END TESTCASE testBoxOnline"
+2166:echo "START TESTCASE testModuleStatus"
+2167:echo "START TESTCASE testModuleStatus"
+2169:sanity97-tor2# echo "START TESTCASE testModuleStatus"
+2170:echo "START TESTCASE testModuleStatus"
+2172:sanity97-node03# echo "START TESTCASE testModuleStatus"
+2173:echo "START TESTCASE testModuleStatus"
+2449:echo "END TESTCASE testModuleStatus"
+2450:echo "END TESTCASE testModuleStatus"
+2452:sanity97-tor2# echo "END TESTCASE testModuleStatus"
+2453:echo "END TESTCASE testModuleStatus"
+2455:sanity97-node03# echo "END TESTCASE testModuleStatus"
+2456:echo "END TESTCASE testModuleStatus"
+2459:echo "START TESTCASE testConfigMgmtPort"
+2460:echo "START TESTCASE testConfigMgmtPort"
+2462:sanity97-tor2# echo "START TESTCASE testConfigMgmtPort"
+2463:echo "START TESTCASE testConfigMgmtPort"
+2465:sanity97-node03# echo "START TESTCASE testConfigMgmtPort"
+2466:echo "START TESTCASE testConfigMgmtPort"
+2621:echo "END TESTCASE testConfigMgmtPort"
+2622:echo "END TESTCASE testConfigMgmtPort"
+2624:sanity97-tor2# echo "END TESTCASE testConfigMgmtPort"
+2625:echo "END TESTCASE testConfigMgmtPort"
+2627:sanity97-node03# echo "END TESTCASE testConfigMgmtPort"
+2628:echo "END TESTCASE testConfigMgmtPort"
+2631:echo "START TESTCASE testL2SanityPortFlap"
+2632:echo "START TESTCASE testL2SanityPortFlap"
+2634:sanity97-tor2# echo "START TESTCASE testL2SanityPortFlap"
+2635:echo "START TESTCASE testL2SanityPortFlap"
+2637:sanity97-node03# echo "START TESTCASE testL2SanityPortFlap"
+2638:echo "START TESTCASE testL2SanityPortFlap"
+2824:echo "START TESTCASE testL2SanityPortModeChange"
+2825:echo "START TESTCASE testL2SanityPortModeChange"
+2827:sanity97-tor2# echo "START TESTCASE testL2SanityPortModeChange"
+2828:echo "START TESTCASE testL2SanityPortModeChange"
+2830:sanity97-node03# echo "START TESTCASE testL2SanityPortModeChange"
+2831:echo "START TESTCASE testL2SanityPortModeChange"
+3017:echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3018:echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3020:sanity97-tor2# echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3021:echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3023:sanity97-node03# echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3024:echo "START TESTCASE testL2SanityPortChannelMemberAdd"
+3055:echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3056:echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3058:sanity97-tor2# echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3059:echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3061:sanity97-node03# echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3062:echo "START TESTCASE testL2SanityPortChannelMemberRemove"
+3248:echo "START TESTCASE testL2SanityUnconfig"
+3249:echo "START TESTCASE testL2SanityUnconfig"
+3251:sanity97-tor2# echo "START TESTCASE testL2SanityUnconfig"
+3252:echo "START TESTCASE testL2SanityUnconfig"
+3254:sanity97-node03# echo "START TESTCASE testL2SanityUnconfig"
+3255:echo "START TESTCASE testL2SanityUnconfig"
+3439:echo "END TESTCASE testL2SanityUnconfig"
+3440:echo "END TESTCASE testL2SanityUnconfig"
+3442:sanity97-tor2# echo "END TESTCASE testL2SanityUnconfig"
+3443:echo "END TESTCASE testL2SanityUnconfig"
+3445:sanity97-node03# echo "END TESTCASE testL2SanityUnconfig"
+3446:echo "END TESTCASE testL2SanityUnconfig"
+3449:echo "START TESTCASE testStaticRoute"
+3450:echo "START TESTCASE testStaticRoute"
+3452:sanity97-tor2# echo "START TESTCASE testStaticRoute"
+3453:echo "START TESTCASE testStaticRoute"
+3455:sanity97-node03# echo "START TESTCASE testStaticRoute"
+3456:echo "START TESTCASE testStaticRoute"
+4018:echo "END TESTCASE testStaticRoute"
+4019:echo "END TESTCASE testStaticRoute"
+4021:sanity97-tor2# echo "END TESTCASE testStaticRoute"
+4022:echo "END TESTCASE testStaticRoute"
+4024:sanity97-node03# echo "END TESTCASE testStaticRoute"
+4025:echo "END TESTCASE testStaticRoute"
+4028:echo "START TESTCASE testToggleSwitchport"
+4029:echo "START TESTCASE testToggleSwitchport"
+4031:sanity97-tor2# echo "START TESTCASE testToggleSwitchport"
+4032:echo "START TESTCASE testToggleSwitchport"
+4034:sanity97-node03# echo "START TESTCASE testToggleSwitchport"
+4035:echo "START TESTCASE testToggleSwitchport"
+4803:echo "END TESTCASE testToggleSwitchport"
+4804:echo "END TESTCASE testToggleSwitchport"
+4806:sanity97-tor2# echo "END TESTCASE testToggleSwitchport"
+4807:echo "END TESTCASE testToggleSwitchport"
+4809:sanity97-node03# echo "END TESTCASE testToggleSwitchport"
+4810:echo "END TESTCASE testToggleSwitchport"
+4813:echo "START TESTCASE testPortChannelShutNoshut"
+4814:echo "START TESTCASE testPortChannelShutNoshut"
+4816:sanity97-tor2# echo "START TESTCASE testPortChannelShutNoshut"
+4817:echo "START TESTCASE testPortChannelShutNoshut"
+4819:sanity97-node03# echo "START TESTCASE testPortChannelShutNoshut"
+4820:echo "START TESTCASE testPortChannelShutNoshut"
+6132:echo "END TESTCASE testPortChannelShutNoshut"
+6133:echo "END TESTCASE testPortChannelShutNoshut"
+6135:sanity97-tor2# echo "END TESTCASE testPortChannelShutNoshut"
+6136:echo "END TESTCASE testPortChannelShutNoshut"
+6138:sanity97-node03# echo "END TESTCASE testPortChannelShutNoshut"
+6139:echo "END TESTCASE testPortChannelShutNoshut"
+6142:echo "START TESTCASE testSubPortChannelShutNoshut"
+6143:echo "START TESTCASE testSubPortChannelShutNoshut"
+6145:sanity97-tor2# echo "START TESTCASE testSubPortChannelShutNoshut"
+6146:echo "START TESTCASE testSubPortChannelShutNoshut"
+6148:sanity97-node03# echo "START TESTCASE testSubPortChannelShutNoshut"
+6149:echo "START TESTCASE testSubPortChannelShutNoshut"
+6829:echo "END TESTCASE testSubPortChannelShutNoshut"
+6830:echo "END TESTCASE testSubPortChannelShutNoshut"
+6832:sanity97-tor2# echo "END TESTCASE testSubPortChannelShutNoshut"
+6833:echo "END TESTCASE testSubPortChannelShutNoshut"
+6835:sanity97-node03# echo "END TESTCASE testSubPortChannelShutNoshut"
+6836:echo "END TESTCASE testSubPortChannelShutNoshut"
+6839:echo "START TESTCASE testSvi"
+6840:echo "START TESTCASE testSvi"
+6842:sanity97-tor2# echo "START TESTCASE testSvi"
+6843:echo "START TESTCASE testSvi"
+6845:sanity97-node03# echo "START TESTCASE testSvi"
+6846:echo "START TESTCASE testSvi"
+7931:echo "END TESTCASE testSvi"
+7932:echo "END TESTCASE testSvi"
+7934:sanity97-tor2# echo "END TESTCASE testSvi"
+7935:echo "END TESTCASE testSvi"
+7937:sanity97-node03# echo "END TESTCASE testSvi"
+7938:echo "END TESTCASE testSvi"
+7941:echo "START TESTCASE testIpv6Interface"
+7942:echo "START TESTCASE testIpv6Interface"
+7944:sanity97-tor2# echo "START TESTCASE testIpv6Interface"
+7945:echo "START TESTCASE testIpv6Interface"
+7947:sanity97-node03# echo "START TESTCASE testIpv6Interface"
+7948:echo "START TESTCASE testIpv6Interface"
+8357:echo "END TESTCASE testIpv6Interface"
+8358:echo "END TESTCASE testIpv6Interface"
+8360:sanity97-tor2# echo "END TESTCASE testIpv6Interface"
+8361:echo "END TESTCASE testIpv6Interface"
+8363:sanity97-node03# echo "END TESTCASE testIpv6Interface"
+8364:echo "END TESTCASE testIpv6Interface"
+8367:echo "START TESTCASE testAAFexBringup"
+8368:echo "START TESTCASE testAAFexBringup"
+8370:sanity97-tor2# echo "START TESTCASE testAAFexBringup"
+8371:echo "START TESTCASE testAAFexBringup"
+8373:sanity97-node03# echo "START TESTCASE testAAFexBringup"
+8374:echo "START TESTCASE testAAFexBringup"
+8561:echo "START TESTCASE testKstackInterfacePreCleanup"
+8562:echo "START TESTCASE testKstackInterfacePreCleanup"
+8564:sanity97-tor2# echo "START TESTCASE testKstackInterfacePreCleanup"
+8565:echo "START TESTCASE testKstackInterfacePreCleanup"
+8567:sanity97-node03# echo "START TESTCASE testKstackInterfacePreCleanup"
+8568:echo "START TESTCASE testKstackInterfacePreCleanup"
+9344:echo "END TESTCASE testKstackInterfacePreCleanup"
+9345:echo "END TESTCASE testKstackInterfacePreCleanup"
+9347:sanity97-tor2# echo "END TESTCASE testKstackInterfacePreCleanup"
+9348:echo "END TESTCASE testKstackInterfacePreCleanup"
+9350:sanity97-node03# echo "END TESTCASE testKstackInterfacePreCleanup"
+9351:echo "END TESTCASE testKstackInterfacePreCleanup"
+9354:echo "START TESTCASE testKstackInterfaceBringup"
+9355:echo "START TESTCASE testKstackInterfaceBringup"
+9357:sanity97-tor2# echo "START TESTCASE testKstackInterfaceBringup"
+9358:echo "START TESTCASE testKstackInterfaceBringup"
+9360:sanity97-node03# echo "START TESTCASE testKstackInterfaceBringup"
+9361:echo "START TESTCASE testKstackInterfaceBringup"
+13503:echo "END TESTCASE testKstackInterfaceBringup"
+13504:echo "END TESTCASE testKstackInterfaceBringup"
+13506:sanity97-tor2# echo "END TESTCASE testKstackInterfaceBringup"
+13507:echo "END TESTCASE testKstackInterfaceBringup"
+13509:sanity97-node03# echo "END TESTCASE testKstackInterfaceBringup"
+13510:echo "END TESTCASE testKstackInterfaceBringup"
+13513:echo "START TESTCASE testKstackInterfaceShut"
+13514:echo "START TESTCASE testKstackInterfaceShut"
+13516:sanity97-tor2# echo "START TESTCASE testKstackInterfaceShut"
+13517:echo "START TESTCASE testKstackInterfaceShut"
+13519:sanity97-node03# echo "START TESTCASE testKstackInterfaceShut"
+13520:echo "START TESTCASE testKstackInterfaceShut"
+14419:echo "END TESTCASE testKstackInterfaceShut"
+14420:echo "END TESTCASE testKstackInterfaceShut"
+14422:sanity97-tor2# echo "END TESTCASE testKstackInterfaceShut"
+14423:echo "END TESTCASE testKstackInterfaceShut"
+14425:sanity97-node03# echo "END TESTCASE testKstackInterfaceShut"
+14426:echo "END TESTCASE testKstackInterfaceShut"
+14429:echo "START TESTCASE testKstackL3IntfMTU"
+14430:echo "START TESTCASE testKstackL3IntfMTU"
+14432:sanity97-tor2# echo "START TESTCASE testKstackL3IntfMTU"
+14433:echo "START TESTCASE testKstackL3IntfMTU"
+14435:sanity97-node03# echo "START TESTCASE testKstackL3IntfMTU"
+14436:echo "START TESTCASE testKstackL3IntfMTU"
+15278:echo "END TESTCASE testKstackL3IntfMTU"
+15279:echo "END TESTCASE testKstackL3IntfMTU"
+15281:sanity97-tor2# echo "END TESTCASE testKstackL3IntfMTU"
+15282:echo "END TESTCASE testKstackL3IntfMTU"
+15284:sanity97-node03# echo "END TESTCASE testKstackL3IntfMTU"
+15285:echo "END TESTCASE testKstackL3IntfMTU"
+15288:echo "START TESTCASE testKstackInterfaceCleanup"
+15289:echo "START TESTCASE testKstackInterfaceCleanup"
+15291:sanity97-tor2# echo "START TESTCASE testKstackInterfaceCleanup"
+15292:echo "START TESTCASE testKstackInterfaceCleanup"
+15294:sanity97-node03# echo "START TESTCASE testKstackInterfaceCleanup"
+15295:echo "START TESTCASE testKstackInterfaceCleanup"
+16210:echo "END TESTCASE testKstackInterfaceCleanup"
+16211:echo "END TESTCASE testKstackInterfaceCleanup"
+16213:sanity97-tor2# echo "END TESTCASE testKstackInterfaceCleanup"
+16214:echo "END TESTCASE testKstackInterfaceCleanup"
+16216:sanity97-node03# echo "END TESTCASE testKstackInterfaceCleanup"
+16217:echo "END TESTCASE testKstackInterfaceCleanup"
+16220:echo "START TESTCASE testFexBringup"
+16221:echo "START TESTCASE testFexBringup"
+16223:sanity97-tor2# echo "START TESTCASE testFexBringup"
+16224:echo "START TESTCASE testFexBringup"
+16226:sanity97-node03# echo "START TESTCASE testFexBringup"
+16227:echo "START TESTCASE testFexBringup"
+16339:echo "END TESTCASE testFexBringup"
+16340:echo "END TESTCASE testFexBringup"
+16342:sanity97-tor2# echo "END TESTCASE testFexBringup"
+16343:echo "END TESTCASE testFexBringup"
+16345:sanity97-node03# echo "END TESTCASE testFexBringup"
+16346:echo "END TESTCASE testFexBringup"
+16349:echo "START TESTCASE testFexSviPing"
+16350:echo "START TESTCASE testFexSviPing"
+16352:sanity97-tor2# echo "START TESTCASE testFexSviPing"
+16353:echo "START TESTCASE testFexSviPing"
+16355:sanity97-node03# echo "START TESTCASE testFexSviPing"
+16356:echo "START TESTCASE testFexSviPing"
+19340:Sat Aug 24 19:06:36 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+21480:Sat Aug 24 19:06:36 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+21559:Sun Aug 25 02:34:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+21560:sanity97-node03# 2019-08-24 19:14:43,011 - PYLOG - INFO - Sun Aug 25 02:34:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+24606:Sat Aug 24 19:06:36 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+27692:Sat Aug 24 19:06:36 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+27738:echo "END TESTCASE testFexSviPing"
+27739:echo "END TESTCASE testFexSviPing"
+27741:sanity97-tor2# echo "END TESTCASE testFexSviPing"
+27742:echo "END TESTCASE testFexSviPing"
+27744:sanity97-node03# echo "END TESTCASE testFexSviPing"
+27745:echo "END TESTCASE testFexSviPing"
+27748:echo "START TESTCASE testFexPortChannelShutNoshut"
+27749:echo "START TESTCASE testFexPortChannelShutNoshut"
+27751:sanity97-tor2# echo "START TESTCASE testFexPortChannelShutNoshut"
+27752:echo "START TESTCASE testFexPortChannelShutNoshut"
+27754:sanity97-node03# echo "START TESTCASE testFexPortChannelShutNoshut"
+27755:echo "START TESTCASE testFexPortChannelShutNoshut"
+34549:Sat Aug 24 19:14:45 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+37085:Sat Aug 24 19:14:45 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+37228:Sun Aug 25 02:42:41 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+37229:sanity97-node03# 2019-08-24 19:37:27,467 - PYLOG - INFO - Sun Aug 25 02:42:41 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+40649:Sat Aug 24 19:14:45 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+44179:Sat Aug 24 19:14:45 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+44295:echo "END TESTCASE testFexPortChannelShutNoshut"
+44296:echo "END TESTCASE testFexPortChannelShutNoshut"
+44298:sanity97-tor2# echo "END TESTCASE testFexPortChannelShutNoshut"
+44299:echo "END TESTCASE testFexPortChannelShutNoshut"
+44301:sanity97-node03# echo "END TESTCASE testFexPortChannelShutNoshut"
+44302:echo "END TESTCASE testFexPortChannelShutNoshut"
+44305:echo "START TESTCASE testFexLacpShutNoshut"
+44306:echo "START TESTCASE testFexLacpShutNoshut"
+44308:sanity97-tor2# echo "START TESTCASE testFexLacpShutNoshut"
+44309:echo "START TESTCASE testFexLacpShutNoshut"
+44311:sanity97-node03# echo "START TESTCASE testFexLacpShutNoshut"
+44312:echo "START TESTCASE testFexLacpShutNoshut"
+51386:Sat Aug 24 19:37:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+54253:Sat Aug 24 19:37:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+54395:Sun Aug 25 03:05:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+54396:sanity97-node03# 2019-08-24 20:00:12,959 - PYLOG - INFO - Sun Aug 25 03:05:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+58182:Sat Aug 24 19:37:30 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+62077:Sat Aug 24 19:37:30 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+62192:echo "END TESTCASE testFexLacpShutNoshut"
+62193:echo "END TESTCASE testFexLacpShutNoshut"
+62195:sanity97-tor2# echo "END TESTCASE testFexLacpShutNoshut"
+62196:echo "END TESTCASE testFexLacpShutNoshut"
+62198:sanity97-node03# echo "END TESTCASE testFexLacpShutNoshut"
+62199:echo "END TESTCASE testFexLacpShutNoshut"
+62202:echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+62203:echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+62205:sanity97-tor2# echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+62206:echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+62208:sanity97-node03# echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+62209:echo "START TESTCASE testL2BridgingAccessFexAndFexPort"
+65734:Sat Aug 24 20:00:15 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+68643:Sat Aug 24 20:00:15 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+68681:Sun Aug 25 03:28:11 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+68700:sanity97-node03# 2019-08-24 20:06:44,739 - PYLOG - INFO - Sun Aug 25 03:28:11 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+72640:Sat Aug 24 20:00:15 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+76582:Sat Aug 24 20:00:15 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+76608:echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76609:echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76611:sanity97-tor2# echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76612:echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76614:sanity97-node03# echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76615:echo "END TESTCASE testL2BridgingAccessFexAndFexPort"
+76618:echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+76619:echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+76621:sanity97-tor2# echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+76622:echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+76624:sanity97-node03# echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+76625:echo "START TESTCASE testFexSviRoutingFexAndFexPort"
+81369:Sat Aug 24 20:06:47 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+84548:Sat Aug 24 20:06:47 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+84630:Sun Aug 25 03:34:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+84711:sanity97-node03# 2019-08-24 20:15:43,162 - PYLOG - INFO - Sun Aug 25 03:34:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+88919:Sat Aug 24 20:06:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+93099:Sat Aug 24 20:06:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+93157:echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93158:echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93160:sanity97-tor2# echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93161:echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93163:sanity97-node03# echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93164:echo "END TESTCASE testFexSviRoutingFexAndFexPort"
+93167:echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+93168:echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+93170:sanity97-tor2# echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+93171:echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+93173:sanity97-node03# echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+93174:echo "START TESTCASE testFexSviRoutingFexAndSwitchPort"
+98060:Sat Aug 24 20:15:45 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+101463:Sat Aug 24 20:15:45 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+101545:Sun Aug 25 03:43:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+101607:sanity97-node03# 2019-08-24 20:23:07,374 - PYLOG - INFO - Sun Aug 25 03:43:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+106044:Sat Aug 24 20:15:46 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+110502:Sat Aug 24 20:15:46 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+110590:echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110591:echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110593:sanity97-tor2# echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110594:echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110596:sanity97-node03# echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110597:echo "END TESTCASE testFexSviRoutingFexAndSwitchPort"
+110600:echo "START TESTCASE testStaticL2MulticastPC"
+110601:echo "START TESTCASE testStaticL2MulticastPC"
+110603:sanity97-tor2# echo "START TESTCASE testStaticL2MulticastPC"
+110604:echo "START TESTCASE testStaticL2MulticastPC"
+110606:sanity97-node03# echo "START TESTCASE testStaticL2MulticastPC"
+110607:echo "START TESTCASE testStaticL2MulticastPC"
+134110:Sat Aug 24 20:23:10 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+140690:Sat Aug 24 20:23:10 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+142489:Sun Aug 25 03:51:06 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+142490:sanity97-node03# 2019-08-24 20:34:28,289 - PYLOG - INFO - Sun Aug 25 03:51:06 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+148362:Sat Aug 24 20:23:10 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+155549:Sat Aug 24 20:23:10 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+156870:echo "END TESTCASE testStaticL2MulticastPC"
+156871:echo "END TESTCASE testStaticL2MulticastPC"
+156873:sanity97-tor2# echo "END TESTCASE testStaticL2MulticastPC"
+156874:echo "END TESTCASE testStaticL2MulticastPC"
+156876:sanity97-node03# echo "END TESTCASE testStaticL2MulticastPC"
+156877:echo "END TESTCASE testStaticL2MulticastPC"
+156880:echo "START TESTCASE testDynamicL2MulticastPhy"
+156881:echo "START TESTCASE testDynamicL2MulticastPhy"
+156883:sanity97-tor2# echo "START TESTCASE testDynamicL2MulticastPhy"
+156884:echo "START TESTCASE testDynamicL2MulticastPhy"
+156886:sanity97-node03# echo "START TESTCASE testDynamicL2MulticastPhy"
+156887:echo "START TESTCASE testDynamicL2MulticastPhy"
+163372:Sat Aug 24 20:34:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+168437:Sat Aug 24 20:34:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+168569:Sun Aug 25 04:02:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+168570:sanity97-node03# 2019-08-24 20:36:51,380 - PYLOG - INFO - Sun Aug 25 04:02:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+174650:Sat Aug 24 20:34:32 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+180897:Sat Aug 24 20:34:32 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+181070:echo "END TESTCASE testDynamicL2MulticastPhy"
+181071:echo "END TESTCASE testDynamicL2MulticastPhy"
+181073:sanity97-tor2# echo "END TESTCASE testDynamicL2MulticastPhy"
+181074:echo "END TESTCASE testDynamicL2MulticastPhy"
+181076:sanity97-node03# echo "END TESTCASE testDynamicL2MulticastPhy"
+181077:echo "END TESTCASE testDynamicL2MulticastPhy"
+181080:echo "START TESTCASE testL2MulticastLcReload"
+181081:echo "START TESTCASE testL2MulticastLcReload"
+181083:sanity97-tor2# echo "START TESTCASE testL2MulticastLcReload"
+181084:echo "START TESTCASE testL2MulticastLcReload"
+181086:sanity97-node03# echo "START TESTCASE testL2MulticastLcReload"
+181087:echo "START TESTCASE testL2MulticastLcReload"
+214916:Sat Aug 24 20:36:55 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+224586:Sat Aug 24 20:36:55 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+226533:Sun Aug 25 04:04:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+226534:sanity97-node03# 2019-08-24 20:51:08,293 - PYLOG - INFO - Sun Aug 25 04:04:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+235512:Sat Aug 24 20:36:56 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+245956:Sat Aug 24 20:36:56 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+247428:echo "END TESTCASE testL2MulticastLcReload"
+247429:echo "END TESTCASE testL2MulticastLcReload"
+247431:sanity97-tor2# echo "END TESTCASE testL2MulticastLcReload"
+247432:echo "END TESTCASE testL2MulticastLcReload"
+247434:sanity97-node03# echo "END TESTCASE testL2MulticastLcReload"
+247435:echo "END TESTCASE testL2MulticastLcReload"
+247438:echo "START TESTCASE testL2MulticastPCFlap"
+247439:echo "START TESTCASE testL2MulticastPCFlap"
+247441:sanity97-tor2# echo "START TESTCASE testL2MulticastPCFlap"
+247442:echo "START TESTCASE testL2MulticastPCFlap"
+247444:sanity97-node03# echo "START TESTCASE testL2MulticastPCFlap"
+247445:echo "START TESTCASE testL2MulticastPCFlap"
+283977:Sat Aug 24 20:51:12 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+296435:Sat Aug 24 20:51:12 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+298382:Sun Aug 25 04:19:09 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+298383:sanity97-node03# 2019-08-24 21:04:32,622 - PYLOG - INFO - Sun Aug 25 04:19:09 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+310263:Sat Aug 24 20:51:13 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+323616:Sat Aug 24 20:51:13 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+325095:echo "END TESTCASE testL2MulticastPCFlap"
+325096:echo "END TESTCASE testL2MulticastPCFlap"
+325098:sanity97-tor2# echo "END TESTCASE testL2MulticastPCFlap"
+325099:echo "END TESTCASE testL2MulticastPCFlap"
+325101:sanity97-node03# echo "END TESTCASE testL2MulticastPCFlap"
+325102:echo "END TESTCASE testL2MulticastPCFlap"
+325105:echo "START TESTCASE testL2MulticastPortFlap"
+325106:echo "START TESTCASE testL2MulticastPortFlap"
+325108:sanity97-tor2# echo "START TESTCASE testL2MulticastPortFlap"
+325109:echo "START TESTCASE testL2MulticastPortFlap"
+325111:sanity97-node03# echo "START TESTCASE testL2MulticastPortFlap"
+325112:echo "START TESTCASE testL2MulticastPortFlap"
+337456:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+348270:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+348403:Sun Aug 25 04:32:34 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+348404:sanity97-node03# 2019-08-24 21:06:56,027 - PYLOG - INFO - Sun Aug 25 04:32:34 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+360512:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+372782:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+372950:echo "END TESTCASE testL2MulticastPortFlap"
+372951:echo "END TESTCASE testL2MulticastPortFlap"
+372953:sanity97-tor2# echo "END TESTCASE testL2MulticastPortFlap"
+372954:echo "END TESTCASE testL2MulticastPortFlap"
+372956:sanity97-node03# echo "END TESTCASE testL2MulticastPortFlap"
+372957:echo "END TESTCASE testL2MulticastPortFlap"
+372960:echo "START TESTCASE testL2MulticastVlanRecreate"
+372961:echo "START TESTCASE testL2MulticastVlanRecreate"
+372963:sanity97-tor2# echo "START TESTCASE testL2MulticastVlanRecreate"
+372964:echo "START TESTCASE testL2MulticastVlanRecreate"
+372966:sanity97-node03# echo "START TESTCASE testL2MulticastVlanRecreate"
+372967:echo "START TESTCASE testL2MulticastVlanRecreate"
+385482:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+396466:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+396599:Sun Aug 25 04:34:56 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+396600:sanity97-node03# 2019-08-24 21:09:19,285 - PYLOG - INFO - Sun Aug 25 04:34:56 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+408928:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+421418:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+421586:echo "END TESTCASE testL2MulticastVlanRecreate"
+421587:echo "END TESTCASE testL2MulticastVlanRecreate"
+421589:sanity97-tor2# echo "END TESTCASE testL2MulticastVlanRecreate"
+421590:echo "END TESTCASE testL2MulticastVlanRecreate"
+421592:sanity97-node03# echo "END TESTCASE testL2MulticastVlanRecreate"
+421593:echo "END TESTCASE testL2MulticastVlanRecreate"
+421596:echo "START TESTCASE testL2MulticastSVICreateDelete"
+421597:echo "START TESTCASE testL2MulticastSVICreateDelete"
+421599:sanity97-tor2# echo "START TESTCASE testL2MulticastSVICreateDelete"
+421600:echo "START TESTCASE testL2MulticastSVICreateDelete"
+421602:sanity97-node03# echo "START TESTCASE testL2MulticastSVICreateDelete"
+421603:echo "START TESTCASE testL2MulticastSVICreateDelete"
+434290:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+445446:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+445579:Sun Aug 25 04:37:20 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+445580:sanity97-node03# 2019-08-24 21:11:41,877 - PYLOG - INFO - Sun Aug 25 04:37:20 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+458128:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+470838:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+471006:echo "END TESTCASE testL2MulticastSVICreateDelete"
+471007:echo "END TESTCASE testL2MulticastSVICreateDelete"
+471009:sanity97-tor2# echo "END TESTCASE testL2MulticastSVICreateDelete"
+471010:echo "END TESTCASE testL2MulticastSVICreateDelete"
+471012:sanity97-node03# echo "END TESTCASE testL2MulticastSVICreateDelete"
+471013:echo "END TESTCASE testL2MulticastSVICreateDelete"
+471016:echo "START TESTCASE testL2FexSanityMacLearning"
+471017:echo "START TESTCASE testL2FexSanityMacLearning"
+471019:sanity97-tor2# echo "START TESTCASE testL2FexSanityMacLearning"
+471020:echo "START TESTCASE testL2FexSanityMacLearning"
+471022:sanity97-node03# echo "START TESTCASE testL2FexSanityMacLearning"
+471023:echo "START TESTCASE testL2FexSanityMacLearning"
+485032:Sat Aug 24 21:11:46 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+496311:Sat Aug 24 21:11:46 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+496407:Sun Aug 25 04:39:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+496408:sanity97-node03# 2019-08-24 21:16:01,676 - PYLOG - INFO - Sun Aug 25 04:39:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+509144:Sat Aug 24 21:11:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+521979:Sat Aug 24 21:11:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+522084:echo "END TESTCASE testL2FexSanityMacLearning"
+522085:echo "END TESTCASE testL2FexSanityMacLearning"
+522087:sanity97-tor2# echo "END TESTCASE testL2FexSanityMacLearning"
+522088:echo "END TESTCASE testL2FexSanityMacLearning"
+522090:sanity97-node03# echo "END TESTCASE testL2FexSanityMacLearning"
+522091:echo "END TESTCASE testL2FexSanityMacLearning"
+522094:echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+522095:echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+522097:sanity97-tor2# echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+522098:echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+522100:sanity97-node03# echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+522101:echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+536438:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+547971:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+548133:Sun Aug 25 04:44:02 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+548163:sanity97-node03# 2019-08-24 21:23:54,816 - PYLOG - INFO - Sun Aug 25 04:44:02 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+561200:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+574409:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+574616:echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574617:echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574619:sanity97-tor2# echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574620:echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574622:sanity97-node03# echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574623:echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk"
+574626:echo "START TESTCASE testL2FexSanityPortFlap"
+574627:echo "START TESTCASE testL2FexSanityPortFlap"
+574629:sanity97-tor2# echo "START TESTCASE testL2FexSanityPortFlap"
+574630:echo "START TESTCASE testL2FexSanityPortFlap"
+574632:sanity97-node03# echo "START TESTCASE testL2FexSanityPortFlap"
+574633:echo "START TESTCASE testL2FexSanityPortFlap"
+574827:echo "START TESTCASE testFexStaticMac"
+574828:echo "START TESTCASE testFexStaticMac"
+574830:sanity97-tor2# echo "START TESTCASE testFexStaticMac"
+574831:echo "START TESTCASE testFexStaticMac"
+574833:sanity97-node03# echo "START TESTCASE testFexStaticMac"
+574834:echo "START TESTCASE testFexStaticMac"
+575284:Sat Aug 24 21:28:13 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575285:sanity97-tor2# 2019-08-24 21:30:21,749 - PYLOG - INFO - Sat Aug 24 21:28:13 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575290:Sun Aug 25 04:56:10 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575291:sanity97-node03# 2019-08-24 21:30:22,226 - PYLOG - INFO - Sun Aug 25 04:56:10 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575296:Sat Aug 24 21:28:14 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575328:sanity97-tor1# 2019-08-24 21:30:26,090 - PYLOG - INFO - Sat Aug 24 21:28:14 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+575361:echo "END TESTCASE testFexStaticMac"
+575362:echo "END TESTCASE testFexStaticMac"
+575364:sanity97-tor2# echo "END TESTCASE testFexStaticMac"
+575365:echo "END TESTCASE testFexStaticMac"
+575367:sanity97-node03# echo "END TESTCASE testFexStaticMac"
+575368:echo "END TESTCASE testFexStaticMac"
+575371:echo "START TESTCASE testL2FexSanityPortModeChange"
+575372:echo "START TESTCASE testL2FexSanityPortModeChange"
+575374:sanity97-tor2# echo "START TESTCASE testL2FexSanityPortModeChange"
+575375:echo "START TESTCASE testL2FexSanityPortModeChange"
+575377:sanity97-node03# echo "START TESTCASE testL2FexSanityPortModeChange"
+575378:echo "START TESTCASE testL2FexSanityPortModeChange"
+588176:Sat Aug 24 21:30:26 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+599670:Sat Aug 24 21:30:26 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+599689:Sun Aug 25 04:58:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+599690:sanity97-node03# 2019-08-24 21:38:27,074 - PYLOG - INFO - Sun Aug 25 04:58:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+612964:Sat Aug 24 21:30:27 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+626299:Sat Aug 24 21:30:27 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+626366:echo "END TESTCASE testL2FexSanityPortModeChange"
+626367:echo "END TESTCASE testL2FexSanityPortModeChange"
+626369:sanity97-tor2# echo "END TESTCASE testL2FexSanityPortModeChange"
+626370:echo "END TESTCASE testL2FexSanityPortModeChange"
+626372:sanity97-node03# echo "END TESTCASE testL2FexSanityPortModeChange"
+626373:echo "END TESTCASE testL2FexSanityPortModeChange"
+626376:echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+626377:echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+626379:sanity97-tor2# echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+626380:echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+626382:sanity97-node03# echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+626383:echo "START TESTCASE testL2FexSanityPortChannelMemberAdd"
+638750:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+650338:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+650363:Sun Aug 25 05:06:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+650364:sanity97-node03# 2019-08-24 21:43:18,288 - PYLOG - INFO - Sun Aug 25 05:06:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+663774:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+677217:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+677256:echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677257:echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677259:sanity97-tor2# echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677260:echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677262:sanity97-node03# echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677263:echo "END TESTCASE testL2FexSanityPortChannelMemberAdd"
+677266:echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+677267:echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+677269:sanity97-tor2# echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+677270:echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+677272:sanity97-node03# echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+677273:echo "START TESTCASE testL2FexSanityPortChannelMemberRemove"
+689895:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+701576:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+701604:Sun Aug 25 05:11:19 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+701605:sanity97-node03# 2019-08-24 21:50:10,902 - PYLOG - INFO - Sun Aug 25 05:11:19 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+715173:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+728787:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+728839:echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728840:echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728842:sanity97-tor2# echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728843:echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728845:sanity97-node03# echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728846:echo "END TESTCASE testL2FexSanityPortChannelMemberRemove"
+728849:echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+728850:echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+728852:sanity97-tor2# echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+728853:echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+728855:sanity97-node03# echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+728856:echo "START TESTCASE testL2FexSanityDeleteCreateVlan"
+741653:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+753464:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+753490:Sun Aug 25 05:18:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+753491:sanity97-node03# 2019-08-24 22:01:03,039 - PYLOG - INFO - Sun Aug 25 05:18:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+767259:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+781076:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+781131:echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781132:echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781134:sanity97-tor2# echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781135:echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781137:sanity97-node03# echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781138:echo "END TESTCASE testL2FexSanityDeleteCreateVlan"
+781141:echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+781142:echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+781144:sanity97-tor2# echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+781145:echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+781147:sanity97-node03# echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+781148:echo "START TESTCASE testL2FexSanityAllowedVlanAdd"
+794189:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+806093:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+806120:Sun Aug 25 05:29:04 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+806121:sanity97-node03# 2019-08-24 22:08:57,840 - PYLOG - INFO - Sun Aug 25 05:29:04 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+820075:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+834086:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+834149:echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834150:echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834152:sanity97-tor2# echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834153:echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834155:sanity97-node03# echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834156:echo "END TESTCASE testL2FexSanityAllowedVlanAdd"
+834159:echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+834160:echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+834162:sanity97-tor2# echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+834163:echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+834165:sanity97-node03# echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+834166:echo "START TESTCASE testL2FexSanityAllowedVlanRemove"
+847168:Sat Aug 24 22:09:02 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+859161:Sat Aug 24 22:09:02 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+859187:Sun Aug 25 05:36:59 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+859188:sanity97-node03# 2019-08-24 22:15:48,623 - PYLOG - INFO - Sun Aug 25 05:36:59 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+873294:Sat Aug 24 22:09:03 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+887446:Sat Aug 24 22:09:03 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+887498:echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887499:echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887501:sanity97-tor2# echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887502:echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887504:sanity97-node03# echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887505:echo "END TESTCASE testL2FexSanityAllowedVlanRemove"
+887508:echo "START TESTCASE testL2FexSanityUnconfig"
+887509:echo "START TESTCASE testL2FexSanityUnconfig"
+887511:sanity97-tor2# echo "START TESTCASE testL2FexSanityUnconfig"
+887512:echo "START TESTCASE testL2FexSanityUnconfig"
+887514:sanity97-node03# echo "START TESTCASE testL2FexSanityUnconfig"
+887515:echo "START TESTCASE testL2FexSanityUnconfig"
+887748:echo "END TESTCASE testL2FexSanityUnconfig"
+887749:echo "END TESTCASE testL2FexSanityUnconfig"
+887751:sanity97-tor2# echo "END TESTCASE testL2FexSanityUnconfig"
+887752:echo "END TESTCASE testL2FexSanityUnconfig"
+887754:sanity97-node03# echo "END TESTCASE testL2FexSanityUnconfig"
+887755:echo "END TESTCASE testL2FexSanityUnconfig"
+887758:echo "START TESTCASE testDynamicL2MulticastPCFex"
+887759:echo "START TESTCASE testDynamicL2MulticastPCFex"
+887761:sanity97-tor2# echo "START TESTCASE testDynamicL2MulticastPCFex"
+887762:echo "START TESTCASE testDynamicL2MulticastPCFex"
+887764:sanity97-node03# echo "START TESTCASE testDynamicL2MulticastPCFex"
+887765:echo "START TESTCASE testDynamicL2MulticastPCFex"
+901752:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+914092:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+914225:Sun Aug 25 05:44:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+914226:sanity97-node03# 2019-08-24 22:19:56,785 - PYLOG - INFO - Sun Aug 25 05:44:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+928638:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+943251:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+943458:echo "END TESTCASE testDynamicL2MulticastPCFex"
+943459:echo "END TESTCASE testDynamicL2MulticastPCFex"
+943461:sanity97-tor2# echo "END TESTCASE testDynamicL2MulticastPCFex"
+943462:echo "END TESTCASE testDynamicL2MulticastPCFex"
+943464:sanity97-node03# echo "END TESTCASE testDynamicL2MulticastPCFex"
+943465:echo "END TESTCASE testDynamicL2MulticastPCFex"
+943468:echo "START TESTCASE testAccessVxLAN10G"
+943469:echo "START TESTCASE testAccessVxLAN10G"
+943471:sanity97-tor2# echo "START TESTCASE testAccessVxLAN10G"
+943472:echo "START TESTCASE testAccessVxLAN10G"
+943474:sanity97-node03# echo "START TESTCASE testAccessVxLAN10G"
+943475:echo "START TESTCASE testAccessVxLAN10G"
+952378:echo "START TESTCASE testTrunkVxLAN10G"
+952379:echo "START TESTCASE testTrunkVxLAN10G"
+952447:sanity97-node03# echo "START TESTCASE testTrunkVxLAN10G"
+952448:echo "START TESTCASE testTrunkVxLAN10G"
+952450:sanity97-node03# echo "START TESTCASE testTrunkVxLAN10G"
+952451:echo "START TESTCASE testTrunkVxLAN10G"
+952478:echo "START TESTCASE testAccessVxLAN40G_PO"
+952479:echo "START TESTCASE testAccessVxLAN40G_PO"
+952481:sanity97-tor2# echo "START TESTCASE testAccessVxLAN40G_PO"
+952482:echo "START TESTCASE testAccessVxLAN40G_PO"
+952484:sanity97-node03# echo "START TESTCASE testAccessVxLAN40G_PO"
+952485:echo "START TESTCASE testAccessVxLAN40G_PO"
+952513:echo "START TESTCASE testAccessVxLAN10GSvi"
+952514:echo "START TESTCASE testAccessVxLAN10GSvi"
+952516:sanity97-tor2# echo "START TESTCASE testAccessVxLAN10GSvi"
+952517:echo "START TESTCASE testAccessVxLAN10GSvi"
+952519:sanity97-node03# echo "START TESTCASE testAccessVxLAN10GSvi"
+952520:echo "START TESTCASE testAccessVxLAN10GSvi"
+952548:echo "START TESTCASE testTrunkVxLAN10GSvi"
+952549:echo "START TESTCASE testTrunkVxLAN10GSvi"
+952551:sanity97-tor2# echo "START TESTCASE testTrunkVxLAN10GSvi"
+952552:echo "START TESTCASE testTrunkVxLAN10GSvi"
+952554:sanity97-node03# echo "START TESTCASE testTrunkVxLAN10GSvi"
+952555:echo "START TESTCASE testTrunkVxLAN10GSvi"
+952582:echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952583:echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952585:sanity97-tor2# echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952586:echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952588:sanity97-node03# echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952589:echo "START TESTCASE testAccessVxLAN40G_POSvi"
+952617:echo "START TESTCASE testBgpv4"
+952618:echo "START TESTCASE testBgpv4"
+952620:sanity97-tor2# echo "START TESTCASE testBgpv4"
+952621:echo "START TESTCASE testBgpv4"
+952623:sanity97-node03# echo "START TESTCASE testBgpv4"
+952624:echo "START TESTCASE testBgpv4"
+953654:echo "START TESTCASE testCdp"
+953655:echo "START TESTCASE testCdp"
+953657:sanity97-tor2# echo "START TESTCASE testCdp"
+953658:echo "START TESTCASE testCdp"
+953660:sanity97-node03# echo "START TESTCASE testCdp"
+953661:echo "START TESTCASE testCdp"
+953664:2019-08-25 01:29:28,545 - PYLOG - ERROR - Command echo "START TESTCASE testCdp" timedout in 180 seconds on switch:180
+953665:2019-08-25 01:29:28,556 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testCdp" timedout in 180 seconds on switch:180
+953674:echo "START TESTCASE testLLDP"
+953675:echo "START TESTCASE testLLDP"
+953677:sanity97-tor2# echo "START TESTCASE testLLDP"
+953678:echo "START TESTCASE testLLDP"
+953680:sanity97-node03# echo "START TESTCASE testLLDP"
+953681:echo "START TESTCASE testLLDP"
+953684:2019-08-25 01:33:23,244 - PYLOG - ERROR - Command echo "START TESTCASE testLLDP" timedout in 180 seconds on switch:180
+953685:2019-08-25 01:33:23,255 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testLLDP" timedout in 180 seconds on switch:180
+953694:echo "START TESTCASE testSviVrf"
+953695:echo "START TESTCASE testSviVrf"
+953697:sanity97-tor2# echo "START TESTCASE testSviVrf"
+953698:echo "START TESTCASE testSviVrf"
+953700:sanity97-node03# echo "START TESTCASE testSviVrf"
+953701:echo "START TESTCASE testSviVrf"
+953703:2019-08-25 01:37:17,860 - PYLOG - ERROR - Command echo "START TESTCASE testSviVrf" timedout in 180 seconds on switch:180
+953704:2019-08-25 01:37:17,870 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testSviVrf" timedout in 180 seconds on switch:180
+953713:echo "START TESTCASE testHsrp"
+953714:echo "START TESTCASE testHsrp"
+953716:sanity97-tor2# echo "START TESTCASE testHsrp"
+953717:echo "START TESTCASE testHsrp"
+953719:sanity97-node03# echo "START TESTCASE testHsrp"
+953720:echo "START TESTCASE testHsrp"
+953723:2019-08-25 01:41:12,553 - PYLOG - ERROR - Command echo "START TESTCASE testHsrp" timedout in 180 seconds on switch:180
+953724:2019-08-25 01:41:12,563 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testHsrp" timedout in 180 seconds on switch:180
+953733:echo "START TESTCASE testStaticMac"
+953734:echo "START TESTCASE testStaticMac"
+953736:sanity97-tor2# echo "START TESTCASE testStaticMac"
+953737:echo "START TESTCASE testStaticMac"
+953739:sanity97-node03# echo "START TESTCASE testStaticMac"
+953740:echo "START TESTCASE testStaticMac"
+953743:2019-08-25 01:45:07,247 - PYLOG - ERROR - Command echo "START TESTCASE testStaticMac" timedout in 180 seconds on switch:180
+953744:2019-08-25 01:45:07,258 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testStaticMac" timedout in 180 seconds on switch:180
+953753:echo "START TESTCASE testVrrp"
+953754:echo "START TESTCASE testVrrp"
+953756:sanity97-tor2# echo "START TESTCASE testVrrp"
+953757:echo "START TESTCASE testVrrp"
+953759:sanity97-node03# echo "START TESTCASE testVrrp"
+953760:echo "START TESTCASE testVrrp"
+953763:2019-08-25 01:49:01,944 - PYLOG - ERROR - Command echo "START TESTCASE testVrrp" timedout in 180 seconds on switch:180
+953764:2019-08-25 01:49:01,954 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testVrrp" timedout in 180 seconds on switch:180
+953773:echo "START TESTCASE testHsrpv6"
+953774:echo "START TESTCASE testHsrpv6"
+953776:sanity97-tor2# echo "START TESTCASE testHsrpv6"
+953777:echo "START TESTCASE testHsrpv6"
+953779:sanity97-node03# echo "START TESTCASE testHsrpv6"
+953780:echo "START TESTCASE testHsrpv6"
+953783:2019-08-25 01:52:56,636 - PYLOG - ERROR - Command echo "START TESTCASE testHsrpv6" timedout in 180 seconds on switch:180
+953784:2019-08-25 01:52:56,646 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testHsrpv6" timedout in 180 seconds on switch:180
+953793:echo "START TESTCASE testPTPSubIntf"
+953794:echo "START TESTCASE testPTPSubIntf"
+953796:sanity97-tor2# echo "START TESTCASE testPTPSubIntf"
+953797:echo "START TESTCASE testPTPSubIntf"
+953799:sanity97-node03# echo "START TESTCASE testPTPSubIntf"
+953800:echo "START TESTCASE testPTPSubIntf"
+953803:2019-08-25 01:56:51,332 - PYLOG - ERROR - Command echo "START TESTCASE testPTPSubIntf" timedout in 180 seconds on switch:180
+953804:2019-08-25 01:56:51,343 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testPTPSubIntf" timedout in 180 seconds on switch:180
+953813:echo "START TESTCASE testRaclIPv4SubIntf"
+953814:echo "START TESTCASE testRaclIPv4SubIntf"
+953816:sanity97-tor2# echo "START TESTCASE testRaclIPv4SubIntf"
+953817:echo "START TESTCASE testRaclIPv4SubIntf"
+953819:sanity97-node03# echo "START TESTCASE testRaclIPv4SubIntf"
+953820:echo "START TESTCASE testRaclIPv4SubIntf"
+953823:2019-08-25 02:00:46,031 - PYLOG - ERROR - Command echo "START TESTCASE testRaclIPv4SubIntf" timedout in 180 seconds on switch:180
+953824:2019-08-25 02:00:46,041 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testRaclIPv4SubIntf" timedout in 180 seconds on switch:180
+953833:echo "START TESTCASE testRaclIPv6SubIntf"
+953834:echo "START TESTCASE testRaclIPv6SubIntf"
+953836:sanity97-tor2# echo "START TESTCASE testRaclIPv6SubIntf"
+953837:echo "START TESTCASE testRaclIPv6SubIntf"
+953839:sanity97-node03# echo "START TESTCASE testRaclIPv6SubIntf"
+953840:echo "START TESTCASE testRaclIPv6SubIntf"
+953843:2019-08-25 02:04:40,726 - PYLOG - ERROR - Command echo "START TESTCASE testRaclIPv6SubIntf" timedout in 180 seconds on switch:180
+953844:2019-08-25 02:04:40,736 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testRaclIPv6SubIntf" timedout in 180 seconds on switch:180
+953853:echo "START TESTCASE testL2ptCdpEthAccess"
+953854:echo "START TESTCASE testL2ptCdpEthAccess"
+953856:sanity97-tor2# echo "START TESTCASE testL2ptCdpEthAccess"
+953857:echo "START TESTCASE testL2ptCdpEthAccess"
+953859:sanity97-node03# echo "START TESTCASE testL2ptCdpEthAccess"
+953860:echo "START TESTCASE testL2ptCdpEthAccess"
+953863:2019-08-25 02:08:35,423 - PYLOG - ERROR - Command echo "START TESTCASE testL2ptCdpEthAccess" timedout in 180 seconds on switch:180
+953864:2019-08-25 02:08:35,434 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testL2ptCdpEthAccess" timedout in 180 seconds on switch:180
+953873:echo "START TESTCASE testL2ptCdpEthTrunk"
+953874:echo "START TESTCASE testL2ptCdpEthTrunk"
+953876:sanity97-tor2# echo "START TESTCASE testL2ptCdpEthTrunk"
+953877:echo "START TESTCASE testL2ptCdpEthTrunk"
+953879:sanity97-node03# echo "START TESTCASE testL2ptCdpEthTrunk"
+953880:echo "START TESTCASE testL2ptCdpEthTrunk"
+953885:sanity97-tor1# echo "START TESTCASE testL2ptCdpEthTrunk"
+953891:echo "START TESTCASE testCdp100G"
+953892:echo "START TESTCASE testCdp100G"
+953894:sanity97-tor2# echo "START TESTCASE testCdp100G"
+953895:echo "START TESTCASE testCdp100G"
+953897:sanity97-node03# echo "START TESTCASE testCdp100G"
+953898:echo "START TESTCASE testCdp100G"
+953947:echo "START TESTCASE testSystemAsciiReplay"
+953948:echo "START TESTCASE testSystemAsciiReplay"
+953950:sanity97-tor2# echo "START TESTCASE testSystemAsciiReplay"
+953951:echo "START TESTCASE testSystemAsciiReplay"
+953953:sanity97-node03# echo "START TESTCASE testSystemAsciiReplay"
+953954:echo "START TESTCASE testSystemAsciiReplay"
+953957:2019-08-25 02:20:30,967 - PYLOG - ERROR - Command echo "START TESTCASE testSystemAsciiReplay" timedout in 180 seconds on switch:180
+953958:2019-08-25 02:20:30,977 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testSystemAsciiReplay" timedout in 180 seconds on switch:180
+953967:echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953968:echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953970:sanity97-tor2# echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953971:echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953973:sanity97-node03# echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953974:echo "START TESTCASE testNxAPIShowAsciiHttpXml"
+953977:2019-08-25 02:24:25,664 - PYLOG - ERROR - Command echo "START TESTCASE testNxAPIShowAsciiHttpXml" timedout in 180 seconds on switch:180
+953978:2019-08-25 02:24:25,676 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testNxAPIShowAsciiHttpXml" timedout in 180 seconds on switch:180
+953987:echo "START TESTCASE testPBR"
+953988:echo "START TESTCASE testPBR"
+953990:sanity97-tor2# echo "START TESTCASE testPBR"
+953991:echo "START TESTCASE testPBR"
+953993:sanity97-node03# echo "START TESTCASE testPBR"
+953994:echo "START TESTCASE testPBR"
+953997:2019-08-25 02:28:20,362 - PYLOG - ERROR - Command echo "START TESTCASE testPBR" timedout in 180 seconds on switch:180
+953998:2019-08-25 02:28:20,372 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testPBR" timedout in 180 seconds on switch:180
+954007:echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954008:echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954010:sanity97-tor2# echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954011:echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954013:sanity97-node03# echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954014:echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk"
+954017:2019-08-25 02:32:15,055 - PYLOG - ERROR - Command echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk" timedout in 180 seconds on switch:180
+954018:2019-08-25 02:32:15,066 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk" timedout in 180 seconds on switch:180
+954027:echo "START TESTCASE testLacpShutNoshut"
+954028:echo "START TESTCASE testLacpShutNoshut"
+954030:sanity97-tor2# echo "START TESTCASE testLacpShutNoshut"
+954031:echo "START TESTCASE testLacpShutNoshut"
+954033:sanity97-node03# echo "START TESTCASE testLacpShutNoshut"
+954034:echo "START TESTCASE testLacpShutNoshut"
+954037:2019-08-25 02:36:09,751 - PYLOG - ERROR - Command echo "START TESTCASE testLacpShutNoshut" timedout in 180 seconds on switch:180
+954038:2019-08-25 02:36:09,761 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testLacpShutNoshut" timedout in 180 seconds on switch:180
+954046:echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954047:echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954049:sanity97-tor2# echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954050:echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954052:sanity97-node03# echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954053:echo "START TESTCASE testL2BridgingLacpPortChannelAccess"
+954056:2019-08-25 02:40:04,448 - PYLOG - ERROR - Command echo "START TESTCASE testL2BridgingLacpPortChannelAccess" timedout in 180 seconds on switch:180
+954057:2019-08-25 02:40:04,459 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testL2BridgingLacpPortChannelAccess" timedout in 180 seconds on switch:180
+954066:echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954067:echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954069:sanity97-tor2# echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954070:echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954072:sanity97-node03# echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954073:echo "START TESTCASE testL2BridgingLacpPortChannelTrunk"
+954076:2019-08-25 02:43:59,144 - PYLOG - ERROR - Command echo "START TESTCASE testL2BridgingLacpPortChannelTrunk" timedout in 180 seconds on switch:180
+954077:2019-08-25 02:43:59,154 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testL2BridgingLacpPortChannelTrunk" timedout in 180 seconds on switch:180
+954086:echo "START TESTCASE testLacpMemberChange"
+954087:echo "START TESTCASE testLacpMemberChange"
+954089:sanity97-tor2# echo "START TESTCASE testLacpMemberChange"
+954090:echo "START TESTCASE testLacpMemberChange"
+954092:sanity97-node03# echo "START TESTCASE testLacpMemberChange"
+954093:echo "START TESTCASE testLacpMemberChange"
+954096:2019-08-25 02:47:53,842 - PYLOG - ERROR - Command echo "START TESTCASE testLacpMemberChange" timedout in 180 seconds on switch:180
+954097:2019-08-25 02:47:53,853 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testLacpMemberChange" timedout in 180 seconds on switch:180
+954106:echo "START TESTCASE testVpcLessChangeLacpSysId"
+954107:echo "START TESTCASE testVpcLessChangeLacpSysId"
+954109:sanity97-tor2# echo "START TESTCASE testVpcLessChangeLacpSysId"
+954110:echo "START TESTCASE testVpcLessChangeLacpSysId"
+954112:sanity97-node03# echo "START TESTCASE testVpcLessChangeLacpSysId"
+954113:echo "START TESTCASE testVpcLessChangeLacpSysId"
+954116:2019-08-25 02:51:48,537 - PYLOG - ERROR - Command echo "START TESTCASE testVpcLessChangeLacpSysId" timedout in 180 seconds on switch:180
+954117:2019-08-25 02:51:48,547 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testVpcLessChangeLacpSysId" timedout in 180 seconds on switch:180
+954126:echo "START TESTCASE testVerifyVpcLacpConvergence"
+954127:echo "START TESTCASE testVerifyVpcLacpConvergence"
+954129:sanity97-tor2# echo "START TESTCASE testVerifyVpcLacpConvergence"
+954130:echo "START TESTCASE testVerifyVpcLacpConvergence"
+954132:sanity97-node03# echo "START TESTCASE testVerifyVpcLacpConvergence"
+954133:echo "START TESTCASE testVerifyVpcLacpConvergence"
+954136:2019-08-25 02:55:43,233 - PYLOG - ERROR - Command echo "START TESTCASE testVerifyVpcLacpConvergence" timedout in 180 seconds on switch:180
+954137:2019-08-25 02:55:43,244 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testVerifyVpcLacpConvergence" timedout in 180 seconds on switch:180
+954146:echo "START TESTCASE testPimv4"
+954147:echo "START TESTCASE testPimv4"
+954149:sanity97-tor2# echo "START TESTCASE testPimv4"
+954150:echo "START TESTCASE testPimv4"
+954152:sanity97-node03# echo "START TESTCASE testPimv4"
+954153:echo "START TESTCASE testPimv4"
+954156:2019-08-25 02:59:37,931 - PYLOG - ERROR - Command echo "START TESTCASE testPimv4" timedout in 180 seconds on switch:180
+954157:2019-08-25 02:59:37,941 - PYLOG - ERROR - Failed:Command echo "START TESTCASE testPimv4" timedout in 180 seconds on switch:180
+954166:echo "START TESTCASE testPimv4LcReload"
+954167:echo "START TESTCASE testPimv4LcReload"
+954169:sanity97-tor2# echo "START TESTCASE testPimv4LcReload"
+954170:echo "START TESTCASE testPimv4LcReload"
+954172:sanity97-node03# echo "START TESTCASE testPimv4LcReload"
+954173:echo "START TESTCASE testPimv4LcReload"
+954178:sanity97-tor1# echo "START TESTCASE testPimv4LcReload"
+954451:echo "START TESTCASE testPimv4PCFlap"
+954452:echo "START TESTCASE testPimv4PCFlap"
+954454:sanity97-tor2# echo "START TESTCASE testPimv4PCFlap"
+954455:echo "START TESTCASE testPimv4PCFlap"
+954457:sanity97-node03# echo "START TESTCASE testPimv4PCFlap"
+954458:echo "START TESTCASE testPimv4PCFlap"
+954463:sanity97-tor1# echo "START TESTCASE testPimv4PCFlap"
+954733:echo "START TESTCASE testPimv4SVI"
+954734:echo "START TESTCASE testPimv4SVI"
+954736:sanity97-tor2# echo "START TESTCASE testPimv4SVI"
+954737:echo "START TESTCASE testPimv4SVI"
+954739:sanity97-node03# echo "START TESTCASE testPimv4SVI"
+954740:echo "START TESTCASE testPimv4SVI"
+954745:sanity97-tor1# echo "START TESTCASE testPimv4SVI"
+955203:echo "START TESTCASE testPimv4SVILcReload"
+955204:echo "START TESTCASE testPimv4SVILcReload"
+955206:sanity97-tor2# echo "START TESTCASE testPimv4SVILcReload"
+955207:echo "START TESTCASE testPimv4SVILcReload"
+955209:sanity97-node03# echo "START TESTCASE testPimv4SVILcReload"
+955210:echo "START TESTCASE testPimv4SVILcReload"
+955215:sanity97-tor1# echo "START TESTCASE testPimv4SVILcReload"
+955682:echo "START TESTCASE testPimv4SVIPortFlap"
+955683:echo "START TESTCASE testPimv4SVIPortFlap"
+955685:sanity97-tor2# echo "START TESTCASE testPimv4SVIPortFlap"
+955686:echo "START TESTCASE testPimv4SVIPortFlap"
+955688:sanity97-node03# echo "START TESTCASE testPimv4SVIPortFlap"
+955689:echo "START TESTCASE testPimv4SVIPortFlap"
+955694:sanity97-tor1# echo "START TESTCASE testPimv4SVIPortFlap"
+956161:echo "START TESTCASE testPimv4SVIPCFlap"
+956162:echo "START TESTCASE testPimv4SVIPCFlap"
+956164:sanity97-tor2# echo "START TESTCASE testPimv4SVIPCFlap"
+956165:echo "START TESTCASE testPimv4SVIPCFlap"
+956167:sanity97-node03# echo "START TESTCASE testPimv4SVIPCFlap"
+956168:echo "START TESTCASE testPimv4SVIPCFlap"
+956173:sanity97-tor1# echo "START TESTCASE testPimv4SVIPCFlap"
+956640:echo "START TESTCASE testPimv4PoSinfPCFlap"
+956641:echo "START TESTCASE testPimv4PoSinfPCFlap"
+956643:sanity97-tor2# echo "START TESTCASE testPimv4PoSinfPCFlap"
+956644:echo "START TESTCASE testPimv4PoSinfPCFlap"
+956646:sanity97-node03# echo "START TESTCASE testPimv4PoSinfPCFlap"
+956647:echo "START TESTCASE testPimv4PoSinfPCFlap"
+956652:sanity97-tor1# echo "START TESTCASE testPimv4PoSinfPCFlap"
+957989:echo "START TESTCASE testPimv4PoSinfFlap"
+957990:echo "START TESTCASE testPimv4PoSinfFlap"
+957992:sanity97-tor2# echo "START TESTCASE testPimv4PoSinfFlap"
+957993:echo "START TESTCASE testPimv4PoSinfFlap"
+957995:sanity97-node03# echo "START TESTCASE testPimv4PoSinfFlap"
+957996:echo "START TESTCASE testPimv4PoSinfFlap"
+958001:sanity97-tor1# echo "START TESTCASE testPimv4PoSinfFlap"
+959333:echo "START TESTCASE testGoldDiagnostic"
+959334:echo "START TESTCASE testGoldDiagnostic"
+959336:sanity97-tor2# echo "START TESTCASE testGoldDiagnostic"
+959337:echo "START TESTCASE testGoldDiagnostic"
+959339:sanity97-node03# echo "START TESTCASE testGoldDiagnostic"
+959340:echo "START TESTCASE testGoldDiagnostic"
+959345:sanity97-tor1# echo "START TESTCASE testGoldDiagnostic"
+959423:echo "END TESTCASE testGoldDiagnostic"
+959424:echo "END TESTCASE testGoldDiagnostic"
+959426:sanity97-tor2# echo "END TESTCASE testGoldDiagnostic"
+959427:echo "END TESTCASE testGoldDiagnostic"
+959429:sanity97-node03# echo "END TESTCASE testGoldDiagnostic"
+959430:echo "END TESTCASE testGoldDiagnostic"
+959433:echo "START TESTCASE testCores"
+959434:echo "START TESTCASE testCores"
+959436:sanity97-tor2# echo "START TESTCASE testCores"
+959437:echo "START TESTCASE testCores"
+959439:sanity97-node03# echo "START TESTCASE testCores"
+959440:echo "START TESTCASE testCores"
+959746:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959751:sanity97-tor2# 2019-08-25 06:02:35,271 - PYLOG - INFO - Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959760:Sun Aug 25 13:29:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959761:sanity97-node03# 2019-08-25 06:02:36,137 - PYLOG - INFO - Sun Aug 25 13:29:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959766:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959789:sanity97-tor1# 2019-08-25 06:02:40,290 - PYLOG - INFO - Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+959813:echo "END TESTCASE testCores"
+959814:echo "END TESTCASE testCores"
+959816:sanity97-tor2# echo "END TESTCASE testCores"
+959817:echo "END TESTCASE testCores"
+959819:sanity97-node03# echo "END TESTCASE testCores"
+959820:echo "END TESTCASE testCores"
+960673:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2MulticastPCFlap" (SUCCESS)
+960674:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+960804:Sat Aug 24 21:06:59 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2MulticastPortFlap" (SUCCESS)
+960805:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+960935:Sat Aug 24 21:09:23 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+960936:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+961066:Sat Aug 24 21:11:46 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+961067:Sat Aug 24 21:11:46 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+961160:Sat Aug 24 21:16:05 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+961161:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+961320:Sat Aug 24 21:23:58 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+961321:Sat Aug 24 21:23:59 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortFlap" (SUCCESS)
+961322:Sat Aug 24 21:28:13 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+961324:Sat Aug 24 21:30:26 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testFexStaticMac" (SUCCESS)
+961325:Sat Aug 24 21:30:26 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+961341:Sat Aug 24 21:38:31 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+961342:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+961364:Sat Aug 24 21:43:22 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+961365:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+961390:Sat Aug 24 21:50:15 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+961391:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+961414:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+961415:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+961439:Sat Aug 24 22:09:02 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+961440:Sat Aug 24 22:09:02 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+961463:Sat Aug 24 22:15:53 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+961464:Sat Aug 24 22:15:53 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+961481:Sat Aug 24 22:16:08 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+961482:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+961612:Sat Aug 24 22:20:01 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+961613:Sat Aug 24 22:20:02 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10G" (SUCCESS)
+962247:Sun Aug 25 00:44:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10G" (SUCCESS)
+962248:Sun Aug 25 00:47:51 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_PO" (SUCCESS)
+962249:Sun Aug 25 00:50:56 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10GSvi" (SUCCESS)
+962250:Sun Aug 25 00:54:01 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10GSvi" (SUCCESS)
+962251:Sun Aug 25 00:57:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_POSvi" (SUCCESS)
+962252:Sun Aug 25 01:00:11 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testBgpv4" (SUCCESS)
+962305:Sun Aug 25 01:26:28 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testCdp" (SUCCESS)
+962306:Sun Aug 25 01:30:22 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testLLDP" (SUCCESS)
+962307:Sun Aug 25 01:34:17 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testSviVrf" (SUCCESS)
+962308:Sun Aug 25 01:38:12 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testHsrp" (SUCCESS)
+962309:Sun Aug 25 01:42:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testStaticMac" (SUCCESS)
+962310:Sun Aug 25 01:46:01 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testVrrp" (SUCCESS)
+962311:Sun Aug 25 01:49:56 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testHsrpv6" (SUCCESS)
+962312:Sun Aug 25 01:53:50 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPTPSubIntf" (SUCCESS)
+962313:Sun Aug 25 01:57:45 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testRaclIPv4SubIntf" (SUCCESS)
+962314:Sun Aug 25 02:01:40 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testRaclIPv6SubIntf" (SUCCESS)
+962315:Sun Aug 25 02:05:35 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2ptCdpEthAccess" (SUCCESS)
+962316:Sun Aug 25 02:09:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2ptCdpEthTrunk" (SUCCESS)
+962317:Sun Aug 25 02:11:06 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testCdp100G" (SUCCESS)
+962323:Sun Aug 25 02:17:30 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testSystemAsciiReplay" (SUCCESS)
+962324:Sun Aug 25 02:21:25 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testNxAPIShowAsciiHttpXml" (SUCCESS)
+962325:Sun Aug 25 02:25:19 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPBR" (SUCCESS)
+962326:Sun Aug 25 02:29:14 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk" (SUCCESS)
+962327:Sun Aug 25 02:33:09 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testLacpShutNoshut" (SUCCESS)
+962328:Sun Aug 25 02:37:04 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingLacpPortChannelAccess" (SUCCESS)
+962329:Sun Aug 25 02:40:58 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testL2BridgingLacpPortChannelTrunk" (SUCCESS)
+962330:Sun Aug 25 02:44:53 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testLacpMemberChange" (SUCCESS)
+962331:Sun Aug 25 02:48:48 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testVpcLessChangeLacpSysId" (SUCCESS)
+962332:Sun Aug 25 02:52:42 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testVerifyVpcLacpConvergence" (SUCCESS)
+962333:Sun Aug 25 02:56:37 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4" (SUCCESS)
+962334:Sun Aug 25 03:00:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4LcReload" (SUCCESS)
+962392:Sun Aug 25 03:16:08 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4PCFlap" (SUCCESS)
+962448:Sun Aug 25 03:31:36 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4SVI" (SUCCESS)
+962556:Sun Aug 25 03:42:32 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4SVILcReload" (SUCCESS)
+962661:Sun Aug 25 03:53:24 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4SVIPortFlap" (SUCCESS)
+962766:Sun Aug 25 04:04:16 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4SVIPCFlap" (SUCCESS)
+962871:Sun Aug 25 04:15:08 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfPCFlap" (SUCCESS)
+963127:Sun Aug 25 05:10:49 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfFlap" (SUCCESS)
+963383:Sun Aug 25 05:59:47 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testGoldDiagnostic" (SUCCESS)
+963384:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testGoldDiagnostic" (SUCCESS)
+963385:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+963391:Sun Aug 25 06:02:40 2019:type=update:id=172.31.201.110@pts/0:user=admin:cmd=echo "END TESTCASE testCores" (SUCCESS)
+963396:Sun Aug 25 02:00:53 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testReloadSwitch" (SUCCESS)
+963397:Sun Aug 25 02:01:09 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testReloadSwitch" (SUCCESS)
+963398:Sun Aug 25 02:01:09 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testBoxOnline" (SUCCESS)
+963399:Sun Aug 25 02:01:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testBoxOnline" (SUCCESS)
+963400:Sun Aug 25 02:01:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testModuleStatus" (SUCCESS)
+963401:Sun Aug 25 02:01:22 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testModuleStatus" (SUCCESS)
+963402:Sun Aug 25 02:01:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testConfigMgmtPort" (SUCCESS)
+963403:Sun Aug 25 02:01:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testConfigMgmtPort" (SUCCESS)
+963404:Sun Aug 25 02:01:53 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2SanityPortFlap" (SUCCESS)
+963405:Sun Aug 25 02:06:07 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2SanityPortModeChange" (SUCCESS)
+963406:Sun Aug 25 02:10:22 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2SanityPortChannelMemberAdd" (SUCCESS)
+963407:Sun Aug 25 02:11:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2SanityPortChannelMemberRemove" (SUCCESS)
+963408:Sun Aug 25 02:15:47 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2SanityUnconfig" (SUCCESS)
+963409:Sun Aug 25 02:15:59 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2SanityUnconfig" (SUCCESS)
+963410:Sun Aug 25 02:15:59 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testStaticRoute" (SUCCESS)
+963411:Sun Aug 25 02:16:41 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testStaticRoute" (SUCCESS)
+963412:Sun Aug 25 02:16:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testToggleSwitchport" (SUCCESS)
+963413:Sun Aug 25 02:18:30 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testToggleSwitchport" (SUCCESS)
+963414:Sun Aug 25 02:18:31 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPortChannelShutNoshut" (SUCCESS)
+963415:Sun Aug 25 02:22:36 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testPortChannelShutNoshut" (SUCCESS)
+963416:Sun Aug 25 02:22:36 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testSubPortChannelShutNoshut" (SUCCESS)
+963417:Sun Aug 25 02:25:22 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testSubPortChannelShutNoshut" (SUCCESS)
+963418:Sun Aug 25 02:25:22 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testSvi" (SUCCESS)
+963419:Sun Aug 25 02:28:57 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testSvi" (SUCCESS)
+963420:Sun Aug 25 02:28:58 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testIpv6Interface" (SUCCESS)
+963421:Sun Aug 25 02:29:47 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testIpv6Interface" (SUCCESS)
+963422:Sun Aug 25 02:29:48 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testAAFexBringup" (SUCCESS)
+963426:Sun Aug 25 02:30:44 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testKstackInterfacePreCleanup" (SUCCESS)
+963427:Sun Aug 25 02:31:07 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testKstackInterfacePreCleanup" (SUCCESS)
+963428:Sun Aug 25 02:31:08 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testKstackInterfaceBringup" (SUCCESS)
+963429:Sun Aug 25 02:32:33 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testKstackInterfaceBringup" (SUCCESS)
+963430:Sun Aug 25 02:32:34 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testKstackInterfaceShut" (SUCCESS)
+963431:Sun Aug 25 02:33:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testKstackInterfaceShut" (SUCCESS)
+963432:Sun Aug 25 02:33:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testKstackL3IntfMTU" (SUCCESS)
+963433:Sun Aug 25 02:33:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testKstackL3IntfMTU" (SUCCESS)
+963434:Sun Aug 25 02:33:53 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testKstackInterfaceCleanup" (SUCCESS)
+963435:Sun Aug 25 02:34:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testKstackInterfaceCleanup" (SUCCESS)
+963436:Sun Aug 25 02:34:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexBringup" (SUCCESS)
+963437:Sun Aug 25 02:34:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexBringup" (SUCCESS)
+963438:Sun Aug 25 02:34:32 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviPing" (SUCCESS)
+963439:Sun Aug 25 02:42:40 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexSviPing" (SUCCESS)
+963440:Sun Aug 25 02:42:41 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+963441:Sun Aug 25 03:05:25 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexPortChannelShutNoshut" (SUCCESS)
+963442:Sun Aug 25 03:05:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexLacpShutNoshut" (SUCCESS)
+963443:Sun Aug 25 03:28:11 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexLacpShutNoshut" (SUCCESS)
+963444:Sun Aug 25 03:28:11 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+963463:Sun Aug 25 03:34:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2BridgingAccessFexAndFexPort" (SUCCESS)
+963464:Sun Aug 25 03:34:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+963545:Sun Aug 25 03:43:41 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexSviRoutingFexAndFexPort" (SUCCESS)
+963546:Sun Aug 25 03:43:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+963608:Sun Aug 25 03:51:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexSviRoutingFexAndSwitchPort" (SUCCESS)
+963609:Sun Aug 25 03:51:06 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testStaticL2MulticastPC" (SUCCESS)
+963610:Sun Aug 25 04:02:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testStaticL2MulticastPC" (SUCCESS)
+963611:Sun Aug 25 04:02:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+963612:Sun Aug 25 04:04:51 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testDynamicL2MulticastPhy" (SUCCESS)
+963613:Sun Aug 25 04:04:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastLcReload" (SUCCESS)
+963614:Sun Aug 25 04:19:08 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2MulticastLcReload" (SUCCESS)
+963615:Sun Aug 25 04:19:09 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPCFlap" (SUCCESS)
+963616:Sun Aug 25 04:32:33 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2MulticastPCFlap" (SUCCESS)
+963617:Sun Aug 25 04:32:34 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+963618:Sun Aug 25 04:34:56 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2MulticastPortFlap" (SUCCESS)
+963619:Sun Aug 25 04:34:56 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+963620:Sun Aug 25 04:37:20 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+963621:Sun Aug 25 04:37:20 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+963622:Sun Aug 25 04:39:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+963623:Sun Aug 25 04:39:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+963624:Sun Aug 25 04:44:02 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+963625:Sun Aug 25 04:44:02 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+963655:Sun Aug 25 04:51:55 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+963656:Sun Aug 25 04:51:55 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortFlap" (SUCCESS)
+963657:Sun Aug 25 04:56:10 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+963658:Sun Aug 25 04:58:22 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testFexStaticMac" (SUCCESS)
+963659:Sun Aug 25 04:58:23 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+963660:Sun Aug 25 05:06:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+963661:Sun Aug 25 05:06:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+963662:Sun Aug 25 05:11:19 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+963663:Sun Aug 25 05:11:19 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+963664:Sun Aug 25 05:18:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+963665:Sun Aug 25 05:18:12 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+963666:Sun Aug 25 05:29:03 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+963667:Sun Aug 25 05:29:04 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+963668:Sun Aug 25 05:36:58 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+963669:Sun Aug 25 05:36:59 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+963670:Sun Aug 25 05:43:49 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+963671:Sun Aug 25 05:43:50 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+963672:Sun Aug 25 05:44:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+963673:Sun Aug 25 05:44:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+963674:Sun Aug 25 05:47:57 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+963675:Sun Aug 25 05:47:58 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10G" (SUCCESS)
+963896:Sun Aug 25 08:12:43 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10G" (SUCCESS)
+963897:Sun Aug 25 08:15:48 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_PO" (SUCCESS)
+963898:Sun Aug 25 08:18:53 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10GSvi" (SUCCESS)
+963899:Sun Aug 25 08:21:58 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10GSvi" (SUCCESS)
+963900:Sun Aug 25 08:25:03 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_POSvi" (SUCCESS)
+963901:Sun Aug 25 08:28:08 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testBgpv4" (SUCCESS)
+963954:Sun Aug 25 08:54:24 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testCdp" (SUCCESS)
+963955:Sun Aug 25 08:58:19 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testLLDP" (SUCCESS)
+963956:Sun Aug 25 09:02:14 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testSviVrf" (SUCCESS)
+963957:Sun Aug 25 09:06:08 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testHsrp" (SUCCESS)
+963958:Sun Aug 25 09:10:03 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testStaticMac" (SUCCESS)
+963959:Sun Aug 25 09:13:58 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testVrrp" (SUCCESS)
+963960:Sun Aug 25 09:17:52 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testHsrpv6" (SUCCESS)
+963961:Sun Aug 25 09:21:47 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPTPSubIntf" (SUCCESS)
+963962:Sun Aug 25 09:25:42 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testRaclIPv4SubIntf" (SUCCESS)
+963963:Sun Aug 25 09:29:36 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testRaclIPv6SubIntf" (SUCCESS)
+963964:Sun Aug 25 09:33:31 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2ptCdpEthAccess" (SUCCESS)
+963965:Sun Aug 25 09:37:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2ptCdpEthTrunk" (SUCCESS)
+963966:Sun Aug 25 09:39:03 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testCdp100G" (SUCCESS)
+963967:Sun Aug 25 09:45:27 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testSystemAsciiReplay" (SUCCESS)
+963968:Sun Aug 25 09:49:21 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testNxAPIShowAsciiHttpXml" (SUCCESS)
+963969:Sun Aug 25 09:53:16 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPBR" (SUCCESS)
+963970:Sun Aug 25 09:57:11 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testNxAPIShowAsciiHttpXmlChunk" (SUCCESS)
+963971:Sun Aug 25 10:01:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testLacpShutNoshut" (SUCCESS)
+963972:Sun Aug 25 10:05:00 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingLacpPortChannelAccess" (SUCCESS)
+963973:Sun Aug 25 10:08:55 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testL2BridgingLacpPortChannelTrunk" (SUCCESS)
+963974:Sun Aug 25 10:12:50 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testLacpMemberChange" (SUCCESS)
+963975:Sun Aug 25 10:16:44 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testVpcLessChangeLacpSysId" (SUCCESS)
+963976:Sun Aug 25 10:20:39 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testVerifyVpcLacpConvergence" (SUCCESS)
+963977:Sun Aug 25 10:24:34 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4" (SUCCESS)
+963978:Sun Aug 25 10:28:28 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4LcReload" (SUCCESS)
+963979:Sun Aug 25 10:44:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4PCFlap" (SUCCESS)
+963980:Sun Aug 25 10:59:33 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4SVI" (SUCCESS)
+963981:Sun Aug 25 11:10:29 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4SVILcReload" (SUCCESS)
+963982:Sun Aug 25 11:21:21 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4SVIPortFlap" (SUCCESS)
+963983:Sun Aug 25 11:32:13 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4SVIPCFlap" (SUCCESS)
+963984:Sun Aug 25 11:43:05 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfPCFlap" (SUCCESS)
+963985:Sun Aug 25 12:38:46 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfFlap" (SUCCESS)
+963986:Sun Aug 25 13:27:44 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testGoldDiagnostic" (SUCCESS)
+963987:Sun Aug 25 13:29:25 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testGoldDiagnostic" (SUCCESS)
+963988:Sun Aug 25 13:29:26 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+963990:Sun Aug 25 13:30:37 2019:type=update:id=172.31.201.110@pts/5:user=admin:cmd=echo "END TESTCASE testCores" (SUCCESS)
+965129:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2MulticastPCFlap" (SUCCESS)
+965130:Sat Aug 24 21:04:37 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastPortFlap" (SUCCESS)
+965298:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2MulticastPortFlap" (SUCCESS)
+965299:Sat Aug 24 21:07:00 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+965467:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2MulticastVlanRecreate" (SUCCESS)
+965468:Sat Aug 24 21:09:24 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+965636:Sat Aug 24 21:11:46 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2MulticastSVICreateDelete" (SUCCESS)
+965637:Sat Aug 24 21:11:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+965742:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityMacLearning" (SUCCESS)
+965743:Sat Aug 24 21:16:06 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+965950:Sat Aug 24 21:23:59 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2BridgingFexLacpPortChannelTrunk" (SUCCESS)
+965951:Sat Aug 24 21:23:59 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortFlap" (SUCCESS)
+965960:Sat Aug 24 21:28:14 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testFexStaticMac" (SUCCESS)
+965993:Sat Aug 24 21:30:26 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testFexStaticMac" (SUCCESS)
+965994:Sat Aug 24 21:30:27 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+966061:Sat Aug 24 21:38:31 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortModeChange" (SUCCESS)
+966062:Sat Aug 24 21:38:32 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+966101:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberAdd" (SUCCESS)
+966102:Sat Aug 24 21:43:23 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+966154:Sat Aug 24 21:50:15 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityPortChannelMemberRemove" (SUCCESS)
+966155:Sat Aug 24 21:50:16 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+966210:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityDeleteCreateVlan" (SUCCESS)
+966211:Sat Aug 24 22:01:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+966274:Sat Aug 24 22:09:02 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanAdd" (SUCCESS)
+966275:Sat Aug 24 22:09:03 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+966327:Sat Aug 24 22:15:53 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityAllowedVlanRemove" (SUCCESS)
+966328:Sat Aug 24 22:15:54 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+966358:Sat Aug 24 22:16:08 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testL2FexSanityUnconfig" (SUCCESS)
+966359:Sat Aug 24 22:16:09 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+966566:Sat Aug 24 22:20:01 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testDynamicL2MulticastPCFex" (SUCCESS)
+966567:Sat Aug 24 22:20:02 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10G" (SUCCESS)
+967414:Sun Aug 25 00:44:47 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10G" (SUCCESS)
+967415:Sun Aug 25 00:47:52 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_PO" (SUCCESS)
+967416:Sun Aug 25 00:50:57 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testAccessVxLAN10GSvi" (SUCCESS)
+967417:Sun Aug 25 00:54:02 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testTrunkVxLAN10GSvi" (SUCCESS)
+967418:Sun Aug 25 00:57:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testAccessVxLAN40G_POSvi" (SUCCESS)
+967419:Sun Aug 25 01:00:11 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testBgpv4" (SUCCESS)
+967424:Sun Aug 25 02:11:06 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testL2ptCdpEthTrunk" (SUCCESS)
+967425:Sun Aug 25 02:11:07 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testCdp100G" (SUCCESS)
+967427:Sun Aug 25 03:02:09 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4LcReload" (SUCCESS)
+967429:Sun Aug 25 03:17:45 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4PCFlap" (SUCCESS)
+967431:Sun Aug 25 03:33:13 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4SVI" (SUCCESS)
+967466:Sun Aug 25 03:44:09 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4SVILcReload" (SUCCESS)
+967498:Sun Aug 25 03:55:01 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4SVIPortFlap" (SUCCESS)
+967530:Sun Aug 25 04:05:53 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4SVIPCFlap" (SUCCESS)
+967562:Sun Aug 25 04:16:45 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfPCFlap" (SUCCESS)
+967598:Sun Aug 25 05:12:26 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testPimv4PoSinfFlap" (SUCCESS)
+967628:Sun Aug 25 06:01:24 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testGoldDiagnostic" (SUCCESS)
+967635:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testGoldDiagnostic" (SUCCESS)
+967636:Sun Aug 25 06:01:29 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "START TESTCASE testCores" (SUCCESS)
+967660:Sun Aug 25 06:02:40 2019:type=update:id=172.31.201.110@pts/2:user=admin:cmd=echo "END TESTCASE testCores" (SUCCESS)
