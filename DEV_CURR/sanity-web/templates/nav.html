@@ -1,0 +1,68 @@
+<div class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+                </div>
+                <!-- /input-group -->
+            </li>
+            <li>
+                <a href="{% url 'home' %}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            </li>
+            <li>
+                <a href="{% url 'submit_job' %}"><i class="fa fa-plus fa-fw"></i> Submit Jobs</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> My Jobs<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="{% url 'user_jobs' %}?filter=active"> My Active Jobs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'user_jobs' %}?filter=completed"> My Completed Jobs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'user_jobs' %}"> All My Jobs</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-table fa-fw"></i> Testbeds<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="{% url 'testbed_status' %}">Testbed Status</a>
+                    </li>
+                    <li>
+                        <a href="#">Testbed Info<span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            {% for asic in asics %}
+                            <li>
+                                <a href="{% url 'display_testbed_info' %}?asic={{asic.asic}}"> {{ asic.asic|capfirst }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% if user.is_superuser %}
+                    <li>
+                        <a href="{% url 'add_new_testbed' %}"> Add New Testbed</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </li>
+            {% if user.is_superuser %}
+            <li>
+                <a href="{% url 'view_all_jobs' %}"><i class="fa fa-table fa-fw"></i> All Jobs</a>
+            </li>
+            {% endif %}
+        </ul>
+        <!-- /#side-menu -->
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>

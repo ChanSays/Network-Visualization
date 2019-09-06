@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %} ALL Jobs {% endblock title %}
+
+{% block sb_admin_content %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">All Jobs</h2>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            <p class="lead">Use search bar to filter jobs</p>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table id="grid-basic" class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th data-column-id="submit_id" data-type="numeric">Submit ID</th>
+                                <th data-column-id="submitter" data-order="desc">Submitter</th>
+                                <th data-column-id="submit_date" data-order="desc">Submit Date</th>
+                                <th data-column-id="status" data-order="desc">Status</th>
+                                <th data-column-id="testsuite" data-order="desc">Testsuite</th>
+                                <th data-column-id="asic" data-order="desc">Asic</th>
+                                <th data-column-id="priority" data-type="numeric">Priority</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th><input type="text" placeholder="Submit ID"></th>
+                                <th><input type="text" placeholder="Submitter"></th>
+                                <th><input type="text" placeholder="Submit Date"></th>
+                                <th><input type="text" placeholder="Status"></th>
+                                <th><input type="text" placeholder="Testsuite"></th>
+                                <th><input type="text" placeholder="Asic"></th>
+                                <th><input type="text" placeholder="Priority"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock sb_admin_content %}
+
+{% block sb_admin_custom_js %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        var table_body = $('#grid-basic').DataTable({
+            ajax: {
+                url: "{% url 'all_jobs' %}?limit=True",
+                dataSrc: 'data'
+            },
+            columns: [{ data: 'submit_id',
+                        render: function(data, type, row, meta){
+                            if(type === 'display'){
+                                data = '<a href="{% url 'get_job_details' %}?submit_id=' + data + '">' + data + '</a>';
+                            }
+                            return data; },},
+                {data: 'submitter'}, {data: 'submit_date'}, {data: 'status'},
+                {data: 'testsuite'}, {data: 'asic'}, {data: 'priority'}
+            ],
+            "order":[[0, "desc"]]
+        });
+        $(".nav").find(".active").removeClass("active");
+        $("#search_nav").addClass("active");
+
+        table_body.columns().every( function () {
+            var column = this;
+            $( 'input', this.footer() ).on( 'keyup change', function () {
+                column.search( this.value ).draw();
+            });
+        });
+    });
+</script>
+{% endblock sb_admin_custom_js %}
+
