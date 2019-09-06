@@ -25,9 +25,12 @@ def nodeDictCreate():
         except yaml.YAMLError as exc:
             print(exc)
     
-        
+    
+def node_to_intf_gen(nodes):
+    pass
+    
 def json_gen(v3,json_file):
-
+    
     number_of_colors = 1
     # choose color based on eth
 #     nodeDictCreate()
@@ -44,76 +47,81 @@ def json_gen(v3,json_file):
     json_obj={}
     i=0
     nodes = nodeGen(nodes) # after appending tor1 etc.
-    nodes = intfGen(nodes)
-    
-    for v3item in v3: 
-        for key in v3item: # eth1,eth2..
-            color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)]) for i in range(number_of_colors)]
-            col = color[0] #rand color
-            curr_eth= key
-            for test_str in v3item[key]: # pkt in [pkt,pkt..]
+    nodes,edges = intfGen(nodes,edges)
+    # edge gen : Node -> interface 
+#     edges = nodeEdge(nodes,edges)
+    # edge gen : intf -> peer_interface
+#     edges = intfEdge(nodes,edges)
 
-                matches = re.finditer(regex3, test_str)
-    #             print("\n\nNEW PKT\n\n") #make new json obj now
+    
+#     for v3item in v3: 
+#         for key in v3item: # eth1,eth2..
+#             color = ["#"+''.join([random.choice('0123456789ABCDEF') for j in range(6)]) for i in range(number_of_colors)]
+#             col = color[0] #rand color
+#             curr_eth= key
+#             for test_str in v3item[key]: # pkt in [pkt,pkt..]
+
+#                 matches = re.finditer(regex3, test_str)
+#     #             print("\n\nNEW PKT\n\n") #make new json obj now
                 
 
 
-                node={}
-                edge={}
-                node_attr={}
-                edge_attr={}
-                for matchNum, match in enumerate(matches, start=1):
+#                 node={}
+#                 edge={}
+#                 node_attr={}
+#                 edge_attr={}
+#                 for matchNum, match in enumerate(matches, start=1):
 
 
-                    s1 = match.group().strip()
-                    spl = s1.split("=")
-                #     print(spl)
-                    dic = {}
+#                     s1 = match.group().strip()
+#                     spl = s1.split("=")
+#                 #     print(spl)
+#                     dic = {}
 
-                    if len(spl)==2:
-                        dic[spl[0].replace('"', "'") ]=spl[1].replace('"', "'") 
+#                     if len(spl)==2:
+#                         dic[spl[0].replace('"', "'") ]=spl[1].replace('"', "'") 
 
 
-                    if spl[0]=='src':
-                        #append to label,id source
-                        node["label"]=spl[1]
-                        node["id"]=spl[1]
-                        edge["source"]=spl[1]
+#                     if spl[0]=='src':
+#                         #append to label,id source
+#                         node["label"]=spl[1]
+#                         node["id"]=spl[1]
+#                         edge["source"]=spl[1]
 
-                    elif spl[0]=='Ether dst':
-                        edge['target']=spl[1]
-                    elif spl[0]=='Raw load':
-                        pass
-                    else:
-                        # append to attr
-#                         node_attr[spl[0]]=spl[1]
-                        pass
-                #         edge_attr[spl[0]]=spl[1]
-                node['color'.replace("'", '"')] = "#"+"%06x" % random.randint(0, 0xFFFFFF)      
-                node['attributes']=node_attr
-                node['channel']=curr_eth
-                node['x']= random.randint(-4000,4000)
-                node['y']= random.randint(-4000,4000)
-#                 node['size']= random.randint(100,300)
-                node["size"] = random.randint(2, 10)
-                edge['id']= 'e'+str(i)
-                i+=1
-                edge['weight'] = random.randint(20,200)
-                edge['label']=''
-                #     edge['attr']=edge_attr
-                nodes.append(node)
-                edges.append(edge)
+#                     elif spl[0]=='Ether dst':
+#                         edge['target']=spl[1]
+#                     elif spl[0]=='Raw load':
+#                         pass
+#                     else:
+#                         # append to attr
+# #                         node_attr[spl[0]]=spl[1]
+#                         pass
+#                 #         edge_attr[spl[0]]=spl[1]
+#                 node['color'.replace("'", '"')] = "#"+"%06x" % random.randint(0, 0xFFFFFF)      
+#                 node['attributes']=node_attr
+#                 node['channel']=curr_eth
+#                 node['x']= random.randint(-4000,4000)
+#                 node['y']= random.randint(-4000,4000)
+# #                 node['size']= random.randint(100,300)
+#                 node["size"] = random.randint(2, 10)
+#                 edge['id']= 'e'+str(i)
+#                 i+=1
+#                 edge['weight'] = random.randint(20,200)
+#                 edge['label']=''
+#                 #     edge['attr']=edge_attr
+#                 nodes.append(node)
+#                 edges.append(edge)
 
-                for groupNum in range(0, len(match.groups())):
+#                 for groupNum in range(0, len(match.groups())):
 
-                    groupNum = groupNum + 1
+#                     groupNum = groupNum + 1
 
-                    if matchNum==1 and groupNum==1:
-                        label= match.group(groupNum).strip() # mac addr
-                        id_obj= match.group(groupNum).strip()
+#                     if matchNum==1 and groupNum==1:
+#                         label= match.group(groupNum).strip() # mac addr
+#                         id_obj= match.group(groupNum).strip()
     
     
-#     dut_nodes = nodeGen()
+# #     dut_nodes = nodeGen()
 
     json_obj['nodes']=nodes
     json_obj['edges']=edges
@@ -180,30 +188,53 @@ def jsonifySanityDict():
     print(g_node_dict[i])
     #     print("\n\n\n")
     
-def intfGen(node_lst):
+def intfGen(node_lst,edge_lst):
     # create Eth1/5 json
     # create eth4 json
     try:
         global g_node_dict
-        for curr_node in g_node_dict.keys():
+        
+        for curr_node in g_node_dict.keys(): # ['node01', 'node02', 'node03', 'tgn']
+            print('\n\n\n')
             for i in g_node_dict[curr_node]["interfaces"]:
-                curr_intf = i  # ie Eth2/1
-                #     print(curr_intf)
-                peer = (
-                    g_node_dict[curr_node]["interfaces"][i]["peer_device"]
-                    + "-"
-                    + g_node_dict[curr_node]["interfaces"][i]["peer_interface"]
-                )  # ie node02-Eth2/1
+                intf_name = i  # ie Eth2/1
+#                 print(intf_name)
+                    
+#                 intf_name = g_node_dict[curr_node]["interfaces"]
+                intf_dev = curr_node
+                curr_intf= str(intf_dev)+'-'+str(intf_name)
+                
+                peer_dev = g_node_dict[curr_node]["interfaces"][str(i)]["peer_device"]
+                peer_intf = g_node_dict[curr_node]["interfaces"][str(i)]["peer_interface"]
+                peer = ''
+                peer= peer_dev+"-"+peer_intf
+                
+#                 peer = (
+#                     g_node_dict[curr_node]["interfaces"][i]["peer_device"]
+#                     + "-"
+#                     + g_node_dict[curr_node]["interfaces"][i]["peer_interface"]
+#                 )  # ie node02-Eth2/1
                 #     print(peer) # node02-Eth2/1
 
                 node = {}
-                edge = {}
-                node_attr = {}
+                node_attr = {'peer':peer}
+                
+                edge_label = intf_dev+'-'+curr_intf
+                edge = {"target":curr_intf,"source":intf_dev,"id":curr_intf+curr_intf+intf_dev,"weight": 77, "label": edge_label}
                 edge_attr = {}
+                edge["attributes"]=edge_attr
+                edge["color"]='0xFFFFFF'
+                edge_label2 = curr_intf+'-'+peer
 
+                edge2 = {"target":peer,"source":curr_intf,"id":edge_label2+edge_label2,"weight": 77, "label": edge_label2}
+                edge_attr2 = {}
+                edge2["color"]='0xFFFFFF'
 
-                node["label"] = str(peer)
-                node["id"] = str(peer)
+                edge2["attributes"]=edge_attr2
+#                 {"target": "00:00:33:33:30:01", "source": "00:00:44:44:30:01", "id": "e0", "weight": 77, "label": ""}
+                
+                node["label"] = curr_intf
+                node["id"] = curr_intf
                 node["color".replace("'", '"')] = "#" + "%06x" % random.randint(0, 0xFFFFFF)
                 node["attributes"] = node_attr
                 node["channel"] = None
@@ -211,13 +242,16 @@ def intfGen(node_lst):
                 node["y"] = random.randint(-18000, -10000)
                 node["size"] = random.randint(2, 10)
         #         print(node)
-
+                
                 node_lst.append(node)
+                edge_lst.append(edge)
+#                 edge_lst.append(edge2)
+                
     except Exception as exc:
         print(exc)
         
 
-    return node_lst    
+    return node_lst,edge_lst    
     
 def nodeGen(node_lst):
     # create node01 json
@@ -226,9 +260,9 @@ def nodeGen(node_lst):
     for i in g_node_dict.keys():
         node = {}
         edge = {}
-        node_attr = {}
+        node_attr = {'a':'b'}
         edge_attr = {}
-
+        
 #         node_attr = g_node_dict[i]
 
         node["label"] = str(i)
